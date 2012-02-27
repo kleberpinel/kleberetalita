@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+       <meta charset="utf-8"/>
+       <title>Kleber e Talita</title>
+       <%= render "/include/head" %>
+</head>
+<body>
+
+	<div class="main">
+		<%= render "/include/header" %>
+		
+		<%= yield %>
+		
+		<div class="clearfix"></div>
+		
+		<%= render "/include/newsletter" %>
+		
+		
+	</div> 
+	
+	<footer class="footer">
+		<%= render "/include/footer" %>
+	</footer>
+</body>
+</html>
