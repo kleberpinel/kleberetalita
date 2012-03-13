@@ -7,7 +7,7 @@ class BlogController < ApplicationController
     elsif params[:user] == "Talita"
       @blog_name = "Blog da talita"
     elsif params[:user] == "Kleber e Talita"
-      @blog_name = "Blog do Kleber e da Talita - Nossas postagens Toguether"
+      @blog_name = "Blog do Kleber e da Talita - Nossas postagens Together"
     end
 
 
@@ -21,7 +21,7 @@ class BlogController < ApplicationController
     elsif params[:user] == "Talita"
       @blog_name = "Blog da talita"
     elsif params[:user] == "Kleber e Talita"
-      @blog_name = "Blog do Kleber e da Talita - Nossas postagens Toguether"
+      @blog_name = "Blog do Kleber e da Talita - Nossas postagens Together"
     end
 
     @post = Post.find(params[:id])
