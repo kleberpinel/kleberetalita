@@ -1,6 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
+gem "nifty-generators", :group => :development
+
+gem 'devise'
+gem 'omniauth-facebook'
+# gem 'mongrel', '1.2.0.pre2'
+# gem "omniauth-facebook"
+# gem 'Flickraw'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -31,3 +38,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+gem "mocha", :group => :test

@@ -1,0 +1,44 @@
+
+<div style="text-align: center; aling: center">
+
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => {:class=> "comment-form"}) do |f| %>
+
+	<table align="center" >
+		<tr>
+			<td colspan="2">
+				<h2>Sign in</h2>
+			</td>
+		</tr>
+		<tr>
+			<td width="200px"><%= f.label :email %></td>
+			<td><%= f.email_field :email%></td>
+		</tr>
+		<tr>
+			<td> <%= f.label :password %></td>
+			<td> <%= f.password_field :password%></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<% if devise_mapping.rememberable? -%>
+					<%= f.check_box :remember_me, :style => "width: 10px; vertical-align: middle"%> <%= f.label :remember_me %>
+				<% end -%>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<%= f.submit "Sign in", :class => "button blue"%>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>
+				<%= render "links" %>
+			</td>
+		</tr>
+	</table>
+	  
+	<% end %>
+
+
+</div>

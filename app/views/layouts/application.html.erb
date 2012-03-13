@@ -3,21 +3,28 @@
 <html lang="pt">
 <head>
        <meta charset="utf-8"/>
-       <title>Kleber e Talita</title>
+       <title><%= content_for?(:title) ? yield(:title) : "Kleber e Talita" %></title>
        <%= render "/include/head" %>
+       <%= yield(:head) %>
 </head>
 <body>
 
 	<div class="main">
 		<%= render "/include/header" %>
 		
+			<% flash.each do |name, msg| %>
+				<div class="full shortcodes">
+					<%= content_tag :span, msg, :class => "box green", :id => "flash_#{name}" %>
+				</div>
+			<% end %>
+		
+		<%= content_tag :h1, yield(:title) if show_title? %>
+		
 		<%= yield %>
 		
 		<div class="clearfix"></div>
 		
 		<%= render "/include/newsletter" %>
-		
-		
 	</div> 
 	
 	<footer class="footer">

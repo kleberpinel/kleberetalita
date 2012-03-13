@@ -2255,10 +2255,25 @@ ul.buttons li {
 
 
 
+#user_nav{
+	color: white;
+	left: 410px;
+	top: 90px;
+	position: absolute;
+	width: 500px;
+	text-align: right;
+}
+
+#user_nav a {
+	color: white;
+}
 
 
-
-
+#error_explanation {
+	margin-left: 100px;
+	color: red;
+	
+}
 
 
 

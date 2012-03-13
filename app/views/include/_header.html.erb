@@ -4,34 +4,43 @@
 	
 	<ul class="mainnav">
 		<li><a href="/" class="active">Home</a>
+			<!--
 			<ul class="subnav">
-				<li><a href="/">Somos nós</a></li>
-				<!--<li><a href="index2.html">Nivo Slider</a></li>-->
+				<li><a href="index2.html">Nivo Slider</a></li>
 			</ul>
+			-->
 		</li>
 		<li><a href="#">Sonhos</a>
 			<ul class="subnav">
-				<li><a href="menu_breakfast.html">Casamento</a></li>
-				<li><a href="menu_lunch.html">Canadá</a></li>
-				<li><a href="menu_dinner.html">Formatura</a></li>
+				<li><a href="#">Casamento</a></li>
+				<li><a href="#">Canadá</a></li>
+				<li><a href="#">Formatura</a></li>
 			</ul>
 		</li>
 		<li><a href="/events/list">Eventos</a></li>
 		<li><a href="blog.html">Blog</a>
 			<ul class="subnav">
-				<li><a href="/blog/list?user=kleber">Kleber</a></li>
-				<li><a href="/blog/list?user=talita">Talita</a></li>
-				<li><a href="/blog/list?user=nois"><3 Conjunto <3</a></li>
+				<li><a href="/blog/list?user=Kleber e Talita"><3 Conjunto <3</a></li>
+				<li><a href="/blog/list?user=Kleber">Kleber</a></li>
+				<li><a href="/blog/list?user=Talita">Talita</a></li>
 				<!--<li><a href="blog-2.html">Blog style 2</a></li>-->
 			</ul>
 		</li>
 		<li><a href="#">Sobre</a>
 			<ul class="subnav">
-				<li><a href="about.html">Kleber</a></li>
-				<li><a href="page-full.html">Talita</a></li>
+				<li><a href="#">Nós</a></li>
+				<li><a href="#">Kleber</a></li>
+				<li><a href="#">Talita</a></li>
 			</ul>
 		</li>
-		<li><a href="contact.php">Contato</a></li>
+		<li><a href="#">Contato</a></li>
 	</ul><!-- END MAIN NAVIGATION -->
-
+	<div id="user_nav">
+		<% if user_signed_in? %>
+		Logado como  <%= current_user.email %>. Não é você?
+		<%= link_to "Deslogar", destroy_user_session_path%>
+		<% else %>
+			<%= link_to "Cadastrar", new_user_registration_path %> or <%= link_to "Logar", new_user_session_path %>.
+		<% end %>
+	</div>
 </nav> <!-- END HEADER -->

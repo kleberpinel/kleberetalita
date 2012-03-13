@@ -1,0 +1,101 @@
+<div class="top">
+		
+	<h2><%= @blog_name %></h2>
+
+</div> <!-- END TOP -->
+
+<div class="clearfix"></div>
+
+<div class="page blog">
+		
+		<h2><%= @post.titulo%></h2>
+			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.created_at %> in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a></span>
+			<a href="/images/slider/slider-image1.jpg" class="img fancybox"><img src="/images/blog/blog-post-1.jpg" alt="Blog post image"></a>
+			<p><%= @post.texto%></p>
+		
+	<div class="comments">
+	
+		<h3>Comentários</h3>
+		
+		<ul class="comment-list">
+			<% @post.comments.each do |comment|%>
+			<li>
+				<a href="#" class="avatar"><img src="/images/blog/avatar.jpg" alt="Avatar"></a>
+				<div class="bubble">
+					<p><%= comment.body%></p>
+				</div>
+			</li>
+			<% end %>
+		</ul>
+		
+		<h3>Poste um comentário</h3>
+		
+		<%= form_for([@post, @post.comments.build], :html => {:class=> "comment-form"})  do |f| %>
+			<%= f.text_field :commenter, :class => "txt name", :placeholder=>"Nome"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <%= f.text_field :commenter, :class => "txt email", :placeholder=>"Endereço de e-mail"%>
+		    <%= f.text_area :body, :class => "txt name", :placeholder=>"Mensagem"%>
+		    <%= f.submit "Enviar",  :class => "button orange" %>
+		<%end%>
+	
+	</div>
+							
+</div> <!-- END PAGE -->
+
+<div class="sidebar blog-side">
+
+	<div class="catg">
+	
+		<h3>Categories</h3>
+		
+		<ul class="catg-list">
+			<li><a href="#">Recipies (5)</a></li>
+			<li><a href="#">Restaurant (3)</a></li>
+			<li><a href="#">Weddings (6)</a></li>
+			<li><a href="#">BBQ (2)</a></li>
+		</ul>
+	
+	</div> <!-- END CATEGORIES -->
+	
+	<div class="clearfix"></div>
+	
+	<div class="tags">
+	
+		<h3>Tags</h3>
+		
+		<ul class="tags-list">
+			<li><a href="#">meat</a></li>
+			<li><a href="#">fish</a></li>
+			<li><a href="#">corn</a></li>
+			<li><a href="#">bread</a></li>
+			<li><a href="#">clamps</a></li>
+			<li><a href="#">party</a></li>
+			<li><a href="#">music</a></li>
+			<li><a href="#">sushi</a></li>
+			<li><a href="#">pasta</a></li>
+		</ul>
+	
+	</div> <!-- END TAGS -->
+	
+	<div class="clearfix"></div>
+	
+	<div class="comments">
+	
+		<h3>Latest Comments</h3>
+		
+		<ul class="comm-list">
+			<li>John D.<a href="#">Spaghetti festival</a></li>
+			<li>Max P.<a href="#">Sushi surprise</a></li>
+			<li>Astrid L.<a href="#">Evening Star</a></li>
+		</ul>
+	
+	</div> <!-- END COMMENTS -->
+	
+	<div class="video">
+	
+		<h3>Check this out</3>
+		
+		<iframe src="http://player.vimeo.com/video/27243869?color=ffffff" width="280" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+	
+	</div> <!-- END VIDEO -->
+
+</div> <!-- END SIDEBAR -->
