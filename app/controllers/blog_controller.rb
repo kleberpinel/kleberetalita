@@ -1,7 +1,7 @@
 class BlogController < ApplicationController
   
   def list
-  	@blog_name = "Malandrão.... não tem blog pra vc não !!! heay heay !"
+  	@blog_name = "Malandrao.... nao tem blog pra vc nao !!! heay heay !"
   	if params[:user] == "Kleber"
       @blog_name = "Blog do Kleber"
     elsif params[:user] == "Talita"
@@ -15,7 +15,7 @@ class BlogController < ApplicationController
   end
 
   def view
-    @blog_name = "Malandrão.... não tem blog pra vc não !!! heay heay !"
+    @blog_name = "Malandrao.... nao tem blog pra vc nao !!! heay heay !"
     if params[:user] == "Kleber"
       @blog_name = "Blog do Kleber"
     elsif params[:user] == "Talita"
