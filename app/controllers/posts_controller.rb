@@ -55,7 +55,24 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params[:post])
     
-    setPictures()
+     pic1 = params[:post][:picture1]
+    if pic1
+      @post.picture1 = params[:post][:titulo].to_s.gsub(" ", "_") << "1.jpg"
+      FileUtils.copy(pic1.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture1}")
+    end
+    
+    pic2 = params[:post][:picture2]
+    if pic2
+      @post.picture2 = params[:post][:titulo].to_s.gsub(" ", "_") << "2.jpg"
+      FileUtils.copy(pic2.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture2}")
+    end
+
+    pic3 = params[:post][:picture3]
+    if pic3
+      @post.picture3 = params[:post][:titulo].to_s.gsub(" ", "_") << "3.jpg"
+      FileUtils.copy(pic3.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture3}")
+    end
+    @post.data = Time.new
     
     respond_to do |format|
       if @post.save
