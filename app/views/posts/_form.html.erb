@@ -1,4 +1,4 @@
-<%= form_for(@post) do |f| %>
+<%= form_for(@post, :html => {:multipart => true}, :html => {:class=> "comment-form"}) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -28,8 +28,16 @@
     <%= f.text_field :autor %>
   </div>
   <div class="field">
-    <%= f.label :data %><br />
-    <%= f.date_select :data %>
+    <%= f.label :picture1 %><br />
+    <%= f.file_field :picture1 %>
+  </div>
+  <div class="field">
+    <%= f.label :picture2 %><br />
+    <%= f.file_field :picture2 %>
+  </div>
+  <div class="field">
+    <%= f.label :picture3 %><br />
+    <%= f.file_field :picture3 %>
   </div>
   <div class="actions">
     <%= f.submit %>

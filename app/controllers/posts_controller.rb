@@ -1,6 +1,16 @@
 class PostsController < ApplicationController
 
   before_filter :authenticate_user!
+  before_filter :user_must_be
+
+  def user_must_be
+    if user_signed_in?
+      if current_user.email != "kleberpinel@gmail.com" && current_user.email != "talita_sack@hotmail.com"
+        flash[:error] = "Seu usuario nao tem premissao para acessar esta area do site!"
+        redirect_to index_home_url # halts request cycle
+      end 
+    end
+  end
 
   # GET /posts
   # GET /posts.json
@@ -44,7 +54,9 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
-
+    
+    setPictures()
+    
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, :notice => 'Post was successfully created.' }
@@ -61,8 +73,27 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
+    pic1 = params[:post][:picture1]
+    if pic1
+      @post.picture1 = params[:post][:titulo].to_s.gsub(" ", "_") << "1.jpg"
+      FileUtils.copy(pic1.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture1}")
+    end
+    
+    pic2 = params[:post][:picture2]
+    if pic2
+      @post.picture2 = params[:post][:titulo].to_s.gsub(" ", "_") << "2.jpg"
+      FileUtils.copy(pic2.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture2}")
+    end
+
+    pic3 = params[:post][:picture3]
+    if pic3
+      @post.picture3 = params[:post][:titulo].to_s.gsub(" ", "_") << "3.jpg"
+      FileUtils.copy(pic3.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture3}")
+    end
+    @post.data = Time.new
+
     respond_to do |format|
-      if @post.update_attributes(params[:post])
+      if @post.save
         format.html { redirect_to @post, :notice => 'Post was successfully updated.' }
         format.json { head :ok }
       else
@@ -70,6 +101,22 @@ class PostsController < ApplicationController
         format.json { render :json => @post.errors, :status => :unprocessable_entity }
       end
     end
+  end
+
+  def setPictures
+    
+    
+    pic2 = @post.picture2
+    if pic2
+      @post.picture2 = pic2.original_filename.to_s
+      FileUtils.copy(pic2.tempfile.path, "#{Rails.root}/public/images/#{pic2.original_filename}")
+    end 
+
+    pic3 = @post.picture3
+    if pic3
+      @post.picture3 = pic3.original_filename.to_s
+      FileUtils.copy(pic3.tempfile.path, "#{Rails.root}/public/images/#{pic3.original_filename}")
+    end 
   end
 
   # DELETE /posts/1

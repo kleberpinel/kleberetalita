@@ -13,7 +13,7 @@
 			<li>
 				<%= link_to post.titulo,  view_blog_path(post), :class=> "title" %>
 				<span class="date"><strong>13</strong>jan</span>
-				<a href="/images/slider/slider-image1.jpg" class="img fancybox"><img src="/images/blog/blog-post-1.jpg" alt="Blog post image"></a>
+				<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag  "/images/uploads/#{post.picture1}" %></a>
 				<p><%= post.descricao %></p>
 				<%= link_to "Leia mais ¬",  view_blog_path(post), :class=> "readmore" %>
 			</li>

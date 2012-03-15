@@ -5,10 +5,8 @@ gem "nifty-generators", :group => :development
 
 gem 'devise'
 gem 'omniauth-facebook'
-# gem 'mongrel', '1.2.0.pre2'
-# gem "omniauth-facebook"
-# gem 'Flickraw'
 
+gem 'rest-client'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 

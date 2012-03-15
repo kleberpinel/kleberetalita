@@ -1,4 +1,10 @@
 Kleberetalita::Application.routes.draw do
+  get "flickr/create"
+
+  get "flickr/flickr_callback"
+
+  get "flickr/something_else_with_flickr"
+
   #match '/auth/:provider/callback' => 'authentications#create'
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
