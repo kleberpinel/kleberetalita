@@ -12,8 +12,8 @@
 		<% @posts.each do |post|%>	
 			<li>
 				<%= link_to post.titulo,  view_blog_path(post), :class=> "title" %>
-				<span class="date"><strong>13</strong>jan</span>
-				<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag  "/images/uploads/#{post.picture1}" %></a>
+				<span class="date"><strong><%= post.data.strftime("%d") %></strong><%= post.data.strftime("%b") %></span>
+				<a href="<%= post.picture1 %>" class="img fancybox"><%= image_tag  "#{post.picture1}", :size => "580x200"  %></a>
 				<p><%= post.descricao %></p>
 				<%= link_to "Leia mais ¬",  view_blog_path(post), :class=> "readmore" %>
 			</li>

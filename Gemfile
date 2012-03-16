@@ -6,7 +6,9 @@ gem "nifty-generators", :group => :development
 gem 'devise'
 gem 'omniauth-facebook'
 
-gem 'rest-client'
+# gem 'rest-client'
+gem 'aws-s3'
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 

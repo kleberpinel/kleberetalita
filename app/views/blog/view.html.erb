@@ -9,8 +9,8 @@
 <div class="page blog">
 		
 		<h2><%= @post.titulo%></h2>
-			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.created_at %> in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a></span>
-			<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag  "/images/uploads/#{@post.picture2}" %></a>
+			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.data.strftime("%d/%m/%Y") %> in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a></span>
+			<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag "#{@post.picture2}" %></a>
 			<p><%= @post.texto%></p>
 		
 	<div class="comments">
