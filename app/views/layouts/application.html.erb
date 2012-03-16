@@ -5,6 +5,7 @@
        <meta charset="utf-8"/>
        <title><%= content_for?(:title) ? yield(:title) : "Kleber e Talita" %></title>
        <%= render "/include/head" %>
+        <%= csrf_meta_tag %>
        <%= yield(:head) %>
 </head>
 <body>

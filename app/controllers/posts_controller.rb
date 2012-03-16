@@ -55,7 +55,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params[:post])
     
-     pic1 = params[:post][:picture1]
+    pic1 = params[:post][:picture1]
     if pic1
       @post.picture1 = params[:post][:titulo].to_s.gsub(" ", "_") << "1.jpg"
       FileUtils.copy(pic1.tempfile.path, "#{Rails.root}/public/images/uploads/#{@post.picture1}")
@@ -120,22 +120,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def setPictures
-    
-    
-    pic2 = @post.picture2
-    if pic2
-      @post.picture2 = pic2.original_filename.to_s
-      FileUtils.copy(pic2.tempfile.path, "#{Rails.root}/public/images/#{pic2.original_filename}")
-    end 
-
-    pic3 = @post.picture3
-    if pic3
-      @post.picture3 = pic3.original_filename.to_s
-      FileUtils.copy(pic3.tempfile.path, "#{Rails.root}/public/images/#{pic3.original_filename}")
-    end 
-  end
-
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
@@ -147,4 +131,5 @@ class PostsController < ApplicationController
       format.json { head :ok }
     end
   end
+ 
 end
