@@ -74,12 +74,12 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.json
   def update
-    logger.debug params.inspect
+    #logger.debug params.inspect
 
     @post = Post.find(params[:id])
 
     savePictures
-    @post.categoria_id = params[:categoria]
+    #@post.categoria_id = params[:categoria]
 
     @post.data = Time.new
 
