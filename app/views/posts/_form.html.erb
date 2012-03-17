@@ -1,3 +1,4 @@
+<% @post.tags.build %>
 <%= form_for(@post, :html => {:multipart => true}, :html => {:class=> "comment-form"}) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -10,6 +11,11 @@
       </ul>
     </div>
   <% end %>
+
+  <div class="field">
+    <%= f.label :categorium %><br />
+    <%= select_tag :categoria, options_from_collection_for_select(@categorias, :id, :nome) %>
+  </div>
 
   <div class="field">
     <%= f.label :titulo %><br />
@@ -39,6 +45,9 @@
     <%= f.label :picture3 %><br />
     <%= f.file_field :picture3 %>
   </div>
+  <h2>Tags</h2>
+  <%= render :partial => 'tags/form',
+             :locals => {:form => f} %>
   <div class="actions">
     <%= f.submit %>
   </div>

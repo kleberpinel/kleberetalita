@@ -48,6 +48,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @categorias = Categoria.find(:all)
   end
 
   # POST /posts
@@ -73,9 +74,12 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.json
   def update
+    logger.debug params.inspect
+
     @post = Post.find(params[:id])
 
     savePictures
+    @post.categoria_id = params[:categoria]
 
     @post.data = Time.new
 

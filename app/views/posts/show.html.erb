@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+Categoria: <%= @post.categoria_id %><br>
 Titulo: <%= @post.titulo %><br>
 Descrição: <%= @post.descricao %><br>
 Texto: <%= @post.texto %><br>
@@ -7,6 +8,14 @@ Autor: <%= @post.autor %><br>
 Imagem 1: <%= image_tag  "#{@post.picture1}" %><br/>
 Imagem 2: <%= image_tag  "#{@post.picture2}" %><br/>
 Imagem 3: <%= image_tag  "#{@post.picture3}" %><br/>
+
+<p>
+  <b>Tags:</b>
+  <%= join_tags(@post) %>
+</p>
+
+<h2>Comments</h2>
+<%= render @post.comments %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

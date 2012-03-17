@@ -11,12 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120317000324) do
+ActiveRecord::Schema.define(:version => 20120317191322) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
     t.string   "provider"
     t.string   "uid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categoria", :force => true do |t|
+    t.string   "nome"
+    t.string   "descricao"
+    t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,7 +52,19 @@ ActiveRecord::Schema.define(:version => 20120317000324) do
     t.string   "picture1"
     t.string   "picture2"
     t.string   "picture3"
+    t.integer  "categoria_id"
   end
+
+  add_index "posts", ["categoria_id"], :name => "index_posts_on_categoria_id"
+
+  create_table "tags", :force => true do |t|
+    t.string   "name"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tags", ["post_id"], :name => "index_tags_on_post_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

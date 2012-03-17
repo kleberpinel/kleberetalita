@@ -1,0 +1,21 @@
+<h1>Listing categoria</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categoria.each do |categorium| %>
+  <tr>
+    <td><%= link_to 'Show', categorium %></td>
+    <td><%= link_to 'Edit', edit_categorium_path(categorium) %></td>
+    <td><%= link_to 'Destroy', categorium, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Categorium', new_categorium_path %>

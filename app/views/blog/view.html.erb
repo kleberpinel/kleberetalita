@@ -7,7 +7,7 @@
 <div class="clearfix"></div>
 
 <div class="page blog">
-		
+		<%= @post.categoria %>
 		<h2><%= @post.titulo%></h2>
 			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.data.strftime("%d/%m/%Y") %> in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a></span>
 			<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag "#{@post.picture2}" %></a>
@@ -27,6 +27,11 @@
 			</li>
 			<% end %>
 		</ul>
+
+		<p>
+		  <b>Tags:</b>
+		  	<%= join_tags(@post) %>
+		  </p>
 		
 		<h3>Poste um comentário</h3>
 		<%- if !user_signed_in? %>
@@ -75,15 +80,7 @@
 		<h3>Tags</h3>
 		
 		<ul class="tags-list">
-			<li><a href="#">meat</a></li>
-			<li><a href="#">fish</a></li>
-			<li><a href="#">corn</a></li>
-			<li><a href="#">bread</a></li>
-			<li><a href="#">clamps</a></li>
-			<li><a href="#">party</a></li>
-			<li><a href="#">music</a></li>
-			<li><a href="#">sushi</a></li>
-			<li><a href="#">pasta</a></li>
+			<%= join_tags_li(@post) %>
 		</ul>
 	
 	</div> <!-- END TAGS -->
