@@ -1,0 +1,37 @@
+
+<div style="padding-left: 50px">
+	<h1>Editando User</h1>
+
+	<%= form_for( usuarios_path(@user), :method => "post", :html => {:class=> "comment-form"}) do |f| %>
+	  <% if @user.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+	      <ul>
+	      <% @user.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+
+	  <div class="field">
+	    <%= f.label :nome %><br />
+	    <%= f.text_field :nome, :value => @user.nome %>
+	  </div>
+
+	  <div class="field">
+	    <%= f.label :email %><br />
+	    <%= f.text_field :email, :value => @user.email %>
+	  </div>
+
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
+
+
+</div>
+
+<%= link_to 'Show', @usuario %> |
+<%= link_to 'Back', usuarios_path %>

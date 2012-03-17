@@ -20,7 +20,7 @@
 		<ul class="comment-list">
 			<% @post.comments.each do |comment|%>
 			<li>
-				<a href="#" class="avatar"><img src="/images/blog/avatar.jpg" alt="Avatar"></a>
+				<a href="#" class="avatar"><%= image_tag "http://graph.facebook.com/#{comment.commenter}/picture", :size => "70x70"%></a>
 				<div class="bubble">
 					<p><%= comment.body%></p>
 				</div>
@@ -29,13 +29,25 @@
 		</ul>
 		
 		<h3>Poste um comentário</h3>
+		<%- if !user_signed_in? %>
+
+			<table>
+				<tr>
+					<td><%= link_to( image_tag("/images/fb_login_icon.gif") , "/users/auth/facebook/" ) %></td>
+					<td>&nbsp;ou <%= link_to "crie um usuário no nosso site", new_registration_path(resource_name) %> para nos deixar um comentário!</td>
+				</tr>
+			</table>
+			 
+		<% end %>
 		
-		<%= form_for([@post, @post.comments.build], :html => {:class=> "comment-form"})  do |f| %>
-			<%= f.text_field :commenter, :class => "txt name", :placeholder=>"Nome"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    <%= f.text_field :commenter, :class => "txt email", :placeholder=>"Endereço de e-mail"%>
-		    <%= f.text_area :body, :class => "txt name", :placeholder=>"Mensagem"%>
-		    <%= f.submit "Enviar",  :class => "button orange" %>
-		<%end%>
+		<%- if user_signed_in? %>
+			<%= form_for([@post, @post.comments.build], :html => {:class=> "comment-form"})  do |f| %>
+				<%= f.text_field :commenter, :value => current_user.nome, :readonly => true,  :class => "txt name", :placeholder=>"Nome"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    <%= f.text_field :email, :value => current_user.email,:readonly => true, :class => "txt email", :placeholder=>"Endereço de e-mail"%>
+			    <%= f.text_area :body, :class => "txt name", :placeholder=>"Mensagem"%>
+			    <%= f.submit "Enviar",  :class => "button orange" %>
+			<%end%>
+		<% end %>
 	
 	</div>
 							

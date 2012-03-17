@@ -6,7 +6,6 @@ Devise.setup do |config|
   config.case_insensitive_keys = []
   Devise.use_salt_as_remember_token = true
   Devise.reset_password_within = 6
-  config.sign_out_via = :delete
   
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is

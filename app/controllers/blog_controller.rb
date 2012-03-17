@@ -26,6 +26,10 @@ class BlogController < ApplicationController
 
     @post = Post.find(params[:id])
     @blog_name = @post.autor
+
+    if user_signed_in?
+      #@post.comments.email = "fefefe"
+    end
   end
 
 end

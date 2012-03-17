@@ -80,7 +80,7 @@ class PostsController < ApplicationController
     @post.data = Time.new
 
     respond_to do |format|
-      if @post.save
+      if @post.update_attributes(params[:post])
         format.html { redirect_to @post, :notice => 'Post was successfully updated.' }
         format.json { head :ok }
       else
@@ -103,8 +103,8 @@ class PostsController < ApplicationController
   end
 
   def savePictures
-    AWS::S3::Base.establish_connection!( :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'])
-    #AWS::S3::Base.establish_connection!( :access_key_id => 'AKIAJ7ZNS42OYFZPC3LA', :secret_access_key => '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')
+    #AWS::S3::Base.establish_connection!( :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'])
+    AWS::S3::Base.establish_connection!( :access_key_id => 'AKIAJ7ZNS42OYFZPC3LA', :secret_access_key => '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')
     
     pic1 = params[:post][:picture1]
     if pic1
