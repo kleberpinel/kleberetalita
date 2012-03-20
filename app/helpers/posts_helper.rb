@@ -10,4 +10,16 @@ module PostsHelper
 			end
 		end
 	end
+
+
+	def join_posts_tags_li(posts)
+		content_tag :li do 
+			posts.each do |post|
+				post.tags.map.each do | t | 
+					concat( content_tag(:a, t.name) )
+				end
+			end
+		end
+	end
+
 end

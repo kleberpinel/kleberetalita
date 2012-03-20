@@ -4,4 +4,7 @@ class EventsController < ApplicationController
   	
   end
 
+  def dates
+  end
+
 end

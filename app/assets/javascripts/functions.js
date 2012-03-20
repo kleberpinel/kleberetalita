@@ -46,7 +46,7 @@ $(document).ready(function(){
 		var href = $(this).attr('id');
 		$("td.link").removeClass("active");
 		$(".loading").fadeIn("fast").delay(500);
-		$("#content").hide().load("dates.html").delay(800).fadeIn("slow");
+		$("#content").hide().load("events/dates").delay(800).fadeIn("slow");
 		$(".loading").fadeOut("fast");
 	});
 });

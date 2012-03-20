@@ -46,15 +46,7 @@
 		<h3>Tags</h3>
 		
 		<ul class="tags-list">
-			<li><a href="#">meat</a></li>
-			<li><a href="#">fish</a></li>
-			<li><a href="#">corn</a></li>
-			<li><a href="#">bread</a></li>
-			<li><a href="#">clamps</a></li>
-			<li><a href="#">party</a></li>
-			<li><a href="#">music</a></li>
-			<li><a href="#">sushi</a></li>
-			<li><a href="#">pasta</a></li>
+			<%= join_posts_tags_li(@posts) %>
 		</ul>
 	
 	</div> <!-- END TAGS -->
@@ -66,9 +58,9 @@
 		<h3>Latest Comments</h3>
 		
 		<ul class="comm-list">
-			<li>John D.<a href="#">Spaghetti festival</a></li>
-			<li>Max P.<a href="#">Sushi surprise</a></li>
-			<li>Astrid L.<a href="#">Evening Star</a></li>
+			<% @last_coments.each do |comment|%>	
+				<li><%= comment.commenter %> <%= link_to comment.body, view_blog_path(comment.post) %></li>
+			<% end %>
 		</ul>
 	
 	</div> <!-- END COMMENTS -->

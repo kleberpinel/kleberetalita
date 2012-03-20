@@ -9,7 +9,7 @@
 <div class="page blog">
 		<%= @post.categoria %>
 		<h2><%= @post.titulo%></h2>
-			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.data.strftime("%d/%m/%Y") %> in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a></span>
+			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.data.strftime("%d/%m/%Y") %> <!-- in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a> --> </span>
 			<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag "#{@post.picture2}" %></a>
 			<p><%= @post.texto%></p>
 		
@@ -63,14 +63,14 @@
 	<div class="catg">
 	
 		<h3>Categories</h3>
-		
+		<!--
 		<ul class="catg-list">
 			<li><a href="#">Recipies (5)</a></li>
 			<li><a href="#">Restaurant (3)</a></li>
 			<li><a href="#">Weddings (6)</a></li>
 			<li><a href="#">BBQ (2)</a></li>
 		</ul>
-	
+		-->
 	</div> <!-- END CATEGORIES -->
 	
 	<div class="clearfix"></div>
@@ -92,9 +92,9 @@
 		<h3>Latest Comments</h3>
 		
 		<ul class="comm-list">
-			<li>John D.<a href="#">Spaghetti festival</a></li>
-			<li>Max P.<a href="#">Sushi surprise</a></li>
-			<li>Astrid L.<a href="#">Evening Star</a></li>
+			<% @last_coments.each do |comment|%>	
+				<li><%= comment.commenter %> <%= link_to comment.body, view_blog_path(comment.post) %></li>
+			<% end %>
 		</ul>
 	
 	</div> <!-- END COMMENTS -->

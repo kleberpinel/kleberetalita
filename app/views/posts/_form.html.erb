@@ -11,12 +11,6 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :categorium %><br />
-    <%= select_tag :categoria, options_from_collection_for_select(@categorias, :id, :nome) %>
-  </div>
-
   <div class="field">
     <%= f.label :titulo %><br />
     <%= f.text_field :titulo %>
