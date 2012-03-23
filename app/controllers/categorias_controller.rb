@@ -2,7 +2,7 @@ class CategoriaController < ApplicationController
   # GET /categoria
   # GET /categoria.json
   def index
-    @categoria = Categorium.all
+    @categoria = Categorias.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,42 +13,42 @@ class CategoriaController < ApplicationController
   # GET /categoria/1
   # GET /categoria/1.json
   def show
-    @categorium = Categorium.find(params[:id])
+    @categorias = Categorias.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @categorium }
+      format.json { render json: @categorias }
     end
   end
 
   # GET /categoria/new
   # GET /categoria/new.json
   def new
-    @categorium = Categorium.new
+    @categorias = Categorias.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @categorium }
+      format.json { render json: @categorias }
     end
   end
 
   # GET /categoria/1/edit
   def edit
-    @categorium = Categorium.find(params[:id])
+    @categorias = Categorias.find(params[:id])
   end
 
   # POST /categoria
   # POST /categoria.json
   def create
-    @categorium = Categorium.new(params[:categorium])
+    @categorias = Categorias.new(params[:categorias])
 
     respond_to do |format|
-      if @categorium.save
-        format.html { redirect_to @categorium, notice: 'Categorium was successfully created.' }
-        format.json { render json: @categorium, status: :created, location: @categorium }
+      if @categorias.save
+        format.html { redirect_to @categorias, notice: 'Categorias was successfully created.' }
+        format.json { render json: @categorias, status: :created, location: @categorias }
       else
         format.html { render action: "new" }
-        format.json { render json: @categorium.errors, status: :unprocessable_entity }
+        format.json { render json: @categorias.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,15 +56,15 @@ class CategoriaController < ApplicationController
   # PUT /categoria/1
   # PUT /categoria/1.json
   def update
-    @categorium = Categorium.find(params[:id])
+    @categorias = Categorias.find(params[:id])
 
     respond_to do |format|
-      if @categorium.update_attributes(params[:categorium])
-        format.html { redirect_to @categorium, notice: 'Categorium was successfully updated.' }
+      if @categorias.update_attributes(params[:categorias])
+        format.html { redirect_to @categorias, notice: 'Categorias was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
-        format.json { render json: @categorium.errors, status: :unprocessable_entity }
+        format.json { render json: @categorias.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -72,8 +72,8 @@ class CategoriaController < ApplicationController
   # DELETE /categoria/1
   # DELETE /categoria/1.json
   def destroy
-    @categorium = Categorium.find(params[:id])
-    @categorium.destroy
+    @categorias = Categorias.find(params[:id])
+    @categorias.destroy
 
     respond_to do |format|
       format.html { redirect_to categoria_url }

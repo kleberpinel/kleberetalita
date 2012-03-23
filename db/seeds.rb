@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+
+categoria = Categoria.create!(nome: "Canadá", descricao: "Canadá")
+Post.create!(texto: "Olb Olb Olb Olb Olb Olb ", titulo: "Olbsdkfjahsdkfjh", descricao: "Descricao da Olb ", categoria: categoria)

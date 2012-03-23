@@ -7,15 +7,15 @@
     <th></th>
   </tr>
 
-<% @categoria.each do |categorium| %>
+<% @categoria.each do |categorias| %>
   <tr>
-    <td><%= link_to 'Show', categorium %></td>
-    <td><%= link_to 'Edit', edit_categorium_path(categorium) %></td>
-    <td><%= link_to 'Destroy', categorium, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Show', categorias %></td>
+    <td><%= link_to 'Edit', edit_categorias_path(categorias) %></td>
+    <td><%= link_to 'Destroy', categorias, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Categorium', new_categorium_path %>
+<%= link_to 'New Categorias', new_categorias_path %>

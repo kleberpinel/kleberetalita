@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
-gem "nifty-generators", :group => :development
 
 gem 'devise'
 gem 'omniauth-facebook'
@@ -12,8 +11,16 @@ gem 'aws-s3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-# gem 'sqlite3'
-gem 'pg'
+group :development do
+  gem 'sqlite3'
+  gem "nifty-generators"
+  gem "pry"
+  gem "awesome_print"
+end
+
+group :production do
+  gem 'pg'
+end
 
 gem 'json'
 

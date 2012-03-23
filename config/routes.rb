@@ -1,7 +1,5 @@
 Kleberetalita::Application.routes.draw do
   
-  resources :categoria
-
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   resources :categorias

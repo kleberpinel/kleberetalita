@@ -79,8 +79,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     savePictures
-    #@post.categoria_id = params[:categoria]
-
+    
     @post.data = Time.new
 
     respond_to do |format|

@@ -1,23 +1,16 @@
 development:
-  adapter: postgresql
-  encoding: utf8
-  database: openT_development
-  username: root
-  password: root
-  template: template0 # Required for UTF8 encoding
- 
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
 test:
-  adapter: postgresql
-  encoding: utf8
-  database: openT_test
-  username: 
-  password: 
-  template: template0 # Required for UTF8 encoding
- 
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
 production:
-  adapter: postgresql
-  encoding: utf8
-  database: openT_production
-  username: 
-  password: 
-  template: template0 # Required for UTF8 encoding
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000

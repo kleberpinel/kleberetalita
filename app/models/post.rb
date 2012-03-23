@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
                     
     has_many :comments, :dependent => :destroy
   	has_many :tags
- 	has_one :categoria
+ 	belongs_to :categoria
 
   	accepts_nested_attributes_for :tags, :allow_destroy => :true, :reject_if => proc { |attrs| attrs.all? { |k, v| v.blank? } }
 end

@@ -27,7 +27,8 @@ class BlogController < ApplicationController
     @post = Post.find(params[:id])
     @blog_name = @post.autor
 
-    @last_coments = Comment.limit(3).order("created_at DESC").find(:all)
+    # @last_coments = Comment.limit(3).order("created_at DESC").find(:all)
+    @last_coments = Comment.joins(:post).where(:posts => {:autor => @post.autor}).limit(3).order("created_at DESC")
     @posts = Post.find(:all)
   end
 

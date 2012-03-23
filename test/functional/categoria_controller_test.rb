@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CategoriaControllerTest < ActionController::TestCase
   setup do
-    @categorium = categoria(:one)
+    @categorias = categoria(:one)
   end
 
   test "should get index" do
@@ -16,32 +16,32 @@ class CategoriaControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create categorium" do
-    assert_difference('Categorium.count') do
-      post :create, categorium: @categorium.attributes
+  test "should create categorias" do
+    assert_difference('Categorias.count') do
+      post :create, categorias: @categorias.attributes
     end
 
-    assert_redirected_to categorium_path(assigns(:categorium))
+    assert_redirected_to categorias_path(assigns(:categorias))
   end
 
-  test "should show categorium" do
-    get :show, id: @categorium.to_param
+  test "should show categorias" do
+    get :show, id: @categorias.to_param
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @categorium.to_param
+    get :edit, id: @categorias.to_param
     assert_response :success
   end
 
-  test "should update categorium" do
-    put :update, id: @categorium.to_param, categorium: @categorium.attributes
-    assert_redirected_to categorium_path(assigns(:categorium))
+  test "should update categorias" do
+    put :update, id: @categorias.to_param, categorias: @categorias.attributes
+    assert_redirected_to categorias_path(assigns(:categorias))
   end
 
-  test "should destroy categorium" do
-    assert_difference('Categorium.count', -1) do
-      delete :destroy, id: @categorium.to_param
+  test "should destroy categorias" do
+    assert_difference('Categorias.count', -1) do
+      delete :destroy, id: @categorias.to_param
     end
 
     assert_redirected_to categoria_path

@@ -27,6 +27,12 @@
     <%= f.label :autor %><br />
     <%= f.text_field :autor %>
   </div>
+
+  <div class="field">
+    <%= f.label :categoria %><br />
+    <%= collection_select(:post, :categoria_id, Categoria.all(:order => "nome"), :id, :nome) %>
+  </div>
+
   <div class="field">
     <%= f.label :picture1 %><br />
     <%= f.file_field :picture1 %>
