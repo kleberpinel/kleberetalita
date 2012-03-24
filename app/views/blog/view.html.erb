@@ -7,31 +7,36 @@
 <div class="clearfix"></div>
 
 <div class="page blog">
-		<%= @post.categoria %>
 		<h2><%= @post.titulo%></h2>
-			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor%></a> em <%= @post.data.strftime("%d/%m/%Y") %> <!-- in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a> --> </span>
-			<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag "#{@post.picture2}" %></a>
+			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor.nome%></a> em <%= @post.created_at.strftime("%d/%m/%Y") %> <!-- in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a> --> </span>
+			<%- if @post.picture2 == "/assets" %>
+				<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag "#{@post.picture2}" %></a>
+			<% end %>
+			
 			<p><%= @post.texto%></p>
 		
 	<div class="comments">
 	
-		<h3>Comentários</h3>
-		
-		<ul class="comment-list">
-			<% @post.comments.each do |comment|%>
-			<li>
-				<a href="#" class="avatar"><%= image_tag "http://graph.facebook.com/#{comment.commenter}/picture", :size => "70x70"%></a>
-				<div class="bubble">
-					<p><%= comment.body%></p>
-				</div>
-			</li>
-			<% end %>
-		</ul>
-
-		<p>
-		  <b>Tags:</b>
-		  	<%= join_tags(@post) %>
-		  </p>
+		<%- if !@post.comments.empty? %>
+			<h3>Comentários</h3>
+			
+			<ul class="comment-list">
+				<% @post.comments.each do |comment|%>
+				<li>
+					<a href="#" class="avatar"><%= image_tag "http://graph.facebook.com/#{comment.commenter}/picture", :size => "70x70"%></a>
+					<div class="bubble">
+						<p><%= comment.body %></p>
+					</div>
+				</li>
+				<% end %>
+			</ul>
+		<% end %>
+		<%- if !@post.tags.empty? %>
+			<p>
+			  <b>Tags:</b>
+			  <%= join_tags(@post) %>
+		  	</p>
+	  	<% end %>
 		
 		<h3>Poste um comentário</h3>
 		<%- if !user_signed_in? %>
@@ -63,27 +68,25 @@
 	<div class="catg">
 	
 		<h3>Categories</h3>
-		<!--
 		<ul class="catg-list">
-			<li><a href="#">Recipies (5)</a></li>
-			<li><a href="#">Restaurant (3)</a></li>
-			<li><a href="#">Weddings (6)</a></li>
-			<li><a href="#">BBQ (2)</a></li>
+			<% Categoria.all.each do |categoria|%>
+				<li>  <%= link_to "#{categoria.nome} (#{Post.find_all_by_categoria_id(categoria.id).size()})" , category_blog_path(categoria) %></li>	
+			<% end %>
 		</ul>
-		-->
 	</div> <!-- END CATEGORIES -->
 	
 	<div class="clearfix"></div>
-	
-	<div class="tags">
-	
-		<h3>Tags</h3>
+	<%- if !@post.tags.empty? %>
+		<div class="tags">
 		
-		<ul class="tags-list">
-			<%= join_tags_li(@post) %>
-		</ul>
-	
-	</div> <!-- END TAGS -->
+			<h3>Tags</h3>
+			
+			<ul class="tags-list">
+				<%= join_tags_li(@post) %>
+			</ul>
+		
+		</div> <!-- END TAGS -->
+	<% end %>
 	
 	<div class="clearfix"></div>
 	

@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :autor %><br />
-    <%= f.text_field :autor %>
+    <%= collection_select(:post, :autor_id, Autor.all(:order => "nome"), :id, :nome) %>
   </div>
 
   <div class="field">

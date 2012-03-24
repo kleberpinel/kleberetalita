@@ -1,0 +1,10 @@
+
+ <div class="field">
+    Nome: <%= @categoria.nome %>
+  </div>
+  <div class="field">
+    Descrição: <%= @categoria.descricao %>
+  </div>
+
+<%= link_to 'Edit', edit_categoria_path(@categoria) %> |
+<%= link_to 'Back', categorias_path %>

@@ -1,34 +1,37 @@
 class BlogController < ApplicationController
   
   def list
-    @posts = Post.find_all_by_autor(params[:user])
-  	if params[:user] == "Kleber"
-      @blog_name = "Blog do Kleber"
-    elsif params[:user] == "Talita"
-      @blog_name = "Blog da Talita"
+    autor = Autor.find_by_id(params[:id_autor])
+    
+    if autor != nil
+      @posts = Post.where( :autor_id =>  autor).paginate(:page => params[:page], :per_page => 5)
+      @blog_name = autor.titulo_blog
     else
-      @blog_name = "Blog do Kleber e da Talita - Nossas postagens Together"
-      @posts = Post.find(:all)
+      @posts = Post.paginate(:page => params[:page], :per_page => 5)
+      @blog_name = "Todas nossas postagens"
     end
 
     @last_coments = Comment.limit(5).order("created_at DESC").find(:all)
 
   end
 
+  def category
+    categoria = Categoria.find_by_id(params[:id])
+    @blog_name = "Voce procurou pela categoria '" << categoria.nome << "'"
+    @posts = Post.where( :categoria_id =>  categoria).paginate(:page => params[:page], :per_page => 5)
+   
+    @last_coments = Comment.limit(5).order("created_at DESC").find(:all)
+
+    render "list"
+
+  end
+
   def view
-    if params[:user] == "Kleber"
-      @blog_name = "Blog do Kleber"
-    elsif params[:user] == "Talita"
-      @blog_name = "Blog da Talita"
-    else
-      @blog_name = "Blog do Kleber e da Talita - Nossas postagens Together"
-    end
-
+    logger.debug params[:id].inspect
     @post = Post.find(params[:id])
-    @blog_name = @post.autor
+    @blog_name = @post.autor.titulo_blog
 
-    # @last_coments = Comment.limit(3).order("created_at DESC").find(:all)
-    @last_coments = Comment.joins(:post).where(:posts => {:autor => @post.autor}).limit(3).order("created_at DESC")
+    @last_coments = Comment.joins(:post).where(:posts => {:autor_id => @post.autor.id}).limit(3).order("created_at DESC")
     @posts = Post.find(:all)
   end
 

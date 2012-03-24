@@ -12,15 +12,19 @@
 		<% @posts.each do |post|%>	
 			<li>
 				<%= link_to post.titulo,  view_blog_path(post), :class=> "title" %>
-				<span class="date"><strong><%= post.data.strftime("%d") %></strong><%= post.data.strftime("%b") %></span>
-				<a href="<%= post.picture1 %>" class="img fancybox"><%= image_tag  "#{post.picture1}", :size => "580x200"  %></a>
+				<span class="date"><strong><%=h post.created_at.strftime("%d") %></strong><%=h post.created_at.strftime("%b") %></span>
+				<%- if post.picture1 == "/assets" %>
+					<a href="<%= post.picture1 %>" class="img fancybox"><%= image_tag  "#{post.picture1}", :size => "580x200"  %></a>
+				<% end %>
+				
 				<p><%= post.descricao %></p>
 				<%= link_to "Leia mais ¬",  view_blog_path(post), :class=> "readmore" %>
 			</li>
 		<% end %>
+		
 	</ul>
 	
-	<a href="#" class="arrow left">&larr; Older posts</a>
+	<%= will_paginate @posts %>
 				
 </div> <!-- END PAGE -->
 
@@ -31,25 +35,24 @@
 		<h3>Categories</h3>
 		
 		<ul class="catg-list">
-			<li><a href="#">Recipies (5)</a></li>
-			<li><a href="#">Restaurant (3)</a></li>
-			<li><a href="#">Weddings (6)</a></li>
-			<li><a href="#">BBQ (2)</a></li>
+			<% Categoria.all.each do |categoria|%>
+				<li>  <%= link_to "#{categoria.nome} (#{Post.find_all_by_categoria_id(categoria.id).size()})" , category_blog_path(categoria) %></li>	
+			<% end %>
 		</ul>
 	
 	</div> <!-- END CATEGORIES -->
 	
 	<div class="clearfix"></div>
 	
-	<div class="tags">
-	
-		<h3>Tags</h3>
+		<div class="tags">
 		
-		<ul class="tags-list">
-			<%= join_posts_tags_li(@posts) %>
-		</ul>
-	
-	</div> <!-- END TAGS -->
+			<h3>Tags</h3>
+			
+			<ul class="tags-list">
+				<%= join_posts_tags_li(@posts) %>
+			</ul>
+		
+		</div> <!-- END TAGS -->
 	
 	<div class="clearfix"></div>
 	

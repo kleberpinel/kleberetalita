@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(:version => 20120317151036) do
     t.datetime "updated_at"
   end
 
+  create_table "autors", :force => true do |t|
+    t.string   "nome"
+    t.string   "titulo_blog"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "categorias", :force => true do |t|
     t.string   "nome"
     t.string   "descricao"
@@ -44,11 +51,11 @@ ActiveRecord::Schema.define(:version => 20120317151036) do
     t.string   "titulo"
     t.text     "descricao"
     t.date     "data"
-    t.string   "autor"
     t.string   "picture1"
     t.string   "picture2"
     t.string   "picture3"
     t.integer  "categoria_id"
+    t.integer  "autor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

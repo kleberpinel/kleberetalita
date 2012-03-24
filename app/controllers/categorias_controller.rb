@@ -2,81 +2,81 @@ class CategoriasController < ApplicationController
   # GET /categoria
   # GET /categoria.json
   def index
-    @categoria = Categorias.all
+    @categorias = Categoria.all
 
     respond_to do |format|
       format.html # index.html.erb
+      format.json { render json: @categorias }
+    end
+  end
+
+  # GET /categorias/1
+  # GET /categorias/1.json
+  def show
+    @categoria = Categoria.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
       format.json { render json: @categoria }
     end
   end
 
-  # GET /categoria/1
-  # GET /categoria/1.json
-  def show
-    @categorias = Categorias.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @categorias }
-    end
-  end
-
-  # GET /categoria/new
-  # GET /categoria/new.json
+  # GET /categorias/new
+  # GET /categorias/new.json
   def new
-    @categorias = Categorias.new
+    @categoria = Categoria.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @categorias }
+      format.json { render json: @categoria }
     end
   end
 
-  # GET /categoria/1/edit
+  # GET /categorias/1/edit
   def edit
-    @categorias = Categorias.find(params[:id])
+    @categoria = Categoria.find(params[:id])
   end
 
   # POST /categoria
   # POST /categoria.json
   def create
-    @categorias = Categorias.new(params[:categorias])
+    @categoria = Categoria.new(params[:categoria])
 
     respond_to do |format|
-      if @categorias.save
-        format.html { redirect_to @categorias, notice: 'Categorias was successfully created.' }
-        format.json { render json: @categorias, status: :created, location: @categorias }
+      if @categoria.save
+        format.html { redirect_to @categoria, notice: 'Categoria was successfully created.' }
+        format.json { render json: @categoria, status: :created, location: @categoria }
       else
         format.html { render action: "new" }
-        format.json { render json: @categorias.errors, status: :unprocessable_entity }
+        format.json { render json: @categoria.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # PUT /categoria/1
-  # PUT /categoria/1.json
+  # PUT /categorias/1
+  # PUT /categorias/1.json
   def update
-    @categorias = Categorias.find(params[:id])
+    @categoria = Categoria.find(params[:id])
 
     respond_to do |format|
-      if @categorias.update_attributes(params[:categorias])
-        format.html { redirect_to @categorias, notice: 'Categorias was successfully updated.' }
+      if @categoria.update_attributes(params[:categoria])
+        format.html { redirect_to @categoria, notice: 'Categoria was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
-        format.json { render json: @categorias.errors, status: :unprocessable_entity }
+        format.json { render json: @categoria.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # DELETE /categoria/1
-  # DELETE /categoria/1.json
+  # DELETE /categorias/1
+  # DELETE /categorias/1.json
   def destroy
-    @categorias = Categorias.find(params[:id])
-    @categorias.destroy
+    @categoria = Categoria.find(params[:id])
+    @categoria.destroy
 
     respond_to do |format|
-      format.html { redirect_to categoria_url }
+      format.html { redirect_to categorias_url }
       format.json { head :ok }
     end
   end

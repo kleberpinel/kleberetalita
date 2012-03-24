@@ -5,8 +5,8 @@ gem 'rails', '3.1.3'
 gem 'devise'
 gem 'omniauth-facebook'
 
-# gem 'rest-client'
 gem 'aws-s3'
+gem 'will_paginate', '~> 3.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'

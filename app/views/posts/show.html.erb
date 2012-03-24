@@ -1,9 +1,8 @@
-<p id="notice"><%= notice %></p>
 
 Titulo: <%= @post.titulo %><br>
 Descrição: <%= @post.descricao %><br>
 Texto: <%= @post.texto %><br>
-Autor: <%= @post.autor %><br>
+Autor: <%= @post.autor.nome %><br>
 Catiguria: <%= @post.categoria.nome %><br />
 Imagem 1: <%= image_tag  "#{@post.picture1}" %><br/>
 Imagem 2: <%= image_tag  "#{@post.picture2}" %><br/>
