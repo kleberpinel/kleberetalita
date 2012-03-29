@@ -3,7 +3,7 @@ class CreateAutors < ActiveRecord::Migration
     create_table :autors do |t|
       t.string :nome
       t.string :titulo_blog
-      t.string :sobre
+      t.text :sobre
       t.string :nome_menu
 
       t.timestamps

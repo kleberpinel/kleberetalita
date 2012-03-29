@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20120317151036) do
   create_table "autors", :force => true do |t|
     t.string   "nome"
     t.string   "titulo_blog"
-    t.string   "sobre"
+    t.text     "sobre"
     t.string   "nome_menu"
     t.datetime "created_at"
     t.datetime "updated_at"
