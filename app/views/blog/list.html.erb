@@ -7,22 +7,28 @@
 <div class="clearfix"></div>
 
 <div class="page blog">
-			
-	<ul class="blog-second">
-		<% @posts.each do |post|%>	
-			<li>
-				<%= link_to post.titulo,  view_blog_path(post), :class=> "title" %>
-				<span class="date"><strong><%=h post.created_at.strftime("%d") %></strong><%=h post.created_at.strftime("%b") %></span>
-				<%- if post.picture1 == "/assets" %>
-					<a href="<%= post.picture1 %>" class="img fancybox"><%= image_tag  "#{post.picture1}", :size => "580x200"  %></a>
-				<% end %>
-				
-				<p><%= post.descricao %></p>
-				<%= link_to "Leia mais ¬",  view_blog_path(post), :class=> "readmore" %>
-			</li>
-		<% end %>
 		
-	</ul>
+
+	<%- if !@posts.empty? %>
+		<ul class="blog-second">
+			<% @posts.each do |post|%>	
+				<li>
+					<%= link_to post.titulo,  view_blog_path(post), :class=> "title" %>
+					<span class="date"><strong><%=h post.created_at.strftime("%d") %></strong><%=h post.created_at.strftime("%b") %></span>
+					<%- if post.picture1 == "/assets" %>
+						<a href="<%= post.picture1 %>" class="img fancybox"><%= image_tag  "#{post.picture1}", :size => "580x200"  %></a>
+					<% end %>
+					
+					<p><%= post.descricao %></p>
+					<%= link_to "Leia mais ¬",  view_blog_path(post), :class=> "readmore" %>
+				</li>
+			<% end %>
+
+			
+		</ul>
+	<% else %>
+		<p> <span class="cap dark">N</span>enhum item cadastrado</p>
+	<% end %>
 	
 	<%= will_paginate @posts %>
 				
@@ -30,20 +36,9 @@
 
 <div class="sidebar blog-side">
 
-	<div class="catg">
-	
-		<h3>Categories</h3>
-		
-		<ul class="catg-list">
-			<% Categoria.all.each do |categoria|%>
-				<li>  <%= link_to "#{categoria.nome} (#{Post.find_all_by_categoria_id(categoria.id).size()})" , category_blog_path(categoria) %></li>	
-			<% end %>
-		</ul>
-	
-	</div> <!-- END CATEGORIES -->
-	
-	<div class="clearfix"></div>
-	
+	<%= render "/categorias/show_categorias" %>
+
+	<%- if !Tag.all.empty? %>
 		<div class="tags">
 		
 			<h3>Tags</h3>
@@ -53,27 +48,12 @@
 			</ul>
 		
 		</div> <!-- END TAGS -->
-	
-	<div class="clearfix"></div>
-	
-	<div class="comments">
-	
-		<h3>Latest Comments</h3>
-		
-		<ul class="comm-list">
-			<% @last_coments.each do |comment|%>	
-				<li><%= comment.commenter %> <%= link_to comment.body, view_blog_path(comment.post) %></li>
-			<% end %>
-		</ul>
-	
-	</div> <!-- END COMMENTS -->
-	
-	<div class="video">
-	
-		<h3>Check this out</h3>
-		
-		<iframe src="http://player.vimeo.com/video/27243869?color=ffffff" width="280" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-	
-	</div> <!-- END COMMENTS -->
+
+		<div class="clearfix"></div>
+	<% end %>
+
+	<%= render "/comments/last_comments" %>
+
+	<%= render "/videos/videos" %>
 
 </div> <!-- END SIDEBAR -->

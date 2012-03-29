@@ -8,7 +8,9 @@
 
 <div class="page blog">
 		<h2><%= @post.titulo%></h2>
-			<span class="meta"><italic>escrito</italic> por <a hef="#"><%= @post.autor.nome%></a> em <%= @post.created_at.strftime("%d/%m/%Y") %> <!-- in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a> --> </span>
+			<span class="meta"><italic>escrito</italic> por 
+
+				<%= link_to @post.autor.nome, "#"  %> em <%= @post.created_at.strftime("%d/%m/%Y") %> <!-- in <a href="#">kitchen</a>,<a href="#">recipies</a>, <a href="#">spaghetti</a> --> </span>
 			<%- if @post.picture2 == "/assets" %>
 				<a href="/images/slider/slider-image1.jpg" class="img fancybox"><%= image_tag "#{@post.picture2}" %></a>
 			<% end %>
@@ -65,17 +67,8 @@
 
 <div class="sidebar blog-side">
 
-	<div class="catg">
-	
-		<h3>Categories</h3>
-		<ul class="catg-list">
-			<% Categoria.all.each do |categoria|%>
-				<li>  <%= link_to "#{categoria.nome} (#{Post.find_all_by_categoria_id(categoria.id).size()})" , category_blog_path(categoria) %></li>	
-			<% end %>
-		</ul>
-	</div> <!-- END CATEGORIES -->
-	
-	<div class="clearfix"></div>
+	<%= render "/categorias/show_categorias" %>
+
 	<%- if !@post.tags.empty? %>
 		<div class="tags">
 		
@@ -86,28 +79,11 @@
 			</ul>
 		
 		</div> <!-- END TAGS -->
+		<div class="clearfix"></div>
 	<% end %>
 	
-	<div class="clearfix"></div>
+	<%= render "/comments/last_comments" %>
 	
-	<div class="comments">
-	
-		<h3>Latest Comments</h3>
-		
-		<ul class="comm-list">
-			<% @last_coments.each do |comment|%>	
-				<li><%= comment.commenter %> <%= link_to comment.body, view_blog_path(comment.post) %></li>
-			<% end %>
-		</ul>
-	
-	</div> <!-- END COMMENTS -->
-	
-	<div class="video">
-	
-		<h3>Check this out</3>
-		
-		<iframe src="http://player.vimeo.com/video/27243869?color=ffffff" width="280" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-	
-	</div> <!-- END VIDEO -->
+	<%= render "/videos/videos" %>
 
 </div> <!-- END SIDEBAR -->

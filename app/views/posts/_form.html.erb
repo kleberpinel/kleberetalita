@@ -23,6 +23,7 @@
     <%= f.label :texto %><br />
     <%= f.text_area :texto %>
   </div>
+  
   <div class="field">
     <%= f.label :autor %><br />
     <%= collection_select(:post, :autor_id, Autor.all(:order => "nome"), :id, :nome) %>

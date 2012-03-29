@@ -28,9 +28,9 @@
 		</li>
 		<li><a href="#">Sobre</a>
 			<ul class="subnav">
-				<li><a href="#">Nós</a></li>
-				<li><a href="#">Kleber</a></li>
-				<li><a href="#">Talita</a></li>
+				<% Autor.all.each do |autor| %> 
+					<li><%= link_to  autor.nome_menu, view_autors_path(autor) %></li>
+				<% end %>
 			</ul>
 		</li>
 		<li><a href="#">Contato</a></li>

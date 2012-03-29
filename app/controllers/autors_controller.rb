@@ -1,4 +1,17 @@
 class AutorsController < ApplicationController
+  
+  before_filter :authenticate_user! , :only => [:index, :show, :new, :edit, :create, :update, :destroy]
+  before_filter :user_must_be , :only => [:index, :show, :new, :edit, :create, :update, :destroy]
+
+  def user_must_be
+    if user_signed_in?
+      if current_user.email != "kleberpinel@gmail.com" && current_user.email != "talita_sack@hotmail.com"
+        flash[:error] = "Seu usuario nao tem premissao para acessar esta area do site!"
+        redirect_to index_home_url # halts request cycle
+      end 
+    end
+  end
+
   # GET /autors
   # GET /autors.json
   def index
@@ -80,4 +93,9 @@ class AutorsController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def view
+    @autor = Autor.find(params[:id])
+  end
+
 end

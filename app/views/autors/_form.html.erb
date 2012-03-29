@@ -1,4 +1,4 @@
-<%= form_for(@autor) do |f| %>
+<%= form_for(@autor, :html => {:class=> "comment-form"}) do |f| %>
   <% if @autor.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@autor.errors.count, "error") %> prohibited this autor from being saved:</h2>
@@ -15,10 +15,22 @@
     <%= f.label :nome %><br />
     <%= f.text_field :nome %>
   </div>
+
+  <div class="field">
+    <%= f.label :nome_menu %><br />
+    <%= f.text_field :nome_menu %>
+  </div>
+  
   <div class="field">
     <%= f.label :titulo_blog %><br />
     <%= f.text_field :titulo_blog %>
   </div>
+
+  <div class="field">
+    <%= f.label :sobre %><br />
+    <%= f.text_area :sobre %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
