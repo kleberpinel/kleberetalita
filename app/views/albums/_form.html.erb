@@ -1,0 +1,61 @@
+<%= form_for(@album, :html => {:class=> "comment-form"}) do |f| %>
+  <% if @album.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@album.errors.count, "error") %> prohibited this album from being saved:</h2>
+
+      <ul>
+      <% @album.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao %><br />
+    <%= f.text_area :descricao %>
+  </div>
+  <script type="text/javascript">
+    var indiceFoto = <%= @album.fotos.size %>;
+
+    function addFoto(foto){
+      splited = foto.attr("name").split("-");
+      id = splited[0];
+      imageURL = splited[1];
+
+      if($("#image" + id).attr("src") == undefined){
+        $("#fotos_selecionadas").append("<img id='image"+ id + "' src='"+ imageURL + "' width='100px' />");
+        $("#fotos_selecionadas").append("<input type='hidden' id='foto"+ id + "' name='foto["+indiceFoto+"]' value='"+id+"' width='100px' />");
+        indiceFoto ++;
+      }
+    }
+
+    function removeFoto(foto){
+      splited = foto.attr("name").split("-");
+      id = splited[0];
+      $("#image" + id).remove();
+      $("#foto" + id).remove();
+      indiceFoto --;
+    }
+  </script>
+  <div class="field">
+    <br/>
+    <%=link_to "Escolha as fotos", select_foto_path, :class => 'iframe' %><br/>
+    <br/>
+
+    <div id="fotos_selecionadas">
+      <% @album.fotos.each_with_index do |foto, index| %>
+        <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{foto.picture}", :width => "100" , :id => "image#{foto.id}"%>
+        <input type='hidden' id='foto<%= foto.id %>' name='foto[<%= index %>]' value='<%= foto.id %>' width='100px' />
+      <% end %>
+    </div>
+  </div>  
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,50 @@
+<div style="padding-left: 30px">
+
+	<h1>Editando foto</h1>
+
+	<%= form_for(@foto, :html => {:class=> "comment-form", :multipart => true}) do |f| %>
+    
+	  <% if @foto.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@foto.errors.count, "error") %> prohibited this foto from being saved:</h2>
+
+	      <ul>
+	      <% @foto.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+
+	 <div class="field">
+	    <%= f.label :nome %><br />
+	    <%= f.text_field :nome %>
+	  </div>
+
+	  <div class="field">
+	    <%= f.label :picture %><br />
+	    <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{@foto.picture}" %>
+	  </div>
+
+	  <div class="field">
+	    <%= f.label :descricao %><br />
+	    <%= f.text_area :descricao %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :width %><br />
+	    <%= f.number_field :width %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :height %><br />
+	    <%= f.number_field :height %>
+	  </div>
+	  
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
+
+
+	<%= link_to 'Visualizar', @foto %> |
+	<%= link_to 'Voltar', fotos_path %>
+</div>

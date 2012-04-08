@@ -1,0 +1,27 @@
+<div style="padding: 30px">
+  <h1>Listando albums</h1>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @albums.each do |album| %>
+    <tr>
+      <td><%= album.nome %></td>
+      <td><%= album.descricao %></td>
+      <td><%= link_to 'Visualizar', album %></td>
+      <td><%= link_to 'Editar', edit_album_path(album) %></td>
+      <td><%= link_to 'Excluir', album, confirm: 'Tem certeza?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
+
+  <%= link_to 'Novo Album', new_album_path %>
+</div>

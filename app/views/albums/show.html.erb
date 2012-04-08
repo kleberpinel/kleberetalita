@@ -1,0 +1,32 @@
+<div style="padding-left: 30px; width: 900px;"/>
+
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <b>Nome:</b>
+	  <%= @album.nome %>
+	</p>
+
+	<p>
+	  <b>Descricao:</b>
+	  <%= @album.descricao %>
+	</p>
+
+
+	<p>
+	  <b>Fotos:</b>
+
+	  <table class="table table-bordered">
+        <tr>
+          <th>Nome</th>
+          <th>Descricao</th>
+          <th>Foto</th>
+        </tr>
+		  <%= render @album.fotos %>
+		</table>
+	</p>
+
+
+	<%= link_to 'Editar', edit_album_path(@album) %> |
+	<%= link_to 'Voltar', albums_path %>
+</div>

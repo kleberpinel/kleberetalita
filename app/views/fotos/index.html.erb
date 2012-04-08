@@ -1,0 +1,29 @@
+<div style="padding: 30px">
+  <h1>Listando fotos</h1>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Foto</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @fotos.each do |foto| %>
+    <tr>
+      <td><%= foto.nome %></td>
+      <td><%= foto.descricao %></td>
+      <td style="text-align: center;"><a href="<%= "https://s3.amazonaws.com/rails_s3/#{foto.picture}" %>" class="img fancybox"><%= image_tag  "https://s3.amazonaws.com/rails_s3/#{foto.picture}", :width => "100" %></a></td>
+      <td><%= link_to 'Visualizar', foto %></td>
+      <td><%= link_to 'Editar', edit_foto_path(foto) %></td>
+      <td><%= link_to 'Excluir', foto, confirm: 'Tem certeza?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
+
+  <%= link_to 'Nova Foto', new_foto_path %>
+</div>

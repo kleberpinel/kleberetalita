@@ -1,0 +1,5 @@
+<tr>
+  <td><%= foto.nome %></td>
+  <td><%= foto.descricao %></td>
+  <td style="text-align: center;"><a href="<%= "https://s3.amazonaws.com/rails_s3/#{foto.picture}" %>" class="img fancybox"><%= image_tag  "https://s3.amazonaws.com/rails_s3/#{foto.picture}", :width => "100" %></a></td>
+</tr>

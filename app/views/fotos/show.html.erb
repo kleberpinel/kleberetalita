@@ -1,0 +1,31 @@
+<div style="padding-left: 30px; width: 900px;"/>
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <b>Nome:</b>
+    <%= @foto.nome %>
+  </p>
+
+  <p>
+    <b>Descricao:</b>
+    <%= @foto.descricao %>
+  </p>
+
+  <p>
+    <b>Width:</b>
+    <%= @foto.width %>
+  </p>
+
+  <p>
+    <b>Height:</b>
+    <%= @foto.height %>
+  </p>
+
+  <p>
+    <b>Foto:</b>
+    <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{@foto.picture}" %>
+  </p>
+
+  <%= link_to 'Editar', edit_foto_path(@foto) %> |
+  <%= link_to 'Voltar', fotos_path %>
+</div>
