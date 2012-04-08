@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120317151036) do
+ActiveRecord::Schema.define(:version => 20120331182707) do
+
+  create_table "albums", :force => true do |t|
+    t.string   "nome"
+    t.text     "descricao"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -37,6 +44,20 @@ ActiveRecord::Schema.define(:version => 20120317151036) do
     t.datetime "updated_at"
   end
 
+  create_table "ckeditor_assets", :force => true do |t|
+    t.string   "data_file_name",                  :null => false
+    t.string   "data_content_type"
+    t.integer  "data_file_size"
+    t.integer  "assetable_id"
+    t.string   "assetable_type",    :limit => 30
+    t.string   "type",              :limit => 30
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
+  add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
+
   create_table "comments", :force => true do |t|
     t.string   "commenter"
     t.text     "body"
@@ -48,6 +69,17 @@ ActiveRecord::Schema.define(:version => 20120317151036) do
 
   add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
 
+  create_table "fotos", :force => true do |t|
+    t.string   "nome"
+    t.string   "picture"
+    t.text     "descricao"
+    t.integer  "width"
+    t.integer  "height"
+    t.integer  "album_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "posts", :force => true do |t|
     t.text     "texto"
     t.string   "titulo"
@@ -56,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20120317151036) do
     t.string   "picture1"
     t.string   "picture2"
     t.string   "picture3"
+    t.boolean  "publicado"
     t.integer  "categoria_id"
     t.integer  "autor_id"
     t.datetime "created_at"

@@ -6,7 +6,7 @@
 		
 		<ul class="catg-list">
 			<% Categoria.all.each do |categoria|%>
-				<li>  <%= link_to "#{categoria.nome} (#{Post.find_all_by_categoria_id(categoria.id).size()})" , category_blog_path(categoria) %></li>	
+				<li>  <%= link_to "#{categoria.nome} (#{Post.where(:categoria_id => categoria.id, :publicado => true).size()})" , category_blog_path(categoria) %></li>	
 			<% end %>
 		</ul>
 

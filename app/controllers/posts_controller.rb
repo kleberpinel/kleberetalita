@@ -3,15 +3,6 @@ class PostsController < ApplicationController
   before_filter :authenticate_user!
   before_filter :user_must_be
 
-  def user_must_be
-    if user_signed_in?
-      if current_user.email != "kleberpinel@gmail.com" && current_user.email != "talita_sack@hotmail.com"
-        flash[:error] = "Seu usuario nao tem premissao para acessar esta area do site!"
-        redirect_to index_home_url # halts request cycle
-      end 
-    end
-  end
-
   # GET /posts
   # GET /posts.json
   def index
@@ -55,9 +46,6 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
-
-    savePictures
-    
     @post.data = Time.new
     
     respond_to do |format|
@@ -76,10 +64,7 @@ class PostsController < ApplicationController
   def update
     #logger.debug params.inspect
 
-    @post = Post.find(params[:id])
-
-    savePictures
-    
+    @post = Post.find(params[:id])    
     @post.data = Time.new
 
     respond_to do |format|
@@ -102,29 +87,6 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to posts_url }
       format.json { head :ok }
-    end
-  end
-
-  def savePictures
-    #AWS::S3::Base.establish_connection!( :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'])
-    AWS::S3::Base.establish_connection!( :access_key_id => 'AKIAJ7ZNS42OYFZPC3LA', :secret_access_key => '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')
-    
-    pic1 = params[:post][:picture1]
-    if pic1
-      @post.picture1 = "https://s3.amazonaws.com/rails_s3/" << params[:post][:titulo].to_s.gsub(" ", "_") << "1.jpg"
-      AWS::S3::S3Object.store(params[:post][:titulo].to_s.gsub(" ", "_") << "1.jpg", open(pic1.tempfile.path) , 'rails_s3', :access => :public_read)
-    end
-
-    pic2 = params[:post][:picture2]
-    if pic2
-      @post.picture2 = "https://s3.amazonaws.com/rails_s3/" << params[:post][:titulo].to_s.gsub(" ", "_") << "2.jpg"
-      AWS::S3::S3Object.store(params[:post][:titulo].to_s.gsub(" ", "_") << "2.jpg", open(pic2.tempfile.path) , 'rails_s3', :access => :public_read)
-    end
-
-    pic3 = params[:post][:picture3]
-    if pic3
-      @post.picture3 = "https://s3.amazonaws.com/rails_s3/" << params[:post][:titulo].to_s.gsub(" ", "_") << "3.jpg"
-      AWS::S3::S3Object.store(params[:post][:titulo].to_s.gsub(" ", "_") << "3.jpg", open(pic3.tempfile.path) , 'rails_s3', :access => :public_read)
     end
   end
  

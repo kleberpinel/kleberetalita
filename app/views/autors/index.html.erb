@@ -1,25 +1,27 @@
-<h1>Listing autors</h1>
+<div style="padding: 30px">
+  <h1>Listagem de autores</h1>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Nome</th>
+      <th>Titulo blog</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
 
-<table>
-  <tr>
-    <th>Nome</th>
-    <th>Titulo blog</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <% @autors.each do |autor| %>
+    <tr>
+      <td><%= autor.nome %></td>
+      <td><%= autor.titulo_blog %></td>
+      <td><%= link_to 'Visualizar', autor %></td>
+      <td><%= link_to 'Editar', edit_autor_path(autor) %></td>
+      <td><%= link_to 'Excluir', autor, confirm: 'Tem certeza?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </table>
 
-<% @autors.each do |autor| %>
-  <tr>
-    <td><%= autor.nome %></td>
-    <td><%= autor.titulo_blog %></td>
-    <td><%= link_to 'Show', autor %></td>
-    <td><%= link_to 'Edit', edit_autor_path(autor) %></td>
-    <td><%= link_to 'Destroy', autor, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <br />
 
-<br />
-
-<%= link_to 'New Autor', new_autor_path %>
+  <%= link_to 'Novo autor', new_autor_path %>
+</div>

@@ -9,7 +9,8 @@
 			<li>
 				<h2><%= post.titulo %></h2>
 				<p><%= post.descricao %> <br/><br/> <%= link_to "Leia mais ¬",  view_blog_path(post), :class=> "link" %></p>
-				<%- if post.picture3.to_s != "" %>
+				<%- if post.picture3.to_s != "/assets" && post.picture3.to_s != ""  %>
+
 					<%= image_tag  "#{post.picture3}", :size => "150x120"  %>
 				<% end %>
 			</li>

@@ -1,5 +1,5 @@
 <% @post.tags.build %>
-<%= form_for(@post, :html => {:multipart => true}, :html => {:class=> "comment-form"}) do |f| %>
+<%= form_for(@post, :html => {:multipart => true, :class=> "comment-form"}) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -12,6 +12,11 @@
     </div>
   <% end %>
   <div class="field">
+    <%= f.label :publicado %><br />
+    Sim<%= radio_button("post", "publicado", "true") %>
+    Não<%= radio_button("post", "publicado", "false") %>
+  </div>
+  <div class="field">
     <%= f.label :titulo %><br />
     <%= f.text_field :titulo %>
   </div>
@@ -21,7 +26,8 @@
   </div>
   <div class="field">
     <%= f.label :texto %><br />
-    <%= f.text_area :texto %>
+    <%= f.text_area :texto %><br />
+
   </div>
   
   <div class="field">
@@ -31,20 +37,62 @@
 
   <div class="field">
     <%= f.label :categoria %><br />
-    <%= collection_select(:post, :categoria_id, Categoria.all(:order => "nome"), :id, :nome) %>
+    <%= collection_select(:post, :categoria_id, Categoria.all(:order => "nome"), :id, :nome) %><br />
+    <br />
+  </div>
+
+  <script type="text/javascript">
+
+      function addFoto(foto, tipo_foto){
+        splited = foto.val().split("-");
+        id = splited[0];
+        imageURL = splited[1];
+
+        if($("#image" + tipo_foto).attr("src") != undefined){
+          $("#image" + tipo_foto).remove();
+          $("#foto" + tipo_foto).remove();
+        } 
+        $("#foto_selecionada"+tipo_foto).append("<img id='image"+ tipo_foto + "' src='"+ imageURL + "' width='100px' />");
+        $("#foto_selecionada"+tipo_foto).append("<input type='hidden' id='foto"+ tipo_foto + "' name='post[picture" + tipo_foto+ "]' value='"+imageURL+"' width='100px' />");
+      }
+
+    </script>
+
+  <div class="field" sytle="border: 1px solid black">
+    <%= f.label "Foto da chamada" %><br />
+    <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 1), :class => 'iframe' %><br/>
+    <br/>
+    <div id="foto_selecionada1">
+        <%- if @post.picture1.to_s != "" %>
+          <%= image_tag  @post.picture1, :width => "100" , :id => "image1"%>
+          <input type='hidden' id='foto1' name='post[picture1]' value='<%= @post.picture1 %>' width='100px' />
+        <% end %>
+    </div>
+  </div>
+
+
+  <div class="field">
+    <%= f.label "Foto da listagem" %><br />
+    <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 2), :class => 'iframe' %><br/>
+    <br/>
+    <div id="foto_selecionada2">
+      <%- if @post.picture1.to_s != "" %>
+        <%= image_tag  @post.picture2, :width => "100" , :id => "image2"%>
+        <input type='hidden' id='foto2' name='post[picture2]' value='<%= @post.picture2 %>' width='100px' />
+      <% end %>
+    </div>
   </div>
 
   <div class="field">
-    <%= f.label :picture1 %><br />
-    <%= f.file_field :picture1 %>
-  </div>
-  <div class="field">
-    <%= f.label :picture2 %><br />
-    <%= f.file_field :picture2 %>
-  </div>
-  <div class="field">
-    <%= f.label :picture3 %><br />
-    <%= f.file_field :picture3 %>
+    <%= f.label "Foto principal" %><br />
+    <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 3), :class => 'iframe' %><br/>
+    <br/>
+    <div id="foto_selecionada3">
+      <%- if @post.picture1.to_s != "" %>
+        <%= image_tag  @post.picture3, :width => "100" , :id => "image3"%>
+        <input type='hidden' id='foto3' name='post[picture3]' value='<%= @post.picture3 %>' width='100px' />
+      <% end %>
+    </div>
   </div>
   <h2>Tags</h2>
   <%= render :partial => 'tags/form',
@@ -52,4 +100,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

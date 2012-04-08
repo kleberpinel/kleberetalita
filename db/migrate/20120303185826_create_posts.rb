@@ -8,6 +8,7 @@ class CreatePosts < ActiveRecord::Migration
         t.string :picture1
         t.string :picture2
         t.string :picture3
+        t.boolean :publicado
 
         t.references :categoria
         t.references :autor

@@ -1,25 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div style="padding-left: 30px; width: 900px;"/>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <b>Nome:</b>
-  <%= @autor.nome %>
-</p>
+	<p>
+	  <b>Nome:</b>
+	  <%= @autor.nome %>
+	</p>
 
-<p>
-  <b>Nome menu:</b>
-  <%= @autor.nome_menu %>
-</p>
+	<p>
+	  <b>Nome menu:</b>
+	  <%= @autor.nome_menu %>
+	</p>
 
-<p>
-  <b>Titulo blog:</b>
-  <%= @autor.titulo_blog %>
-</p>
+	<p>
+	  <b>Titulo blog:</b>
+	  <%= @autor.titulo_blog %>
+	</p>
 
-<p>
-  <b>Sobre:</b><br/>
-  <%= @autor.sobre %>
-</p>
+	<p>
+	  <b>Sobre:</b><br/>
+	  <%= @autor.sobre %>
+	</p>
 
-
-<%= link_to 'Edit', edit_autor_path(@autor) %> |
-<%= link_to 'Back', autors_path %>
+	<br/>
+	<%= link_to 'Editar', edit_autor_path(@autor) %> |
+	<%= link_to 'Voltar', autors_path %>
+</div>

@@ -7,3 +7,33 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+ $(document).ready(function() {
+
+	  $("a.iframe").fancybox({
+	  	'width': 1100,
+		'height': 800,
+	    'transitionIn'    :    'elastic',
+	    'transitionOut'    :    'elastic',
+	    'speedIn'        :    400,
+	    'speedOut'        :    200,
+	    'overlayShow'    :    false,
+	    onStart     :   function() {
+        	//return window.confirm('Continue?');
+	    },
+	    onCancel    :   function() {
+	        //alert('Canceled!');
+	    },
+	    onComplete  :   function() {
+	        //alert('Completed!');
+	    },
+	    onCleanup   :   function() {
+	        //return window.confirm('Close?');
+	    },
+	    onClosed    :   function() {
+	        //alert('Closed!');
+	    }
+	  });
+    $("a.iframe_defaults").fancybox();
+  
+});

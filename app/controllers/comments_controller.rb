@@ -1,5 +1,8 @@
 class CommentsController < ApplicationController
 	def create
+
+		logger.debug params[:comment].to_s << "---------------"
+
 		@post = Post.find(params[:post_id])
 		@comment = @post.comments.create(params[:comment])
 		redirect_to view_blog_path(@post)

@@ -15,7 +15,7 @@
 				<li>
 					<%= link_to post.titulo,  view_blog_path(post), :class=> "title" %>
 					<span class="date"><strong><%=h post.created_at.strftime("%d") %></strong><%=h post.created_at.strftime("%b") %></span>
-					<%- if post.picture1 == "/assets" %>
+					<%- if post.picture1.to_s != "/assets" && post.picture1.to_s != ""  %>
 						<a href="<%= post.picture1 %>" class="img fancybox"><%= image_tag  "#{post.picture1}", :size => "580x200"  %></a>
 					<% end %>
 					

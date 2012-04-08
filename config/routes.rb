@@ -1,5 +1,15 @@
 Kleberetalita::Application.routes.draw do
   
+  resources :albums #do
+  #  resources :fotos
+  #end
+
+  resources :fotos
+
+  # match "/fotos",             :to => "fotos#index",     :as => "fotos",     :via => :get
+  # match "/foto/new",             :to => "fotos#new",     :as => "new_foto",     :via => :get
+  # match "/fotos",             :to => "fotos#create",     :as => "fotos",     :via => :post
+  
   resources :autors
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
@@ -17,6 +27,9 @@ Kleberetalita::Application.routes.draw do
   match "/blog/:id/list/category",    :to => "blog#category", :as => "category_blog", :via => :get
   
   match "/autors/:id/view",           :to => "autors#view",   :as => "view_autors",   :via => :get
+
+  match "/foto/select/",           :to => "fotos#select",   :as => "select_foto",   :via => :get
+  match "/foto/select/one/:tipo_foto",           :to => "fotos#selectOne",   :as => "select_one_foto",   :via => :get
 
   get "events/list"
   get "events/dates"

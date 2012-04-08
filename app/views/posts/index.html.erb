@@ -1,25 +1,27 @@
-<h1>Listing posts</h1>
+<div style="padding: 30px">
+  <h1>Listando posts</h1>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Titulo</th>
+      <th>Autor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
 
-<table width="300px">
-  <tr>
-    <th>Titulo</th>
-    <th>Autor</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.titulo %></td>
+      <td><%= post.autor.nome %></td>
+      <td><%= link_to 'Visualizar', post %></td>
+      <td><%= link_to 'Editar', edit_post_path(post) %></td>
+      <td><%= link_to 'Excluir', post, :confirm => 'Tem certeza?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
 
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.titulo %></td>
-    <td><%= post.autor.nome %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <br />
 
-<br />
-
-<%= link_to 'New Post', new_post_path %>
+  <%= link_to 'Novo Post', new_post_path %>
+</div>

@@ -1,20 +1,72 @@
+<div style="padding-left: 30px; width: 900px;"/>
+	<p>
+	  <b>Publicado:</b>
+	  <%- if @post.publicado.to_s != "" ||  @post.publicado.to_s == "true" %>
+	  	Sim
+	  <% else %>
+	  	Não
+	  <% end %>
+	</p>
+	<p>
+	  <b>Titulo:</b>
+	  <%= @post.titulo %>
+	</p>
 
-Titulo: <%= @post.titulo %><br>
-Descrição: <%= @post.descricao %><br>
-Texto: <%= @post.texto %><br>
-Autor: <%= @post.autor.nome %><br>
-Catiguria: <%= @post.categoria.nome %><br />
-Imagem 1: <%= image_tag  "#{@post.picture1}" %><br/>
-Imagem 2: <%= image_tag  "#{@post.picture2}" %><br/>
-Imagem 3: <%= image_tag  "#{@post.picture3}" %><br/>
+	<p>
+	  <b>Descrição:</b>
+	  <%= @post.descricao %>
+	</p>
 
-<p>
-  <b>Tags:</b>
-  <%= join_tags(@post) %>
-</p>
+	<p>
+	  <b>Texto:</b>
+	  <%= @post.texto %>
+	</p>
 
-<h2>Comments</h2>
-<%= render @post.comments %>
+	<p>
+	  <b>Autor:</b>
+	  <%= @post.autor.nome %>
+	</p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+	<p>
+	  <b>Categoria:</b>
+	  <%= @post.categoria.nome %>
+	</p>
+
+	<p >
+	  <b>Foto da chamada:</b>
+	  <%- if @post.picture1.to_s != "" %>
+	  	<a href="<%= @post.picture1 %>" class="img fancybox"><%= image_tag  "#{@post.picture1}", :width => "100" %></a>
+	  <% else %>
+	    Foto não vinculada!	
+	  <% end  %>
+	</p>
+
+	<p>
+	  <b>Foto da listagem:</b>
+	  <%- if @post.picture1.to_s != "" %>
+	  	<a href="<%= @post.picture2 %>" class="img fancybox"><%= image_tag  "#{@post.picture2}", :width => "100" %></a>
+	  	<% else %>
+	    Foto não vinculada!
+	  <% end  %>	
+	</p>
+
+	<p>
+	  <b>Foto da principal:</b>
+	  <%- if @post.picture1.to_s != "" %>
+	  	<a href="<%= @post.picture3 %>" class="img fancybox"><%= image_tag  "#{@post.picture3}", :width => "100" %></a>
+	  	<% else %>
+	    Foto não vinculada!
+	  <% end  %>	
+	</p>
+
+	<p>
+	  <b>Tags:</b>
+	  <%= join_tags(@post) %>
+	</p>
+
+	<h2>Comments</h2>
+	<%= render @post.comments %>
+
+	<%= link_to 'Editar', edit_post_path(@post) %> |
+	<%= link_to 'Voltar', posts_path %>
+</div>
