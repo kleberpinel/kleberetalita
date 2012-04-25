@@ -32,8 +32,17 @@
 	  <%= @post.categoria.nome %>
 	</p>
 
+	<p>
+	  <b>Foto da Home:</b>
+	  <%- if @post.picture1.to_s != "" %>
+	  	<a href="<%= @post.picture3 %>" class="img fancybox"><%= image_tag  "#{@post.picture3}", :width => "100" %></a>
+	  	<% else %>
+	    Foto não vinculada!
+	  <% end  %>	
+	</p>
+
 	<p >
-	  <b>Foto da chamada:</b>
+	  <b>Foto da listagem:</b>
 	  <%- if @post.picture1.to_s != "" %>
 	  	<a href="<%= @post.picture1 %>" class="img fancybox"><%= image_tag  "#{@post.picture1}", :width => "100" %></a>
 	  <% else %>
@@ -42,7 +51,7 @@
 	</p>
 
 	<p>
-	  <b>Foto da listagem:</b>
+	  <b>Foto do texto:</b>
 	  <%- if @post.picture1.to_s != "" %>
 	  	<a href="<%= @post.picture2 %>" class="img fancybox"><%= image_tag  "#{@post.picture2}", :width => "100" %></a>
 	  	<% else %>
@@ -50,14 +59,7 @@
 	  <% end  %>	
 	</p>
 
-	<p>
-	  <b>Foto da principal:</b>
-	  <%- if @post.picture1.to_s != "" %>
-	  	<a href="<%= @post.picture3 %>" class="img fancybox"><%= image_tag  "#{@post.picture3}", :width => "100" %></a>
-	  	<% else %>
-	    Foto não vinculada!
-	  <% end  %>	
-	</p>
+	
 
 	<p>
 	  <b>Tags:</b>

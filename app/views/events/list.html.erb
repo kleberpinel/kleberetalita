@@ -12,10 +12,10 @@
 	
 		<h2 class="events-head">Eventos</h2>
 		
-		<table class="eve-list">
+		<table class="eve-list" id="mes3" style="display: none;">
 		
 			<thead>
-				<tr class="month"><th colspan="7">Março</th></tr>
+				<tr class="month"><th colspan="7"> Março <span onclick="paginationIncrementCalendar(3)" style="font-weight: bold; cursor: pointer;" /> > </span> </th></tr>
 			</thead>
 			
 			<tbody>
@@ -27,12 +27,46 @@
 				<tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
 			</tbody>
 		</table>
+
+		<table class="eve-list" id="mes4" style="display: none;">
+		
+			<thead>
+				<tr class="month"><th colspan="7"><span onclick="paginationDecrementCalendar(4)" style="font-weight: bold; cursor: pointer;" /> < </span> Abril </th></tr>
+			</thead>
+			
+			<tbody>
+				<tr class="days"><td>dom</td><td>seg</td><td>ter</td><td>qua</td><td>qui</td><td>sex</td><td>sab</td></tr>
+				<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+				<tr><td>8</td><td >9</td><td >10</td><td>11</td><td>12</td><td>13</td><td >14</td></tr>
+				<tr><td>15</td><td>16</td><td>17</td><td >18</td><td>19</td><td>20</td><td id="date-2" class="link">21</td></tr>
+				<tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+				<tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr>
+			</tbody>
+		</table>
 		
 		<a href="#" class="all">Todos os eventos</a>
 						
 	</div> <!-- END EVENTS -->
 	
 	<div class="clearfix"></div>
+	<script type="text/javascript">
+		function paginationIncrementCalendar(id){
+			$('#mes' + id ).hide(); 
+			$('#mes' + (id+1)).show();
+		}
+
+		function paginationDecrementCalendar(id){
+			$('#mes' + id ).hide(); 
+			$('#mes' + (id-1)).show();
+		}
+
+		jQuery(function($){
+			mes = new Date().getMonth()+1;
+			$('#mes' +  mes ).show();
+		});
+
+		
+	</script>
 				
 </div> <!-- END SIDEBAR -->
 

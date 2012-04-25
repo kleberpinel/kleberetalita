@@ -58,8 +58,20 @@
 
     </script>
 
+  <div class="field">
+    <%= f.label "Foto na home" %><br />
+    <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 3), :class => 'iframe' %><br/>
+    <br/>
+    <div id="foto_selecionada3">
+      <%- if @post.picture1.to_s != "" %>
+        <%= image_tag  @post.picture3, :width => "100" , :id => "image3"%>
+        <input type='hidden' id='foto3' name='post[picture3]' value='<%= @post.picture3 %>' width='100px' />
+      <% end %>
+    </div>
+  </div>
+
   <div class="field" sytle="border: 1px solid black">
-    <%= f.label "Foto da chamada" %><br />
+    <%= f.label "Foto da listagem" %><br />
     <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 1), :class => 'iframe' %><br/>
     <br/>
     <div id="foto_selecionada1">
@@ -72,7 +84,7 @@
 
 
   <div class="field">
-    <%= f.label "Foto da listagem" %><br />
+    <%= f.label "Foto do texto" %><br />
     <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 2), :class => 'iframe' %><br/>
     <br/>
     <div id="foto_selecionada2">
@@ -83,17 +95,7 @@
     </div>
   </div>
 
-  <div class="field">
-    <%= f.label "Foto principal" %><br />
-    <%=link_to "Escolha a foto", select_one_foto_path(:tipo_foto => 3), :class => 'iframe' %><br/>
-    <br/>
-    <div id="foto_selecionada3">
-      <%- if @post.picture1.to_s != "" %>
-        <%= image_tag  @post.picture3, :width => "100" , :id => "image3"%>
-        <input type='hidden' id='foto3' name='post[picture3]' value='<%= @post.picture3 %>' width='100px' />
-      <% end %>
-    </div>
-  </div>
+  
   <h2>Tags</h2>
   <%= render :partial => 'tags/form',
              :locals => {:form => f} %>
