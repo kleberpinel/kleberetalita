@@ -70,29 +70,24 @@ class AlbumsController < ApplicationController
   def update
     @album = Album.find(params[:id])
 
-    if(params[:foto] != nil)
-      fotos = Foto.find_all_by_album_id(@album.id)
-      fotos.each do |fotoExistente|
-        if (!params[:foto][fotoExistente.id] )    
-          fotoExistente.update_attributes(:album_id => nil)        
-        end
-      end
-
-      params[:foto].each do |idFoto|
-        foto = Foto.find_by_id(idFoto);
-        foto.update_attributes(:album_id => @album.id)
-        #@album.fotos.create( foto.attributes ) 
-      end  
-    else
-      fotos = Foto.find_all_by_album_id(@album.id)
-      fotos.each do |fotoExistente|   
-        fotoExistente.update_attributes(:album_id => nil)     
-      end
-
-    end
+   
 
     respond_to do |format|
       if @album.update_attributes(params[:album])
+
+        if(params[:foto] != nil)
+          fotos = Foto.find_all_by_album_id(@album.id)
+          fotos.each do |fotoExistente|
+            fotoExistente.update_attributes(:album_id => nil) 
+          end
+
+          logger.debug params[:foto].inspect
+          params[:foto].each do |idFoto|
+            foto = Foto.find_by_id(idFoto);
+            foto.update_attributes(:album_id => @album.id)
+          end   
+        end
+
         format.html { redirect_to @album, notice: 'Album was successfully updated.' }
         format.json { head :ok }
       else

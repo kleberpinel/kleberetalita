@@ -28,8 +28,8 @@
       imageURL = splited[1];
 
       if($("#image" + id).attr("src") == undefined){
-        $("#fotos_selecionadas").append("<img id='image"+ id + "' src='"+ imageURL + "' width='100px' />");
-        $("#fotos_selecionadas").append("<input type='hidden' id='foto"+ id + "' name='foto["+indiceFoto+"]' value='"+id+"' width='100px' />");
+        $("#fotos_selecionadas").append("<img id='image"+ imageURL + "' src='"+ imageURL + "' width='100px' />");
+        $("#fotos_selecionadas").append("<input type='hidden' id='foto"+ imageURL + "' name='foto["+indiceFoto+"]' value='"+id+"' width='100px' />");
         indiceFoto ++;
       }
     }
@@ -37,8 +37,10 @@
     function removeFoto(foto){
       splited = foto.attr("name").split("-");
       id = splited[0];
-      $("#image" + id).remove();
-      $("#foto" + id).remove();
+      imageURL = splited[1];
+
+      $("#image" + imageURL).remove();
+      $("#foto" + imageURL).remove();
       indiceFoto --;
     }
   </script>
@@ -49,8 +51,8 @@
 
     <div id="fotos_selecionadas">
       <% @album.fotos.each_with_index do |foto, index| %>
-        <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{foto.picture}", :width => "100" , :id => "image#{foto.id}"%>
-        <input type='hidden' id='foto<%= foto.id %>' name='foto[<%= index %>]' value='<%= foto.id %>' width='100px' />
+        <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{foto.picture}", :width => "100" , :id => "imagehttps://s3.amazonaws.com/rails_s3/#{foto.picture}"%>
+        <input type='hidden' id='foto<%= "https://s3.amazonaws.com/rails_s3/#{foto.picture}" %>' name='foto[<%= index %>]' value='<%= foto.id %>' width='100px' />
       <% end %>
     </div>
   </div>  
