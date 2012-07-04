@@ -5,6 +5,11 @@ class EventsController < ApplicationController
   end
 
   def dates
+  	render :layout => false
   end
 
+
+  def gift
+  	
+  end
 end

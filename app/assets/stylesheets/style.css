@@ -160,7 +160,7 @@ h6 {font-size: 14px;}
 
 /* BUTTONS */
 
-.button {width: 100px;height: 40px;line-height: 3.5;text-align: center;display: block;text-decoration: none;font-size: 12px;color: #fff;-moz-border-radius: 3px;border-radius: 3px;font-weight: 700;}
+.button {width: 100px;height: 40px;line-height: 3.5;text-align: center;text-decoration: none;font-size: 12px;color: #fff;-moz-border-radius: 3px;border-radius: 3px;font-weight: 700;}
 .button:hover {color: #fff !important;}
 .button.black {
 	background: #494949; /* Old browsers */
@@ -2276,7 +2276,12 @@ ul.buttons li {
 	
 }
 
-
+/*--------------------------------------------
+	GIFT PAGE
+--------------------------------------------*/
+.txt {
+	color: #fff !important;
+}
 
 
 
