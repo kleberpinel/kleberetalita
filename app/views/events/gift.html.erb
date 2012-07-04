@@ -1,0 +1,164 @@
+<style type="text/css">
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: white;
+}
+</style>
+
+<div class="top">
+			
+	<h2>Nos ajude a fazer um casamento perfeito!</h2>
+
+</div> <!-- END TOP -->
+
+<div class="clearfix"></div>
+
+<div class="full">
+	Estamos fazendo uma campanha para juntar uma grana e para fazermos um casamento perfeito, com Buffet, lua de mel, carro, luzes e tudo mais. Mas para tanto precisamos de dinheiro.<br>
+	<br>
+
+	<table class="table table-bordered" id="table" >
+		<tr >
+			<td style="text-align:center;">
+				Valor do presente
+			</td>
+			<td style="text-align:center;">
+				R$ 1,00 
+			</td>
+			<td style="text-align:center;">
+				R$ 2,00 
+			</td>
+			<td style="text-align:center;">
+				R$ 5,00 
+			</td>
+			<td style="text-align: center; width: 150px">
+				<label id="outro">Outro</label> 
+				<div id="valor" style="display: none;">
+					<input type="text" id="valorGrana" class="txt" style="width:30px" onkeypress="return numberFormat(event)"/>
+					<a href="#" class="button blue" style="width: 70px; height: 20px; line-height: 1.8; padding: 5px" onclick="submitForm()">Confirmar</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center;">
+				Comprar pelo PagSeguro
+			</td>
+			<td style="text-align:center;">
+				<form target="pagseguro1" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+					<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+					<input type="hidden" name="currency" value="BRL" />
+					<input type="hidden" name="itemId" value="1" />
+					<input type="hidden" name="itemDescription" value="Presente de 1,00 real" />
+					<input type="hidden" name="itemQuantity" value="1" />
+					<input type="hidden" name="itemAmount" value="1.00" />
+					<input type="hidden" name="itemWeight" value="" />
+					<input type="hidden" name="itemShippingCost" value="0.00" />
+					<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+				</form>	
+			</td>
+			<td style="text-align:center;">
+				<form target="pagseguro3" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+					<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+					<input type="hidden" name="currency" value="BRL" />
+					<input type="hidden" name="itemId" value="2" />
+					<input type="hidden" name="itemDescription" value="Presente de 2,00 reais" />
+					<input type="hidden" name="itemQuantity" value="1" />
+					<input type="hidden" name="itemAmount" value="2.00" />
+					<input type="hidden" name="itemWeight" value="" />
+					<input type="hidden" name="itemShippingCost" value="0.00" />
+					<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+				</form>	
+			</td>
+			<td style="text-align:center;">
+				<form target="pagseguro5" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+					<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+					<input type="hidden" name="currency" value="BRL" />
+					<input type="hidden" name="itemId" value="3" />
+					<input type="hidden" name="itemDescription" value="Presente de 5,00 reais" />
+					<input type="hidden" name="itemQuantity" value="1" />
+					<input type="hidden" name="itemAmount" value="5.00" />
+					<input type="hidden" name="itemWeight" value="" />
+					<input type="hidden" name="itemShippingCost" value="0.00" />
+					<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+				</form>	
+			</td>
+			<td style="text-align:center;">
+				<input type="image" src="/images/pag_seguro_only.png" onclick="valorOutro()" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+				<form target="pagseguro0" id="formpagseguro0" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+					<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+					<input type="hidden" name="currency" value="BRL" />
+					<input type="hidden" name="itemId" value="4" />
+					<input type="hidden" name="itemDescription" value="Presente com valor customizado" />
+					<input type="hidden" name="itemQuantity" value="1" />
+					<input type="hidden" name="itemAmount" id="itemAmount" />
+					<input type="hidden" name="itemWeight" value="" />
+					<input type="hidden" name="itemShippingCost" value="0.00" />
+				</form>	
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		$("#table tr td").bind({
+			mouseover: function (){
+				if($(this).index() > 0){
+					$("#table tr td:nth-child("+($(this).index()+1)+")").css("background-color","#f5f5f5");	
+				}
+			},
+			mouseout: function (){
+				if($(this).index() > 0){
+					$("#table tr td:nth-child("+($(this).index()+1)+")").css("background-color","white");
+				}
+			}
+		});
+
+		var cont_ponto = 0;
+		var cont_virgula = 0;
+		function numberFormat(evt) {
+		    evt = (evt) ? evt : window.event
+		    var charCode = (evt.which) ? evt.which : evt.keyCode
+		    console.log(charCode);
+		    if (charCode == 44 ){
+		    	cont_virgula ++;
+		    	if(cont_virgula > 1){
+		    		return false;
+		    	} else{
+		    		return true
+		    	}
+		    } 
+
+		    if (charCode == 46 ){
+		    	cont_ponto ++;
+		    	if(cont_ponto > 1){
+		    		return false;
+		    	} else{
+		    		return true
+		    	}
+		    }
+
+		    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+		        status = "This field accepts numbers only."
+		        return false
+		    }
+		    status = ""
+		    return true
+		}
+
+		function valorOutro(){
+			$("#valor").show();
+			$("#outro").hide();
+		}
+		function submitForm(){
+			valorCustomizado = $("#valorGrana").val();
+			valorCustomizado = parseFloat(valorCustomizado).toFixed(2);
+			console.log(valorCustomizado);
+			$("#itemAmount").val(valorCustomizado);
+			$("#formpagseguro0").submit();
+		}
+	</script>
+	<!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+	
+	<!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+</div> <!-- END PAGE -->
+							
+<div class="clearfix"></div>
