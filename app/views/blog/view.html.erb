@@ -71,6 +71,8 @@
 
 	<%= render "/categorias/show_categorias" %>
 
+	<div class="clearfix"></div>
+
 	<%- if !@post.tags.empty? %>
 		<div class="tags">
 		
@@ -85,6 +87,8 @@
 	<% end %>
 	
 	<%= render "/comments/last_comments" %>
+
+	<%= render "/events/gift_call" %>
 	
 	<%= render "/videos/videos" %>
 
