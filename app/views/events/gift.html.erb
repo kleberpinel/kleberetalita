@@ -23,94 +23,136 @@
 	<p>
 		Nós gostariamos muito de receber um presente de você que nos proporcione fazer o casamento como sonhamos. Não será um casamento onde a ostentação supere tudo, mas será um casamento onde possamos passar momentos agradaveis com nossos amigos e pessoas importante em nossas vidas.<br/>
 		Desde já, agradecemos o seu presente com o nosso "Muito obrigado" e não deixe de colocar um recado em nosso post de "<a href="http://kleberetalita.com/blog/15/view">Recados para o Casamento</a>"!
-		<br><br>Veja abaixo, e entenda quanto vamos receber do valor do seu presente:
-		<h5>PagSeguro</h3>
-		<ul class="list-style2">
-			<li>Débito online e boleto - vamos receber <b>97%</b> do valor do seu presente</li>
-			<li>Cartão de crédito e saldo PagSeguro - vamos receber <b>94%</b> do valor do seu presente</li>
-		</ul>
-		<br>
-		<table class="table table-bordered" id="table" >
-			<tr >
-				<td style="text-align:center;">
-					Valor do presente
-				</td>
-				<td style="text-align:center;">
-					R$ 10,00 
-				</td>
-				<td style="text-align:center;">
-					R$ 20,00 
-				</td>
-				<td style="text-align:center;">
-					R$ 50,00 
-				</td>
-				<td style="text-align: center; width: 150px">
-					<label id="outro">Outro</label> 
-					<div id="valor" style="display: none;">
-						<input type="text" id="valorGrana" style="width:30px" onkeypress="return numberFormat(event)"/>
-						<a href="#" class="button blue" style="width: 70px; height: 20px; line-height: 1.8; padding: 5px" onclick="submitForm()">Confirmar</a>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td style="text-align:center;">
-					Comprar pelo PagSeguro
-				</td>
-				<td style="text-align:center;">
-					<form target="pagseguro1" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
-						<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
-						<input type="hidden" name="currency" value="BRL" />
-						<input type="hidden" name="itemId" value="1" />
-						<input type="hidden" name="itemDescription" value="Presente de 1,00 real" />
-						<input type="hidden" name="itemQuantity" value="1" />
-						<input type="hidden" name="itemAmount" value="10.00" />
-						<input type="hidden" name="itemWeight" value="" />
-						<input type="hidden" name="itemShippingCost" value="0.00" />
-						<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-					</form>	
-				</td>
-				<td style="text-align:center;">
-					<form target="pagseguro3" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
-						<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
-						<input type="hidden" name="currency" value="BRL" />
-						<input type="hidden" name="itemId" value="2" />
-						<input type="hidden" name="itemDescription" value="Presente de 2,00 reais" />
-						<input type="hidden" name="itemQuantity" value="1" />
-						<input type="hidden" name="itemAmount" value="20.00" />
-						<input type="hidden" name="itemWeight" value="" />
-						<input type="hidden" name="itemShippingCost" value="0.00" />
-						<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-					</form>	
-				</td>
-				<td style="text-align:center;">
-					<form target="pagseguro5" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
-						<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
-						<input type="hidden" name="currency" value="BRL" />
-						<input type="hidden" name="itemId" value="3" />
-						<input type="hidden" name="itemDescription" value="Presente de 5,00 reais" />
-						<input type="hidden" name="itemQuantity" value="1" />
-						<input type="hidden" name="itemAmount" value="50.00" />
-						<input type="hidden" name="itemWeight" value="" />
-						<input type="hidden" name="itemShippingCost" value="0.00" />
-						<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-					</form>	
-				</td>
-				<td style="text-align:center;">
-					<input type="image" src="/images/pag_seguro_only.png" onclick="valorOutro()" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-					<form target="pagseguro0" id="formpagseguro0" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
-						<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
-						<input type="hidden" name="currency" value="BRL" />
-						<input type="hidden" name="itemId" value="4" />
-						<input type="hidden" name="itemDescription" value="Presente com valor customizado" />
-						<input type="hidden" name="itemQuantity" value="1" />
-						<input type="hidden" name="itemAmount" id="itemAmount" />
-						<input type="hidden" name="itemWeight" value="" />
-						<input type="hidden" name="itemShippingCost" value="0.00" />
-					</form>	
-				</td>
-			</tr>
-		</table>
 	</p>
+
+
+
+	<div id="toggles">
+			
+		<div id="toggle">
+			<h2 class="trigger" style="background: url('/images/headers_full.png') 0px 0px">De o presente em dinheiro on-line<a href="#"></a></h2>
+			<div class="toggle_container" style="display: none; ">
+				<div class="block">
+					<p>
+					Veja abaixo, e entenda quanto vamos receber do valor do seu presente:
+					<h5>PagSeguro</h3>
+					<ul class="list-style2">
+						<li>Débito online e boleto - vamos receber <b>97%</b> do valor do seu presente</li>
+						<li>Cartão de crédito e saldo PagSeguro - vamos receber <b>94%</b> do valor do seu presente</li>
+					</ul>
+					</p>
+					<table class="table table-bordered" id="table" >
+						<tr >
+							<td style="text-align:center;">
+								Valor do presente
+							</td>
+							<td style="text-align:center;">
+								R$ 10,00 
+							</td>
+							<td style="text-align:center;">
+								R$ 20,00 
+							</td>
+							<td style="text-align:center;">
+								R$ 50,00 
+							</td>
+							<td style="text-align: center; width: 150px">
+								<label id="outro">Outro</label> 
+								<div id="valor" style="display: none;">
+									<input type="text" id="valorGrana" style="width:30px" onkeypress="return numberFormat(event)"/>
+									<a href="#" class="button blue" style="width: 70px; height: 20px; line-height: 1.8; padding: 5px" onclick="submitForm()">Confirmar</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;">
+								Comprar pelo PagSeguro
+							</td>
+							<td style="text-align:center;">
+								<form target="pagseguro1" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+									<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+									<input type="hidden" name="currency" value="BRL" />
+									<input type="hidden" name="itemId" value="1" />
+									<input type="hidden" name="itemDescription" value="Presente de 1,00 real" />
+									<input type="hidden" name="itemQuantity" value="1" />
+									<input type="hidden" name="itemAmount" value="10.00" />
+									<input type="hidden" name="itemWeight" value="" />
+									<input type="hidden" name="itemShippingCost" value="0.00" />
+									<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+								</form>	
+							</td>
+							<td style="text-align:center;">
+								<form target="pagseguro3" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+									<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+									<input type="hidden" name="currency" value="BRL" />
+									<input type="hidden" name="itemId" value="2" />
+									<input type="hidden" name="itemDescription" value="Presente de 2,00 reais" />
+									<input type="hidden" name="itemQuantity" value="1" />
+									<input type="hidden" name="itemAmount" value="20.00" />
+									<input type="hidden" name="itemWeight" value="" />
+									<input type="hidden" name="itemShippingCost" value="0.00" />
+									<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+								</form>	
+							</td>
+							<td style="text-align:center;">
+								<form target="pagseguro5" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+									<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+									<input type="hidden" name="currency" value="BRL" />
+									<input type="hidden" name="itemId" value="3" />
+									<input type="hidden" name="itemDescription" value="Presente de 5,00 reais" />
+									<input type="hidden" name="itemQuantity" value="1" />
+									<input type="hidden" name="itemAmount" value="50.00" />
+									<input type="hidden" name="itemWeight" value="" />
+									<input type="hidden" name="itemShippingCost" value="0.00" />
+									<input type="image" src="/images/pag_seguro_only.png" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+								</form>	
+							</td>
+							<td style="text-align:center;">
+								<input type="image" src="/images/pag_seguro_only.png" onclick="valorOutro()" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+								<form target="pagseguro0" id="formpagseguro0" action="https://pagseguro.uol.com.br/v2/checkout/cart.html?action=add" method="post">
+									<input type="hidden" name="receiverEmail" value="kleberpinel@gmail.com" />
+									<input type="hidden" name="currency" value="BRL" />
+									<input type="hidden" name="itemId" value="4" />
+									<input type="hidden" name="itemDescription" value="Presente com valor customizado" />
+									<input type="hidden" name="itemQuantity" value="1" />
+									<input type="hidden" name="itemAmount" id="itemAmount" />
+									<input type="hidden" name="itemWeight" value="" />
+									<input type="hidden" name="itemShippingCost" value="0.00" />
+								</form>	
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div> <!-- end toggle 1 -->
+
+		<div id="toggle">
+			<h2 class="trigger"  style="background: url('/images/headers_full.png') 0px 0px">De o presente da lista de lojas<a href="#"></a></h2>
+			<div class="toggle_container" style="display: none; ">
+				<div class="block">
+					<p>
+						Estamos montando nossas listas. Em breve vamos colocar o link direto para nossa lista aqui :)
+					</p>
+				</div>
+			</div>
+		</div> <!-- end toggle 2 -->
+	
+		<div id="toggle">
+			<h2 class="trigger" style="background: url('/images/headers_full.png') 0px 0px">De o presente direto em nossa conta bancaria<a href="#"></a></h2>
+			<div class="toggle_container" style="display: none; ">
+				<div class="block">
+					<p>
+						Se você preferir, pode transferir direto para a minha (Kleber) conta bancaria.<br><br>
+						Banco do Brasil<br>
+						Ag: 2807-x<br>
+						Cc: 37374-5<br>
+						CPF: 352.420.448-10<br>
+					</p>
+				</div>
+			</div>
+		</div> <!-- end toggle 2 -->
+	</div>
+		
+	
 	<script type="text/javascript">
 		$("#table tr td").bind({
 			mouseover: function (){
