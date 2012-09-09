@@ -20,6 +20,13 @@ group :development do
   gem "awesome_print"
 end
 
+group :test do
+  gem 'sqlite3'
+  gem "nifty-generators"
+  gem "pry"
+  gem "awesome_print"
+end
+
 group :production do
   gem 'pg'
 end
