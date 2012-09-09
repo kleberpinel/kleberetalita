@@ -21,10 +21,7 @@ group :development do
 end
 
 group :test do
-  gem 'sqlite3'
-  gem "nifty-generators"
-  gem "pry"
-  gem "awesome_print"
+  gem "sqlite3", :platform => [:ruby, :mswin, :mingw]
 end
 
 group :production do
