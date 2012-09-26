@@ -2150,12 +2150,12 @@ textarea:-moz-placeholder {
 	transition: all .3s ease;
 }
 .comment-list .bubble {
-	width: 375px;
+	width: 425px;
 	position: relative;
 	border-radius: 3px;
 	-moz-border-radius:3px;
 	top: 0px;
-	left: 174px;
+	left: 104px;
 	background: #f2f2f2;
 	padding: 20px;
 	font-size: 13px;
