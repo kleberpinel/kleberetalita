@@ -1,6 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-Nome: <%= @user.nome %><br>
+ <div class="field">
+   Nome: <%= @user.nome %><br>
+  </div>
+  <div class="field">
+    Email: <%= @user.email %>
+  </div>
+   <div class="field">
+    Foto: <%= image_tag "http://graph.facebook.com/#{@user.nome}/picture", :size => "70x70"%>
+  </div>
 
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 <%= link_to 'Back', usuarios_path %>

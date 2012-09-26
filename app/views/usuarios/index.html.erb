@@ -1,23 +1,29 @@
-<h1>Listing users</h1>
+<div style="padding: 30px">
+  <h1>Listando usuarios</h1>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Foto</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
 
-<table width="300px">
-  <tr>
-    <th>Nome</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.nome %></td>
+      <td><%= user.email %></td>
+      <td><%= image_tag "http://graph.facebook.com/#{user.nome}/picture", :size => "70x70"%></td>
+      <td><%= link_to 'Visualizar', usuario_path(user) %></td>
+      <td><%= link_to 'Editar', edit_usuario_path(user) %></td>
+      <td><%= link_to 'Excluir', usuario_path(user), :confirm => 'Tem certeza?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.nome %></td>
-    <td><%= link_to 'Show', usuario_path(user) %></td>
-    <td><%= link_to 'Edit', edit_usuario_path(user) %></td>
-    <td><%= link_to 'Destroy', usuario_path(user), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <br />
 
-<br />
-
-<%= link_to 'New Post', new_usuario_path %>
+  <%= link_to 'Novo Usuario', new_usuario_path %>
+</div>

@@ -1,5 +1,8 @@
 class UsuariosController < ApplicationController
 
+  before_filter :authenticate_user!
+  before_filter :user_must_be
+  
   # GET /users
   # GET /users.json
   def index
