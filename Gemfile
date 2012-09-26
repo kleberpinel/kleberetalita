@@ -8,9 +8,6 @@ gem 'omniauth-facebook'
 gem 'aws-s3'
 gem 'will_paginate', '~> 3.0'
 
-gem 'sqlite3'
-
-
 # gem 'pagseguro_client', git: "git://github.com/matheustardivo/pagseguro_client.git"
 
 # Bundle edge Rails instead:
