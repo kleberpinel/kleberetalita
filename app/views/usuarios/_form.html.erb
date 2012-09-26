@@ -1,10 +1,10 @@
-<%= form_for( @user, :html => {:class=> "comment-form"}) do |f| %>
-  <% if @user.errors.any? %>
+<%= form_for( @usuario, :html => {:class=> "comment-form"}) do |f| %>
+  <% if @usuario.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2><%= pluralize(@usuario.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
-      <% @user.errors.full_messages.each do |msg| %>
+      <% @usuario.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :nome %><br />
-    <%= f.text_field :nome, :value => @user.nome %>
+    <%= f.text_field :nome %>
   </div>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email, :value => @user.email %>
+    <%= f.text_field :email %>
   </div>
 
   <div class="actions">

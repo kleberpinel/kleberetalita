@@ -38,7 +38,9 @@ class UsuariosController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = User.find(params[:id])
+
+    @usuario = User.find(params[:id])
+    logger.info @usuario.inspect
   end
 
   # POST /users
