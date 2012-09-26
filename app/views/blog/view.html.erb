@@ -26,7 +26,21 @@
 			<ul class="comment-list">
 				<% @post.comments.each do |comment|%>
 				<li>
-					<a href="#" class="avatar"><%= image_tag "http://graph.facebook.com/#{comment.commenter}/picture", :size => "70x70"%></a>
+					<script type="text/javascript">
+						jQuery(function($){
+							url_face = 'http://graph.facebook.com/<%= comment.commenter %>/picture';
+
+							$.ajax({
+							  url: url_face,
+							  success: function(data) {
+							    $('.result').html(data);
+							    alert('Load was performed.');
+							    $("#imagem_face").attr("src", url_face);
+							  }
+							});
+						});
+					</script>
+					<a href="#" class="avatar"><%= image_tag "/images/cao-sorridente.jpg", :id => "imagem_face" , :size => "70x70"%></a>
 					<div class="bubble">
 						<p><b><%= comment.commenter %> </b>diz:<br/>
 							<%= comment.body %></p>
