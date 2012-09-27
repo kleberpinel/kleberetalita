@@ -5,7 +5,7 @@
 		
 		<ul class="comm-list">
 			<% @last_coments.each do |comment|%>	
-				<li><%= comment.commenter %> <%= link_to comment.body, view_blog_path(comment.post) %></li>
+				<li><%= comment.commenter %> <%= link_to truncate(comment.body, :length => 80), view_blog_path(comment.post) %></li>
 			<% end %>
 		</ul>
 
