@@ -14,7 +14,7 @@ class OiAutenticacaoController < ApplicationController
 	end
 
 	def logout
-		siteOrigin = request.subdomain + '.' + request.domain
+		siteOrigin = request.domain
 		options = {}
 		if request.cookies['ckOnline'] != nil
 			options = { :headers => { 'cliente' => siteOrigin, 'Cookie' => COOKIE_OI_INTERNET + '=' + request.cookies['ckOnline'] } }
@@ -33,7 +33,7 @@ class OiAutenticacaoController < ApplicationController
 	end
 
 	def user_must_oi
-		siteOrigin = request.subdomain + '.' + request.domain
+		siteOrigin = request.domain
 		parans = "origin=" + siteOrigin
 		
 		options = {}
