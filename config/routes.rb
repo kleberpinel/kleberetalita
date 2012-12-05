@@ -36,10 +36,14 @@ Kleberetalita::Application.routes.draw do
   get "events/dates"
   get "events/gift"
 
-  get "oiAutenticacao/verificarAutenticado"
-
   get "index/historia"
   get "index/home"
   root :to => 'index#home' 
+
+  get "oiAutenticacao/paginaAberta"
+  get "oiAutenticacao/paginaRestrita"
+  get "oiAutenticacao/verificarLogado"
+  get "oiAutenticacao/logout"
+  get "oiAutenticacao/callbackAuthentication"
 
 end
