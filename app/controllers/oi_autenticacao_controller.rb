@@ -55,7 +55,7 @@ class OiAutenticacaoController < ApplicationController
 		if data["autenticacao"]["status"] == 'nao_autenticado'
 			parans << '&key=' + identificador 
 			parans << '&returnTo=/oiAutenticacao/paginaRestrita' 
-			redirect_to "http://hanoi-auth-dev.dev.infra/autenticacao/login?" + parans;
+			redirect_to SERVIDOR_AUTENTICACAO + "/login?" + parans;
 		end
 	end
 end
