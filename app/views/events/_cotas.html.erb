@@ -1,0 +1,131 @@
+<SCRIPT TYPE="text/javascript">
+	var ids = [];
+	function exibirCotas(idCotaExibir){
+		$.each(ids, function(index, value) { 
+			if(value != idCotaExibir){
+				$('#' + value).hide();
+			} else {
+				$('#' + value).show();
+			}
+		});
+		var catTopPosition = jQuery('#'+ idCotaExibir).offset().top;
+		jQuery('html, body').animate({scrollTop:catTopPosition}, 'slow');
+	}
+
+	var carrinho = {};
+
+	function adicionarCotasCarrinho(idCota, qtd){
+
+		var nomeValor = $('#nome' + idCota).html();
+		var precoValor = $('#preco' + idCota).html();
+		var descricaoValor = $('#descricao' + idCota).html();
+
+		precoFloat = parseFloat(precoValor.substring(2,precoValor.length).replace(",","."));
+		precoFinalValor = (precoFloat * qtd);
+
+		console.log(precoFinalValor)
+
+		itemCarrinho = {
+			nome : nomeValor,
+			preco : precoFloat,
+			descricao : descricaoValor,
+			quantidade : qtd,
+			precoFinal : precoFinalValor
+		}
+
+		carrinho[idCota] = itemCarrinho
+
+		var total = 0;
+		$.each(carrinho, function(idCota, itemCarrinho) { 
+			total += itemCarrinho.precoFinal; 
+		});
+
+		$("#total_carrinho").html(total + ",00");
+		$("#carinho" + idCota).remove();
+		$("#carrinho ul").prepend("<li id='carinho" + idCota + "'>"+ nomeValor +  " - <b>R$ " + precoFinalValor + ",00 </b></li>");
+		$("#carrinho").show();
+	}
+
+	function gerarCamposFormularioPagSeguro(){
+		var campos = ""
+		var contador = 1;
+		$.each(carrinho, function(idCota, itemCarrinho) { 
+			campos += "<input type='hidden' name='itemQuantity" + contador + "' value='"+ itemCarrinho.quantidade +"'/> "; 
+			campos += "<input type='hidden' name='itemId" + contador + "' value='"+ idCota +"'/> "; 
+			campos += "<input type='hidden' name='itemDescription" + contador + "' value='Casamento Kleber e Talita - "+ itemCarrinho.nome +"'/> ";
+			campos += "<input type='hidden' name='itemAmount" + contador + "' value='"+ itemCarrinho.preco +".00'/> ";
+			campos += "<input type='hidden' name='itemWeight" + contador + "' value='0'/> ";  
+			campos += "<input type='hidden' name='item_frete_" + contador + "' value='0'/> ";  
+			
+			contador ++;
+		});
+
+		$("#formularioPagSeguro").append(campos);
+		$("#formPagSeguro").submit();
+		
+	}
+
+</SCRIPT>
+
+<form action="https://pagseguro.uol.com.br/v2/checkout/payment.html" class="pagseguro" method="post" id="formPagSeguro">
+<!-- <form action="https://ws.pagseguro.uol.com.br/v2/checkout" class="pagseguro" method="post" id="formPagSeguro"> -->
+	<div id="formularioPagSeguro">
+		<%= hidden_field_tag "encoding", "UTF-8"  %>
+		<%= hidden_field_tag "receiverEmail", "kleberpinel@gmail.com"  %>
+		<%= hidden_field_tag "tipo", "CP" %>
+		<%= hidden_field_tag "currency", "BRL" %>
+	</div>
+</form>
+
+<div class="menu dinner">
+	<ul class="specials">
+		<% @categorias_cota.each do |categoria_cota| %>
+			<SCRIPT TYPE="text/javascript">
+				ids.push(<%= categoria_cota.id %>);
+			</SCRIPT>
+			<li onclick="exibirCotas('<%= categoria_cota.id %>')" style="cursor: pointer">
+				<span class="info">
+					<h2><%= categoria_cota.nome %></h2>
+					<p><%= categoria_cota.descricao %></p>
+				</span>
+				<%= image_tag  "https://s3.amazonaws.com/rails_s3/#{categoria_cota.imagem}", :width => "380px" %>
+			</li>
+		<% end %>
+	</ul>
+	<% @categorias_cota.each do |categoria_cota| %>
+		<%- if !categoria_cota.cotas.empty? %>
+			<div id="<%= categoria_cota.id %>" style="display: none">
+				<div class="col one">
+					<h1 class="subtitle">Cotas da <%= categoria_cota.nome %></h1>
+					<ul>
+						<% categoria_cota.cotas.each do |cota| %>
+							<li>
+								<a href="https://s3.amazonaws.com/rails_s3/<%= cota.imagem %>" class="img fancybox"><%= image_tag  "https://s3.amazonaws.com/rails_s3/#{cota.imagem}", :width => '100px' %></a>
+								<h2 id="nome<%= categoria_cota.id %>_<%= cota.id %>" style="color: black"><%= cota.nome %></h2>
+								<span class="price" id="preco<%= categoria_cota.id %>_<%= cota.id %>"><%= number_to_currency(cota.valor, :separator => ",", :delimiter => ".", :unit => "R$")  %></span>
+								<p id="descricao<%= categoria_cota.id %>_<%= cota.id %>"><%= cota.descricao %></p>
+								<table>
+									<tr>
+										<td><img src="/images/icone_presente.jpg" width="25px"/></td>
+										<td style="vertical-align: middle;"><p> Quero presentear com <input type="text" style="width: 30px" onfocusout="adicionarCotasCarrinho('<%= categoria_cota.id %>_<%= cota.id %>', this.value)"/> cota(s)</p></td>
+									</tr>
+								</table>
+							</li>
+						<% end %>
+					</ul>
+					
+				</div>
+			</div>
+		<% end %>
+	<% end %>
+</div>
+
+<div class="sidebar" id="carrinho" style="display: none">
+		
+	<h3 class="info-head">Cotas escolhidas</h3>
+	<ul class="address">
+		<li><b>Total em dinheiro: </b> R$ <span id="total_carrinho">0,00</span></li>
+		<li onclick="gerarCamposFormularioPagSeguro()"><img src="/images/pag_seguro_only.png">Finalizar presente</li>
+	</ul>
+	<br/>
+</div>

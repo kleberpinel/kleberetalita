@@ -8,6 +8,7 @@ gem 'httparty'
 
 gem 'aws-s3'
 gem 'will_paginate', '~> 3.0'
+gem "pagseguro", "~> 0.1.13"
 
 # gem 'pagseguro_client', git: "git://github.com/matheustardivo/pagseguro_client.git"
 

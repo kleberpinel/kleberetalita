@@ -10,6 +10,7 @@ class EventsController < ApplicationController
 
 
   def gift
-  	
+  	@categorias_cota = CategoriaCota.find(:all)
+
   end
 end

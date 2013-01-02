@@ -1,14 +1,13 @@
 development: &development
-  ws_url: "http://localhost:4000"
-  ps_url: "http://localhost:4000"
-  email: matheustardivo@gmail.com
-  token: "a1951ac04115012fabb660334b97cc6e"
+  developer: true
+  base: "http://localhost:3000"
+  return_to: "/events/gift/success"
+  email: kleberpinel@gmail.com
 
 test:
   <<: *development
 
 production:
-  ws_url: "https://ws.pagseguro.uol.com.br"
-  ps_url: "https://pagseguro.uol.com.br"
-  email: matheustardivo@gmail.com
-  token: "tokenGeradoPeloPagseguro"
+  authenticity_token: 2E09EF8D396E4BCC8B4B68DA30ED7004
+  email: kleberpinel@gmail.com
+  return_to: "/events/gift/success"

@@ -32,6 +32,12 @@ a {outline: none;}
 transition: all .3s ease;}
 .imgLeft:hover {border: 5px solid #d2d2d2;}
 .imgLeft img {display: block;}
+
+.imgRight {float: right;margin: 0 0 20px 20px;border: 5px solid #f2f2f2;display: block;-moz-border-radius: 3px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;-ms-transition: all .3s ease;
+transition: all .3s ease;}
+.imgRight:hover {border: 5px solid #d2d2d2;}
+.imgRight img {display: block;}
+
 a:hover {color: #fc5a2a !important;}
 
 /*--------------------------------------------
@@ -272,7 +278,7 @@ h6 {font-size: 14px;}
 #toggle .toggle_container {margin: 0 0 5px 0;overflow: hidden;font-size: 13px; width:100%;clear: left; background: #fff;}
 #toggle .toggle_container p {line-height: 20px; margin: 0 !important; font-size: 12px;
 }
-#toggle .toggle_container h3 {margin:0 0 10px 0 !important; font-size: 16px;}
+#toggle .toggle_container h3 {margin:0 0 0px 0 !important; font-size: 16px;}
 #toggle .toggle_container .block {padding: 10px;}
 
 /* HIGHLIGHT */
@@ -1110,7 +1116,7 @@ iframe {
 .sidebar {
 	width: 280px;
 	float: left;
-	margin: 30px 0 0 30px;
+	margin: 30px 0 0 50px;
 	position: relative;
 }
 .full {
@@ -1228,7 +1234,7 @@ textarea:-moz-placeholder {
 	color: #616161;
 	height: 60px;
 	line-height: 5;
-	text-indent: 80px;
+	text-indent: 20px;
 }
 .sidebar .address li:last-child {
 	border: none;
@@ -1247,7 +1253,7 @@ textarea:-moz-placeholder {
 	transition: all .3s ease;
 }
 .sidebar .address li.info {
-	background: url(../images/sidebar/address.png) no-repeat 20px 20px;
+	/*background: url(../images/sidebar/address.png) no-repeat 20px 20px;*/
 }
 .sidebar .address li.phone {
 	background: url(../images/sidebar/phone.png) no-repeat 20px 20px;
@@ -1313,9 +1319,10 @@ textarea:-moz-placeholder {
 }
 .menu .col.one {
 	margin-left: 30px;
+	width: 465px;
 }
 .menu .col.two {
-	margin-left: 100px;
+	margin-left: 50px;
 }
 .menu .col .subtitle {
 	display: inline;
@@ -1435,11 +1442,13 @@ textarea:-moz-placeholder {
 .menu .specials li {
 	float: left;
 	display: block;
-	width: 270px;
+	width: 370px;
 	height: 140px;
 	position: relative;
 	overflow: hidden;
 	border: 5px solid #f2f2f2;
+	margin-bottom: 30px;
+	margin-left: 20px;
 }
 .menu .specials li.margin {
 	margin-left: 25px;
@@ -1459,7 +1468,7 @@ textarea:-moz-placeholder {
 	z-index: 60;
 	top: 105px;
 	left: 0px;
-	width: 250px;
+	width: 350px;
 	height: 120px;
 	padding: 10px;
 	background: #515151;
