@@ -1,0 +1,56 @@
+<div style="padding-left: 30px">
+	<h1>Nova cota</h1>
+
+	<%= form_for(@cota, :html => {:class=> "comment-form",  :multipart => true}) do |f| %>
+		<% if @cota.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@cota.errors.count, "error") %> prohibited this cota from being saved:</h2>
+
+	      <ul>
+	      <% @cota.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+
+	  <div class="field">
+	    <%= f.label :categoria_cotas %><br />
+	    <%= collection_select(:cota, :categoria_cota_id, CategoriaCota.all(:order => "nome"), :id, :nome) %>
+	  </div>
+
+	  <div class="field">
+	    <%= f.label :nome %><br />
+	    <%= f.text_field :nome %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :descricao %><br />
+	    <%= f.text_field :descricao %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :valor %><br />
+	    <%= f.text_field :valor %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :cotas %><br />
+	    <%= f.number_field :cotas %>
+	  </div>
+	  <div class="field">
+	    <p>
+	      Imagem atual:</b><br>
+	      <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{@cota.imagem}", :width => '100px' %>
+	    </p>
+	    <%= f.label :imagem %><br />
+   		<%= f.file_field :imagem %>
+	  </div>
+	  
+	  <%= f.hidden_field :totalArrecadado, :value=> 0 %>
+	  <%= f.hidden_field :totalVendido, :value=> 0 %>
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+
+		<%= f.hidden_field :totalArrecadado, :value=> 0 %>
+	<% end %>
+	<%= link_to 'Voltar', cotas_path %>
+</div>

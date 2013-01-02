@@ -1,0 +1,31 @@
+<div style="padding: 30px">
+  <h1>Listagem de Categorias de cotas</h1>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Total Arrecadado</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @categoria_cotas.each do |categoria_cota| %>
+    <tr>
+      <td><%= categoria_cota.nome %></td>
+      <td><%= categoria_cota.descricao %></td>
+      <td><%= number_to_currency(categoria_cota.totalArrecadado, :separator => ",", :delimiter => ".", :unit => "R$") %></td>
+      <td><%= link_to 'Visualizar', categoria_cota %></td>
+      <td><%= link_to 'Editar', edit_categoria_cota_path(categoria_cota) %></td>
+      <td><%= link_to 'Excluir', categoria_cota, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
+
+
+  </table>
+
+  <br />
+
+  <%= link_to 'Nova categoria de cota', new_categoria_cota_path %>
+</div>

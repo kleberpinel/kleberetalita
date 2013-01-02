@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  descricao: MyString
+  valor: 1.5
+  imagem: 
+  cotas: 1
+  totalVendido: 1
+  totalArrecadado: 1.5
+
+two:
+  nome: MyString
+  descricao: MyString
+  valor: 1.5
+  imagem: 
+  cotas: 1
+  totalVendido: 1
+  totalArrecadado: 1.5

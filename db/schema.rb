@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120331182707) do
+ActiveRecord::Schema.define(:version => 20130102110528) do
 
   create_table "albums", :force => true do |t|
     t.string   "nome"
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(:version => 20120331182707) do
     t.string   "titulo_blog"
     t.text     "sobre"
     t.string   "nome_menu"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categoria_cotas", :force => true do |t|
+    t.string   "nome"
+    t.string   "descricao"
+    t.string   "imagem"
+    t.float    "totalArrecadado"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -68,6 +77,19 @@ ActiveRecord::Schema.define(:version => 20120331182707) do
   end
 
   add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
+
+  create_table "cotas", :force => true do |t|
+    t.string   "nome"
+    t.string   "descricao"
+    t.float    "valor"
+    t.string   "imagem"
+    t.integer  "cotas"
+    t.integer  "totalVendido"
+    t.float    "totalArrecadado"
+    t.integer  "categoria_cota_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "fotos", :force => true do |t|
     t.string   "nome"

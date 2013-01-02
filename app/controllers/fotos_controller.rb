@@ -53,7 +53,6 @@ class FotosController < ApplicationController
   end
 
   def update
-    #logger.debug params.inspect
 
     @foto = Foto.find(params[:id])
     

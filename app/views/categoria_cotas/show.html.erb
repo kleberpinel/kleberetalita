@@ -1,0 +1,28 @@
+<div style="padding-left: 30px; width: 900px;"/>
+
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <b>Nome:</b>
+	  <%= @categoria_cota.nome %>
+	</p>
+
+	<p>
+	  <b>Descricao:</b>
+	  <%= @categoria_cota.descricao %>
+	</p>
+
+	<p>
+		<b>Imagem:</b>
+		<%= image_tag  "https://s3.amazonaws.com/rails_s3/#{@categoria_cota.imagem}", :width => '100px' %>
+	</p>
+
+	<p>
+	  <b>Total arrecadado:</b>
+	  <%= number_to_currency(@categoria_cota.totalArrecadado, :separator => ",", :delimiter => ".", :unit => "R$") %>
+	</p>
+
+
+	<%= link_to 'Editar', edit_categoria_cota_path(@categoria_cota) %> |
+	<%= link_to 'Voltar', categoria_cotas_path %>
+</div>

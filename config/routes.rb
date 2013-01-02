@@ -1,5 +1,9 @@
 Kleberetalita::Application.routes.draw do
   
+  resources :cotas
+
+  resources :categoria_cotas
+
   resources :albums #do
   #  resources :fotos
   #end

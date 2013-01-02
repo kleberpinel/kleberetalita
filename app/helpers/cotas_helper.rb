@@ -1,0 +1,2 @@
+module CotasHelper
+end

@@ -1,0 +1,47 @@
+<div style="padding-left: 30px">
+	<h1>Editando categoria de cota</h1>
+
+	<%= form_for(@categoria_cota, :html => {:class=> "comment-form",  :multipart => true}) do |f| %>
+		
+	  <% if @categoria_cota.errors.any? %>
+	    <div id="error_explanation">
+	      <h2><%= pluralize(@categoria_cota.errors.count, "error") %> prohibited this categoria_cota from being saved:</h2>
+
+	      <ul>
+	      <% @categoria_cota.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+
+	  <div class="field">
+	    <%= f.label :nome %><br />
+	    <%= f.text_field :nome %>
+	  </div>
+	  <div class="field">
+	    <%= f.label 'Descrição' %><br />
+	    <%= f.text_field :descricao %>
+	  </div>
+	  <div class="field">
+	    <p>
+	      Imagem atual:</b><br>
+	      <%= image_tag  "https://s3.amazonaws.com/rails_s3/#{@categoria_cota.imagem}", :width => '100px' %>
+	    </p>
+
+	    <%= f.label :imagem %><br />
+	    <%= f.file_field :imagem %>
+	  </div>
+	  <p>
+	    Total arrecadado:
+	    <%= number_to_currency(@categoria_cota.totalArrecadado, :separator => ",", :delimiter => ".", :unit => "R$") %>
+	  </p><br>
+	  <div class="actions">
+	    <%= f.submit 'Salvar'%>
+	  </div>
+
+	<% end %>
+
+	<%= link_to 'Voltar', categoria_cotas_path %>
+
+</div>
