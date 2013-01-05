@@ -42,7 +42,13 @@
 
 		$("#total_carrinho").html(total + ",00");
 		$("#carinho" + idCota).remove();
-		$("#carrinho ul").prepend("<li id='carinho" + idCota + "'>"+ nomeValor +  " - <b>R$ " + precoFinalValor + ",00 </b></li>");
+		var maxNomeValor = 25;
+		var title = nomeValor;
+		if(nomeValor.length > maxNomeValor){
+			nomeValor = nomeValor.substring(0,maxNomeValor) + "...";
+		}
+
+		$("#carrinho ul").prepend("<li id='carinho" + idCota + "' title='"+title+"'>"+ nomeValor +  " - <b>R$ " + precoFinalValor + ",00 </b></li>");
 		$("#carrinho").show();
 	}
 
@@ -125,7 +131,7 @@
 	<h3 class="info-head">Cotas escolhidas</h3>
 	<ul class="address">
 		<li><b>Total em dinheiro: </b> R$ <span id="total_carrinho">0,00</span></li>
-		<li onclick="gerarCamposFormularioPagSeguro()"><img src="/images/pag_seguro_only.png">Finalizar presente</li>
+		<li onclick="gerarCamposFormularioPagSeguro()" style="cursor: pointer"><img src="/images/pag_seguro_only.png" >Finalizar presente</li>
 	</ul>
 	<br/>
 </div>
