@@ -28,17 +28,17 @@
 				<li>
 					<script type="text/javascript">
 						jQuery(function($){
-							url_face = 'http://graph.facebook.com/<%= comment.commenter %>/picture';
+							url_face = 'http://graph.facebook.com/<%= comment.email %>/picture';
 
 							$.ajax({
 							  url: url_face,
 							  success: function(data) {
-							    $("#imagem_face").attr("src", url_face);
+							    $("#imagem_face_<%= comment.email %>").attr("src", url_face);
 							  }
 							});
 						});
 					</script>
-					<a href="#" class="avatar"><%= image_tag "/images/cao-sorridente.jpg", :id => "imagem_face" , :size => "70x70"%></a>
+					<a href="#" class="avatar"><%= image_tag "/images/cao-sorridente.jpg", :id => "imagem_face" + comment.email  , :size => "70x70"%></a>
 					<div class="bubble">
 						<p><b><%= comment.commenter %> </b>diz:<br/>
 							<%= comment.body %></p>
