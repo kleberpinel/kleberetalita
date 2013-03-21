@@ -28,7 +28,7 @@
 				<li>
 					<script type="text/javascript">
 						jQuery(function($){
-							url_face = 'http://graph.facebook.com/<%= comment.email %>/picture';
+							url_face = 'http://graph.facebook.com/<%= comment.commenter %>/picture';
 
 							$.ajax({
 							  url: url_face,
