@@ -31,7 +31,7 @@
 				<li>
 					<script type="text/javascript">
 						jQuery(function($){
-							url_face = 'http://graph.facebook.com/<%= comment.commenter %>/picture';
+							url_face<%= @contador.to_s %> = 'http://graph.facebook.com/<%= comment.commenter %>/picture';
 
 							$.ajax({
 							  url: url_face,
