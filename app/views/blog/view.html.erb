@@ -34,9 +34,9 @@
 							url_face<%= @contador.to_s %> = 'http://graph.facebook.com/<%= comment.commenter %>/picture';
 
 							$.ajax({
-							  url: url_face,
+							  url: url_face<%= @contador.to_s %>,
 							  success: function(data) {
-							    $("#imagem_face_<%= @contador.to_s %>").attr("src", url_face);
+							    $("#imagem_face_<%= @contador.to_s %>").attr("src", url_face<%= @contador.to_s %>);
 							  }
 							});
 						});
