@@ -26,7 +26,7 @@
 			<ul class="comment-list">
 				<% 
 					@contador = 1
-					@post.comments.each do |comment|
+					@post.comments.order("created_at DESC").all.each do |comment|
 				%>	
 				<li>
 					<script type="text/javascript">
