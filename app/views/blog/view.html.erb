@@ -24,7 +24,9 @@
 			<h3>Comentários</h3>
 			
 			<ul class="comment-list">
-				<% @post.comments.each do |comment|%>
+				<% @post.comments.each do |comment|
+					 @contador = 1
+					%>
 				<li>
 					<script type="text/javascript">
 						jQuery(function($){
@@ -33,17 +35,18 @@
 							$.ajax({
 							  url: url_face,
 							  success: function(data) {
-							    $("#imagem_face_<%= comment.email %>").attr("src", url_face);
+							    $("#imagem_face_<%= @contador.to_s %>").attr("src", url_face);
 							  }
 							});
 						});
 					</script>
-					<a href="#" class="avatar"><%= image_tag "/images/cao-sorridente.jpg", :id => "imagem_face" + comment.email  , :size => "70x70"%></a>
+					<a href="#" class="avatar"><%= image_tag "/images/cao-sorridente.jpg", :id => "imagem_face" + @contador.to_s , :size => "70x70"%></a>
 					<div class="bubble">
 						<p><b><%= comment.commenter %> </b>diz:<br/>
 							<%= comment.body %></p>
 					</div>
 				</li>
+				<% @contador += 1 %>
 				<% end %>
 			</ul>
 		<% end %>
