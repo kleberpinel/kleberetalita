@@ -24,9 +24,10 @@
 			<h3>Comentários</h3>
 			
 			<ul class="comment-list">
-				<% @post.comments.each do |comment|
-					 @contador = 1
-					%>
+				<% 
+					@contador = 1
+					@post.comments.each do |comment|
+				%>	
 				<li>
 					<script type="text/javascript">
 						jQuery(function($){
