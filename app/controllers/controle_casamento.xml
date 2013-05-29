@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Raiz>
+	<lista>
+		<Nome>Vo Salovi</Nome>
+		<De_Onde>Familia - Vô</De_Onde>
+		<Nome_Convite>Vô e Vó</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Vó Cenyra</Nome>
+		<De_Onde>Familia - Vô</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Avó Cida</Nome>
+		<De_Onde>Familia - Vô</De_Onde>
+		<Nome_Convite>Cida e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Nelia Pinel</Nome>
+		<De_Onde>Familia - Casa</De_Onde>
+		<Nome_Convite>Gil e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Gil Oliveira</Nome>
+		<De_Onde>Familia - Casa</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Gil Jr</Nome>
+		<De_Onde>Familia - Casa</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Paula Zuquin</Nome>
+		<De_Onde>Familia - Casa</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Leticia</Nome>
+		<De_Onde>Familia - Casa</De_Onde>
+		<Nome_Convite>Bruno e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Bruno Paulo</Nome>
+		<De_Onde>Familia - Casa</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tio Junior</Nome>
+		<De_Onde>Familia - Tio Jr</De_Onde>
+		<Nome_Convite>Junior e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Emilce</Nome>
+		<De_Onde>Familia - Tio Jr</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Cristiano</Nome>
+		<De_Onde>Familia - Tio Jr</De_Onde>
+		<Nome_Convite>Cristiano e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Joice Mota</Nome>
+		<De_Onde>Familia - Tio Jr</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Daniel Z</Nome>
+		<De_Onde>Familia - Tio Jr</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Cintia</Nome>
+		<De_Onde>Familia - Tio Jr</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Pri</Nome>
+		<De_Onde>Familia - Tio Lucas</De_Onde>
+		<Nome_Convite>Lucas e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tio Lucas</Nome>
+		<De_Onde>Familia - Tio Lucas</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Henrique</Nome>
+		<De_Onde>Familia - Tio Lucas</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Leonardo</Nome>
+		<De_Onde>Familia - Tio Lucas</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tio Nestor</Nome>
+		<De_Onde>Familia - Tio Nestor</De_Onde>
+		<Nome_Convite>Nestor e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Telma</Nome>
+		<De_Onde>Familia - Tio Nestor</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Karyna</Nome>
+		<De_Onde>Familia - Tio Nestor</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Zé</Nome>
+		<De_Onde>Familia - Tio Nestor</De_Onde>
+		<Nome_Convite>José Luiz e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Keylla</Nome>
+		<De_Onde>Familia - Tio Nestor</De_Onde>
+	</lista>
+	<lista>
+		<Nome>George</Nome>
+		<De_Onde>Familia - Tio Nestor</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tio Claudio</Nome>
+		<De_Onde>Familia - Tio Claudio</De_Onde>
+		<Nome_Convite>Claudio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Livia</Nome>
+		<De_Onde>Familia - Tio Claudio</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Claudinho</Nome>
+		<De_Onde>Familia - Tio Claudio</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Aninha</Nome>
+		<De_Onde>Familia - Tio Claudio</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Zinia</Nome>
+		<De_Onde>Familia - Tia Zinia</De_Onde>
+		<Nome_Convite>Zinia e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Tia Zinia</Nome>
+		<De_Onde>Familia - Tia Zinia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Marcio</Nome>
+		<De_Onde>Familia - Tia Zinia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada Marcio</Nome>
+		<De_Onde>Familia - Tia Zinia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Patty</Nome>
+		<De_Onde>Familia - Tia Zinia</De_Onde>
+		<Nome_Convite>Eudes e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Eudes (namorado Patty)</Nome>
+		<De_Onde>Familia - Tia Zinia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Lucia</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+		<Nome_Convite>Lucia e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Tia Lucia</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Danillo</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada Danilo</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Diego</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada Diego</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tio Wilson</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+		<Nome_Convite>Wilson</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>beatriz</Nome>
+		<De_Onde>Familia - Tia Lucia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Junia</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+		<Nome_Convite>Junia e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Soraia</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Marido Soraia</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Jr Bill</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada Bill</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tio Jorgecir</Nome>
+		<De_Onde>Familia - Tio Geci</De_Onde>
+		<Nome_Convite>Jorgecir e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Alzenir</Nome>
+		<De_Onde>Familia - Tio Geci</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Jefferson</Nome>
+		<De_Onde>Familia - Tio Geci</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Janielle</Nome>
+		<De_Onde>Familia - Tio Geci</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Leandro</Nome>
+		<De_Onde>Familia - Tio Geci</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tio Joacir</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+		<Nome_Convite>Joacir e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Lu</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Bruna</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+		<Nome_Convite>Bruna e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Fernando</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Camila</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+		<Nome_Convite>Camila e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Camila</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Juliana</Nome>
+		<De_Onde>Familia - Tio Joacir</De_Onde>
+		<Nome_Convite>Juliana</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Cenilda</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+		<Nome_Convite>Cenilda</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ciro</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+		<Nome_Convite>Ciro e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Giselle (mulher Ciro)</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Cassio</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+		<Nome_Convite>Cassio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Aline (mulher Cassio)</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Cida</Nome>
+		<De_Onde>Familia - Tia Cida</De_Onde>
+		<Nome_Convite>Adeilton e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tio Adeilton</Nome>
+		<De_Onde>Familia - Tia Cida</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Alan</Nome>
+		<De_Onde>Familia - Tia Cida</De_Onde>
+		<Nome_Convite>Alan e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Mulher Alan</Nome>
+		<De_Onde>Familia - Tia Cida</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Outro Primo (nao lembro o nome)</Nome>
+		<De_Onde>Familia - Tia Cida</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Zaine</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+		<Nome_Convite>Nicolas e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Filha Zaine</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Nicolas (marido Zaine)</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Cassio</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+		<Nome_Convite>Cassio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Mulher Cassio</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Filho Cassio (Samir)</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Filha Cassio (Karyne)</Nome>
+		<De_Onde>Familia - Tia Junia</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Dalva</Nome>
+		<De_Onde>Familia - Familia de Vitória</De_Onde>
+		<Nome_Convite>Fumil e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tio Fumil</Nome>
+		<De_Onde>Familia - Familia de Vitória</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Beko</Nome>
+		<De_Onde>Familia - Familia de Vitória</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Emanuel Kikugawa</Nome>
+		<De_Onde>Familia - Familia de Vitória</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Paloma Kikugawa</Nome>
+		<De_Onde>Familia - Familia de Vitória</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Tia Ide</Nome>
+	</lista>
+	<lista>
+		<Nome>Tio Luiz</Nome>
+	</lista>
+	<lista>
+		<Nome>Tia Helia</Nome>
+		<De_Onde>Tia Helia</De_Onde>
+		<Nome_Convite>Tia Helia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Joselia</Nome>
+		<De_Onde>Familia Noélio</De_Onde>
+		<Nome_Convite>Noélio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Noelio</Nome>
+		<De_Onde>Familia Noélio</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Juliana Giordani</Nome>
+		<De_Onde>Familia - Juliana</De_Onde>
+		<Nome_Convite>Juliana e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Julinana Giordani</Nome>
+		<De_Onde>Familia - Juliana</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ana Carolina Giordani</Nome>
+		<De_Onde>Familia - Ana Carolina</De_Onde>
+		<Nome_Convite>Ana Carolina e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Ana Carolina Giordani</Nome>
+		<De_Onde>Familia - Ana Carolina</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Gisele (RJ)</Nome>
+		<De_Onde>Familia Gisele</De_Onde>
+		<Nome_Convite>Gisele e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Daniela (filha Gisele)</Nome>
+		<De_Onde>Familia Gisele</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Fabiana</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+		<Nome_Convite>Fabiana e Famila</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Fabiana</Nome>
+		<De_Onde>Familia - Tia Cenilda</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Pai</Nome>
+		<Nome_Convite>Airton e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Eliabe</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Vó Cacá</Nome>
+		<Nome_Convite>Clair e Silvio</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Silvinho</Nome>
+	</lista>
+	<lista>
+		<Nome>Edson</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+		<Nome_Convite>Edson e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Meri</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Guid</Nome>
+	</lista>
+	<lista>
+		<Nome>Igor</Nome>
+		<Nome_Convite>Igor e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ludmila</Nome>
+	</lista>
+	<lista>
+		<Nome>Keila</Nome>
+	</lista>
+	<lista>
+		<Nome>Samuel</Nome>
+		<Nome_Convite>Samuel e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Mateus</Nome>
+		<Nome_Convite>Mateus e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Cinthia</Nome>
+	</lista>
+	<lista>
+		<Nome>Maira</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Táta ( Clélia)</Nome>
+	</lista>
+	<lista>
+		<Nome>Késia</Nome>
+		<Nome_Convite>Kesia e Filhas</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Nicole</Nome>
+	</lista>
+	<lista>
+		<Nome>Barbará</Nome>
+	</lista>
+	<lista>
+		<Nome>Valéria ( e a Rebeca)</Nome>
+	</lista>
+	<lista>
+		<Nome>Robson</Nome>
+		<Nome_Convite>Robson e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ivanir</Nome>
+		<Nome_Convite>Ivani e Madelena</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Maria Madela (mãe do Edson)</Nome>
+	</lista>
+	<lista>
+		<Nome>Amador</Nome>
+		<Nome_Convite>Amador e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Monica</Nome>
+	</lista>
+	<lista>
+		<Nome>Dodinha</Nome>
+		<Nome_Convite>Amador Neto e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Nena</Nome>
+	</lista>
+	<lista>
+		<Nome>Marcela</Nome>
+	</lista>
+	<lista>
+		<Nome>Luis Carlos</Nome>
+		<Nome_Convite>Luis Carlos e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Andressa</Nome>
+	</lista>
+	<lista>
+		<Nome>Neto</Nome>
+		<Nome_Convite>Jose Neto e Famila</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>André</Nome>
+		<Nome_Convite>Andre e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Zilda</Nome>
+	</lista>
+	<lista>
+		<Nome>Nena ( avó)</Nome>
+	</lista>
+	<lista>
+		<Nome>Vlademir</Nome>
+		<Nome_Convite>Vlademir e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Dora</Nome>
+	</lista>
+	<lista>
+		<Nome>Vanessa</Nome>
+	</lista>
+	<lista>
+		<Nome>Luis ( Namorado da Van)</Nome>
+	</lista>
+	<lista>
+		<Nome>Luis Fernando</Nome>
+		<Nome_Convite>Luis Fernando e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Glaucia</Nome>
+	</lista>
+	<lista>
+		<Nome>Elaine Mendes Lira</Nome>
+	</lista>
+	<lista>
+		<Nome>Wilson</Nome>
+		<Nome_Convite>Wilson e Familia (Colocar o convite da festa)</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Levi</Nome>
+	</lista>
+	<lista>
+		<Nome>Larissa</Nome>
+	</lista>
+	<lista>
+		<Nome>Luis</Nome>
+		<Nome_Convite>Luiz e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Cleunice</Nome>
+	</lista>
+	<lista>
+		<Nome>Vinny</Nome>
+	</lista>
+	<lista>
+		<Nome>Namorada do Vinny</Nome>
+	</lista>
+	<lista>
+		<Nome>Caio</Nome>
+	</lista>
+	<lista>
+		<Nome>Namorada do Caio</Nome>
+	</lista>
+	<lista>
+		<Nome>Vanderleia</Nome>
+	</lista>
+	<lista>
+		<Nome>Marcos</Nome>
+		<Nome_Convite>Marcos e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>André</Nome>
+	</lista>
+	<lista>
+		<Nome>Alexandre</Nome>
+		<Nome_Convite>Alexande e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Dudinha</Nome>
+	</lista>
+	<lista>
+		<Nome>Marcia</Nome>
+	</lista>
+	<lista>
+		<Nome>Valdecir</Nome>
+		<Nome_Convite>Valdecir e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Erik</Nome>
+	</lista>
+	<lista>
+		<Nome>Nathalia ( namorada do Erik)</Nome>
+	</lista>
+	<lista>
+		<Nome>Alessandra</Nome>
+	</lista>
+	<lista>
+		<Nome>Andreia</Nome>
+	</lista>
+	<lista>
+		<Nome>Caio (filho da Andreia)</Nome>
+	</lista>
+	<lista>
+		<Nome>Tia Terezinha</Nome>
+		<Nome_Convite>Terezinha e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Vó Vige</Nome>
+	</lista>
+	<lista>
+		<Nome>Tio João</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+		<Nome_Convite>Joao e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Namorada do Tio</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Gabriel</Nome>
+	</lista>
+	<lista>
+		<Nome>Tia Maria</Nome>
+		<Nome_Convite>Maria e Dora</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Tia Dora</Nome>
+	</lista>
+	<lista>
+		<Nome>Vanderlei</Nome>
+		<Nome_Convite>Vanderlei e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Cleide</Nome>
+	</lista>
+	<lista>
+		<Nome>Mafalda</Nome>
+		<Nome_Convite>Mafalda</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Raquel</Nome>
+		<Nome_Convite>Leandro e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Leandro</Nome>
+	</lista>
+	<lista>
+		<Nome>Lygia</Nome>
+	</lista>
+	<lista>
+		<Nome>Paulo</Nome>
+		<Nome_Convite>Paulo e Ligia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Erminio</Nome>
+		<Nome_Convite>Erminio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Aldaisa</Nome>
+	</lista>
+	<lista>
+		<Nome>Rafael</Nome>
+	</lista>
+	<lista>
+		<Nome>Silvestre</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+		<Nome_Convite>Silvestre e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Cleunira</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Roberta</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Noivo</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Thiago</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+		<Nome_Convite>Thiago e Famila</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Esposa e Thiago</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Pricilla</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+		<Nome_Convite>Pricilla e familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido</Nome>
+		<De_Onde>Praia Grande</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Abel</Nome>
+		<De_Onde>Sao Jose</De_Onde>
+		<Nome_Convite>Abel</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Osvaldo</Nome>
+		<De_Onde>Familia - Tio Osvaldo</De_Onde>
+		<Nome_Convite>Osvaldo e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Rafael</Nome>
+		<De_Onde>Familia - Tio Osvaldo</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Diogo</Nome>
+		<De_Onde>Familia - Tio Osvaldo</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Conceição</Nome>
+		<De_Onde>Familia - Tio Osvaldo</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Mariquinha</Nome>
+		<De_Onde>Sao Jose</De_Onde>
+		<Nome_Convite>Maria</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Margareth</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Milton</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+		<Nome_Convite>Milton e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Helon</Nome>
+	</lista>
+	<lista>
+		<Nome>Namorada Helon</Nome>
+	</lista>
+	<lista>
+		<Nome>Rodrigo</Nome>
+		<De_Onde>Padrinho Kleber</De_Onde>
+		<Nome_Convite>Rodrigo e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Luciana</Nome>
+		<De_Onde>Padrinho Kleber</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ricardo Ubiratan</Nome>
+		<De_Onde>Padrinho Kleber</De_Onde>
+		<Nome_Convite>Ricardo e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Solange</Nome>
+		<De_Onde>Padrinho Kleber</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Gabriel</Nome>
+	</lista>
+	<lista>
+		<Nome>Guilia</Nome>
+	</lista>
+	<lista>
+		<Nome>Clarimur</Nome>
+		<Nome_Convite>Clarimur</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Rute Zocchio</Nome>
+		<Nome_Convite>Joel e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Zoel Zocchio</Nome>
+	</lista>
+	<lista>
+		<Nome>Larissa Porto</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Davi Zocchio</Nome>
+	</lista>
+	<lista>
+		<Nome>Debora Porto</Nome>
+	</lista>
+	<lista>
+		<Nome>Tito Porto</Nome>
+		<Nome_Convite>Aires e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Vini Porto</Nome>
+		<Nome_Convite>Vinicios e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Mariana Porto</Nome>
+	</lista>
+	<lista>
+		<Nome>Cacilda</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+		<Nome_Convite>Dugair e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Dugair</Nome>
+		<De_Onde>Padrinhos - Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Raul</Nome>
+	</lista>
+	<lista>
+		<Nome>Lucas Pereira</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Marcia Pereira</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Valmir Pereira</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Valmir e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Diego Costa</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Diego e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Thais Rocha</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Joel Pereira</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Joel e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Natalia Pereira</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Elieser</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Elieser e familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Gato (Rafael)</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Mãe do Ricardo</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ricardo</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Jó</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Josenildo e Gilene</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ninha</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Anderson</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Anderson e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Anete</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Carol</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Andrei</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Adrei e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Jackeline</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Jackeline</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Dani de Jesus</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Daniele de Jesus</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Dani dos Santos</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Dani dos Santos e Namorado</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Namorado Dani dos Santos</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Eunapio</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Eunapio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Silvandira</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Chico</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Francisco e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Regiane</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Leticia</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Thiago</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Benedito</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Benedito e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Aura</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Manoel</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Manoel e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Kelly</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Filha 1 / Filha 2</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ana Cleide</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Robson</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Robson e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Aninha Cleidinha</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Pedrinho</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Adneia</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Marido da Adneia</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Ferreira e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Sinesio</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Sinesio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Lucia</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Wagner</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Willian</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Roberto</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Roberto e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Luciana - Isaac e Grabriela</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Alessandra</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Mauro</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Mauro e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Felipe</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Monique</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorado Monique</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Neno</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Austregesio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marli</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Bruna</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ricardo</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Ricardo e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Samuel</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Samuel e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Luciane</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Celso</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Celso e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ruth</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Eurides</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Givaldo</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Givaldo e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Antonio</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Antonio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Lidia</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Maria</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>tauane</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Esposo Maria</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Esposo Maria e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Paulo Hass</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Paulo e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marcia Hass</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Stela Hass</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Julinana Hass</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>marido maria anunciacao</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+		<Nome_Convite>Marido Maria Anunciação e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Maria Anunsiação</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ireni</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Nonato</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+		<Nome_Convite>Nonato e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Renata</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Vinicios (namorado)</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+		<Nome_Convite>Vinicios e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ricardo</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada Ricardo</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Nair</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+		<Nome_Convite>Nair</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marcia</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Marcia e Amanda</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Amanda</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Andreia</Nome>
+		<De_Onde>Igreja</De_Onde>
+		<Nome_Convite>Adreia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Renata Souza</Nome>
+		<De_Onde>Fecap</De_Onde>
+		<Nome_Convite>Renata e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido da Rê</Nome>
+		<De_Onde>Fecap</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Macikelly</Nome>
+		<De_Onde>Fecap</De_Onde>
+		<Nome_Convite>Kelly</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Renann ( namorado da Kelly)</Nome>
+		<De_Onde>Fecap</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Carol</Nome>
+		<De_Onde>Fecap</De_Onde>
+		<Nome_Convite>Carol</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Angela</Nome>
+		<De_Onde>Fecap</De_Onde>
+		<Nome_Convite>Angela</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Caroline</Nome>
+		<De_Onde>Mary Ward</De_Onde>
+		<Nome_Convite>Carol</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Namorado da Caroline</Nome>
+		<De_Onde>Mary Ward</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Graziele</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Lucas</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Lucas e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ismael</Nome>
+		<De_Onde>Batista</De_Onde>
+		<Nome_Convite>Ismael</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Namorada Ismael</Nome>
+		<De_Onde>Batista</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Caio (Frodo)</Nome>
+		<De_Onde>Batista</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Namorada Caio</Nome>
+		<De_Onde>Batista</De_Onde>
+		<Nome_Convite>Rubens e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ivan</Nome>
+		<De_Onde>Batista</De_Onde>
+		<Nome_Convite>Ivan e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Esposa do Ivan</Nome>
+		<De_Onde>Batista</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Jorge Maranho</Nome>
+		<De_Onde>Exata</De_Onde>
+		<Nome_Convite>Jorge e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Esposa do Jorge</Nome>
+		<De_Onde>Exata</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Thomas</Nome>
+		<De_Onde>Exata</De_Onde>
+		<Nome_Convite>Thomas e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Esposa do Thomas</Nome>
+		<De_Onde>Exata</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Amauri</Nome>
+		<De_Onde>Amiga mãe (Veio na minha formatura)</De_Onde>
+		<Nome_Convite>Amauri e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marielza</Nome>
+		<De_Onde>Amiga mãe (Veio na minha formatura)</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Rose</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ivan</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Ivan e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Eliane</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Eliane</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Eldinha</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Elda</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Eunice</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Eunice</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Henrique</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+		<Nome_Convite>Henrique e Jessica</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Jessica</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Marcos</Nome>
+		<De_Onde>Amigo do Airton</De_Onde>
+		<Nome_Convite>Marcos e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Cristiane</Nome>
+		<De_Onde>Amigo do Airton</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Filho 1 Marcos</Nome>
+		<De_Onde>Amigo do Airton</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Filho 2 Marcos</Nome>
+		<De_Onde>Amigo do Airton</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Eunapio Jr</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Eunapio Jr e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Paula</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Iraci</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Pai da Ines</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Pai da Ines e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Ines</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Ir Antonio</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+		<Nome_Convite>Antonio e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Irma</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Elma</Nome>
+		<De_Onde>Parelheiros</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Campana</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Campana</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Irmao Pedro</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Pedro e Esposa</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Esposa Irmão Pedro</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Lurdinha</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Lurdes</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Semana</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Semana e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Fabiola</Nome>
+		<De_Onde>IBNJ</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Rosimeire</Nome>
+		<De_Onde>IBNJ</De_Onde>
+		<Nome_Convite>Rosimeire</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Vera</Nome>
+		<De_Onde>Vizinhos Talita</De_Onde>
+		<Nome_Convite>Carlos e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Carlos</Nome>
+		<De_Onde>Vizinhos Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Michele</Nome>
+		<De_Onde>Vizinhos Talita</De_Onde>
+		<Nome_Convite>Marido Michele e Familia</Nome_Convite>
+	</lista>
+	<lista>
+		<Nome>Marido Michele</Nome>
+		<De_Onde>Vizinhos Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Bruno</Nome>
+		<De_Onde>Vizinhos Talita</De_Onde>
+	</lista>
+	<lista>
+		<Nome>Talita</Nome>
+		<De_Onde>Vizinhos Talita</De_Onde>
+	</lista>
+</Raiz>

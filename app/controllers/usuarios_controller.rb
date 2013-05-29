@@ -36,6 +36,22 @@ class UsuariosController < ApplicationController
     end
   end
 
+  def import
+
+    f = File.open("C:/Users/kleber.silva/Documents/GitHub/kleberetalita/app/controllers/controle_casamento.xml")
+    doc = Nokogiri::XML(f)
+
+
+
+    @links = doc.xpath('//Raiz/lista').map do |i| 
+      {'Nome' => i.xpath('Nome').text, 
+        'De_Onde' => i.xpath('De_Onde').text, 
+        'Nome_Convite' => i.xpath('Nome_Convite').text}
+    end
+    f.close
+    render :json => @links
+  end
+
   # GET /users/1/edit
   def edit
 

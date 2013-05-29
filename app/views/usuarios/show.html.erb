@@ -1,14 +1,34 @@
-<p id="notice"><%= notice %></p>
+<div style="padding-left: 30px; width: 900px;"/>
+	<p id="notice"><%= notice %></p>
+	<p>
+	  <b>Nome:</b>
+	  <%= @user.nome %>
+	</p>
+	<p>
+	  <b>Email:</b>
+	  <%= @user.email %>
+	</p>
+	<p>
+	  <b>de_onde:</b>
+	  <%= @user.de_onde %>
+	</p>
+	<p>
+	  <b>nome_convite:</b>
+	  <%= @user.nome_convite %>
+	</p>
+	<p>
+	  <b>numero telefone:</b>
+	  <%= @user.numero_telefone %>
+	</p>
+	<p>
+	  <b>convidados:</b>
+	  <%= @user.convidados %>
+	</p>
+	<p>
+	  <b>Foto:</b>
+	  <%= image_tag "http://graph.facebook.com/#{@user.nome}/picture", :size => "70x70"%>
+	</p>
 
- <div class="field">
-   Nome: <%= @user.nome %><br>
-  </div>
-  <div class="field">
-    Email: <%= @user.email %>
-  </div>
-   <div class="field">
-    Foto: <%= image_tag "http://graph.facebook.com/#{@user.nome}/picture", :size => "70x70"%>
-  </div>
-
-<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
-<%= link_to 'Back', usuarios_path %>
+	<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
+	<%= link_to 'Back', usuarios_path %>
+</div>

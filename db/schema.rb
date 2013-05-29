@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130102110528) do
+ActiveRecord::Schema.define(:version => 20130529180852) do
 
   create_table "albums", :force => true do |t|
     t.string   "nome"
@@ -140,6 +140,9 @@ ActiveRecord::Schema.define(:version => 20130102110528) do
     t.string   "nome"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "de_onde"
+    t.string   "nome_convite"
+    t.string   "convidados"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

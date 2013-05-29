@@ -188,6 +188,7 @@ DEPENDENCIES
   json
   mocha
   nifty-generators
+  nokogiri
   omniauth-facebook
   pg
   pry
