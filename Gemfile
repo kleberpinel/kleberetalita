@@ -8,7 +8,6 @@ gem 'httparty'
 
 gem 'aws-s3'
 gem 'will_paginate', '~> 3.0'
-gem "pagseguro", "~> 0.1.13"
 gem 'roadie'
 #gem 'hrpicot'
 #gem 'premailer-rails3'

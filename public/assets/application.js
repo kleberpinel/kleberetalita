@@ -9919,8 +9919,11 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 }).call(this);
 // TOGGLES & TABS
 $(document).ready(function() {
+
+	/*
  	$(".toggle_container").hide(); 
  	$(".trigger").click(function(){
+ 			console.log("vdvd")
 			$(this).toggleClass("active").next().slideToggle("fast");
 		return false; 	
 	});
@@ -9937,6 +9940,7 @@ $(document).ready(function() {
 		$(activeTab).fadeIn(); 
 		return false;
 	});
+*/
 });
 // NOTIFICATIONS
 $(document).ready(function(){
