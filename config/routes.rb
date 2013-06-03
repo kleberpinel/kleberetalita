@@ -41,6 +41,8 @@ Kleberetalita::Application.routes.draw do
   get "events/dates"
   get "events/gift"
 
+  match "/presentes",  :to => "events#gift"
+
   get "index/historia"
   get "index/home"
   root :to => 'index#home' 
