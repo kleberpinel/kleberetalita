@@ -1,5 +1,14 @@
 <div style="padding-left: 30px; width: 900px;"/>
 	<p id="notice"><%= notice %></p>
+	<br>
+	<p>
+	  <%= image_tag "http://graph.facebook.com/#{@user.nome}/picture", :size => "70x70"%>
+	  <b>Foto do facebook:</b>
+	</p>
+	<p>
+	  <b>Link facebook:</b>
+	  <a href="http://www.facebook.com/<% @user.nome %>" target="_blank">http://www.facebook.com/<% @user.nome %></a>
+	</p>
 	<p>
 	  <b>Nome:</b>
 	  <%= @user.nome %>
@@ -9,25 +18,27 @@
 	  <%= @user.email %>
 	</p>
 	<p>
-	  <b>de_onde:</b>
+	  <b>De onde:</b>
 	  <%= @user.de_onde %>
 	</p>
 	<p>
-	  <b>nome_convite:</b>
+	  <b>Nome da TAG no convite:</b>
 	  <%= @user.nome_convite %>
 	</p>
 	<p>
-	  <b>numero telefone:</b>
+	  <b>Numero do telefone de contato:</b>
 	  <%= @user.numero_telefone %>
 	</p>
 	<p>
-	  <b>convidados:</b>
-	  <%= @user.convidados %>
+	  <b>Convidados:</b><br>
+	  <% @user.convidados.each do |convidado| %>
+	  	<%= convidado.nome %> <br/>
+	  	<%if convidado.confimacao_presenca_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%>Confirmado para Cerimonia <br/>
+	  	<%if convidado.confimacao_presenca_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%>Confirmado para Festa<br/>
+	  	<br/>
+	  <% end %>
 	</p>
-	<p>
-	  <b>Foto:</b>
-	  <%= image_tag "http://graph.facebook.com/#{@user.nome}/picture", :size => "70x70"%>
-	</p>
+	
 
 	<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 	<%= link_to 'Back', usuarios_path %>

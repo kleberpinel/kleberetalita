@@ -1,5 +1,14 @@
 Kleberetalita::Application.routes.draw do
   
+  get "convidados/list"
+
+  post "confirmacao_presenca/step1"
+  put "confirmacao_presenca/step2"
+  put "confirmacao_presenca/sucesso"
+
+  get "importer/importar"
+  get "importer/remover" 
+
   resources :cotas
 
   resources :categoria_cotas
@@ -31,8 +40,7 @@ Kleberetalita::Application.routes.draw do
   match "/blog/:id/list/category",    :to => "blog#category", :as => "category_blog", :via => :get
   
   match "/autors/:id/view",           :to => "autors#view",   :as => "view_autors",   :via => :get
-  match "/usuarios/:id",           :to => "usuarios#update",   :as => "user",   :via => :put  
-  match "/import",           :to => "usuarios#import",   :as => "user",   :via => :get  
+  match "/usuarios/:id",           :to => "usuarios#update",   :as => "user",   :via => :put
 
   match "/foto/select/",           :to => "fotos#select",   :as => "select_foto",   :via => :get
   match "/foto/select/one/:tipo_foto",           :to => "fotos#selectOne",   :as => "select_one_foto",   :via => :get

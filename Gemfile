@@ -5,7 +5,6 @@ gem 'rails', '3.1.3'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'httparty'
-gem 'nokogiri'
 
 gem 'aws-s3'
 gem 'will_paginate', '~> 3.0'
@@ -54,3 +53,4 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem "mocha", :group => :test
+gem 'roo'

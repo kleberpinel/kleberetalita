@@ -12,6 +12,24 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :nome_convite %><br />
+    <%= f.text_field :nome_convite %>
+  </div>
+
+  <div class="field"> 
+    <%= f.fields_for :convidados do |builder| %>
+          <b><%= f.label builder.object.nome %></b><br/>
+          <% if @usuario.disponivel_cerimonia %>
+            <%= builder.check_box :confimacao_presenca_cerimonia, :style=>"width: 20px" %> Confirmar presença na cerimonia 
+          <% end %>
+          <% if @usuario.disponivel_festa %>
+            <%= builder.check_box :confimacao_presenca_festa, :style=>"width: 20px" %> Confirmar presença na festa
+          <% end %>
+          <br/><br/>
+    <% end %>   
+  </div>   
+
+  <div class="field">
     <%= f.label :nome %><br />
     <%= f.text_field :nome %>
   </div>
@@ -22,19 +40,23 @@
   </div>
 
   <div class="field">
+    <%= f.label :numero_telefone %><br />
+    <%= f.text_field :numero_telefone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+
+  <div class="field">
     <%= f.label :de_onde %><br />
     <%= f.text_field :de_onde %>
   </div>
 
-  <div class="field">
-    <%= f.label :convidados %><br />
-    <%= f.text_field :convidados %>
-  </div>
+  
 
-  <div class="field">
-    <%= f.label :nome_convite %><br />
-    <%= f.text_field :nome_convite %>
-  </div>
+  
 
   <div class="actions">
     <%= f.submit %>

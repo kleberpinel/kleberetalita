@@ -1,0 +1,120 @@
+<div class="top">
+			
+	<h2>Confirmação de presença</h2>
+
+</div> <!-- END TOP -->
+
+<div class="clearfix"></div>
+
+<div class="full">
+
+	<div style="float: left; width: 580px">
+		<p>Olá <b><%= @usuario.nome_convite %></b>!<br/><br/>
+		Obrigado por entrar em nosso site para confirmar presença!<br/>
+		Nos deixa muito feliz em saber que <% if @usuario.convidados.size > 1 %> vocês pretendem <%else%> você pretende <%end%> vir ao nosso casamento, um momento de alegria e que marcará definitivamente o novo inicio de nossas vidas.<br>
+		Por favor, se você ainda não deixou um recado em nossa pagina de recados, faça-o clicando <a href="/blog/15/view">aqui</a>.<br>
+		<br>
+
+		Nossa cerimônia terá inicio as <b>19:00</b> no dia <b>03/08/2013</b> e terá inicio na Igreja Batista Nova Jerusalem.
+		<% if @usuario.disponivel_festa %>
+			Logo depois vamos nos dirigir ao Buffet Castelo Imperial onde teremos os comes e bebes :D!
+		<% end %>
+		<br/>Venha participar conosco desse momento de alegria!
+		</p>
+	</div>
+	<div >
+		<%= image_tag("/images/caricatura/beh_e_mel.jpg") %>
+	</div>
+	
+	
+	<div id="toggles">
+		
+		<% if @usuario.disponivel_cerimonia %>
+			<div id="toggle">
+				<h2 class="trigger" style="background: url('/images/headers_full.png') 0px 0px">Local da cerimonia - Igreja Batista Nova Jerusalem<a href="#"></a></h2>
+				<div class="toggle_container" style="display: none; ">
+					<div class="block">
+						<p>
+							Local: Igreja Batista Nova Jerusalem<br>
+							Endereço: Rua Nova Jerusalem, 499 - Vl. Carrão<br>
+							Site: <a href="http://www.ibnj.com.br" target="_blank"/>http://www.ibnj.com.br</a><br><br>
+						</p>
+						<div style="float: left; padding: 5px">
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=rua+nova+jerusalem+499&amp;sll=-14.179186,-50.449219&amp;sspn=116.727291,158.027344&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Nova+Jerusal%C3%A9m,+499+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03410-000&amp;t=m&amp;ll=-23.521618,-46.56318&amp;spn=0.006639,0.011362&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=rua+nova+jerusalem+499&amp;sll=-14.179186,-50.449219&amp;sspn=116.727291,158.027344&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Nova+Jerusal%C3%A9m,+499+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03410-000&amp;t=m&amp;ll=-23.546688,-46.54918&amp;spn=0.006639,0.011362&amp;z=14" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
+						</div>
+
+						<div style="padding: 5px">
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=rua+nova+jerusalem+499&amp;sll=-14.179186,-50.449219&amp;sspn=116.727291,158.027344&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Nova+Jerusal%C3%A9m,+499+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03410-000&amp;t=h&amp;layer=c&amp;cbll=-23.546685,-46.549181&amp;panoid=fR52KfH9pvzwHzZdwVzo6g&amp;cbp=13,93.42,,0,0.88&amp;ll=-23.555352,-46.549158&amp;spn=0.053112,0.090895&amp;z=14&amp;output=svembed"></iframe><br /><small><a href="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=&amp;q=rua+nova+jerusalem+499&amp;sll=-14.179186,-50.449219&amp;sspn=116.727291,158.027344&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Nova+Jerusal%C3%A9m,+499+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03410-000&amp;t=h&amp;layer=c&amp;cbll=-23.546685,-46.549181&amp;panoid=fR52KfH9pvzwHzZdwVzo6g&amp;cbp=13,93.42,,0,0.88&amp;ll=-23.555352,-46.549158&amp;spn=0.053112,0.090895&amp;z=14" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end toggle 1 -->
+		<% end %>
+		<% if @usuario.disponivel_festa %>
+			<div id="toggle">
+				<h2 class="trigger" style="background: url('/images/headers_full.png') 0px 0px">Local da Festa - Buffet Castelo Imperial<a href="#"></a></h2>
+				<div class="toggle_container" style="display: none; ">
+					<div class="block">
+						<p>
+							Local: Buffet Castelo Imperial<br>
+							Endereço: Av. Conselheiro Carrão, 223 - Tatuapé<br>
+							Site: <a href="http://www.buffetcasteloimperial.com.br/" target="_blank"/>http://www.buffetcasteloimperial.com.br/</a><br><br>
+						</p>
+						<div style="float: left; padding: 5px">
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Av.+Conselheiro+Carr%C3%A3o,+223&amp;aq=&amp;sll=-23.682804,-46.555546&amp;sspn=0.848906,1.454315&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Conselheiro+Carr%C3%A3o,+223+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03403-000&amp;t=m&amp;z=14&amp;ll=-23.51289,-46.569822&amp;output=embed"></iframe>
+							<br /><small><a href="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Av.+Conselheiro+Carr%C3%A3o,+223&amp;aq=&amp;sll=-23.682804,-46.42918&amp;sspn=0.848906,1.454315&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Conselheiro+Carr%C3%A3o,+223+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03403-000&amp;t=m&amp;z=14&amp;ll=-23.546688,-46.54918" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+						</div>
+
+						<div style="padding: 5px">
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Av.+Conselheiro+Carr%C3%A3o,+223&amp;aq=&amp;sll=-23.682804,-46.595546&amp;sspn=0.848906,1.454315&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Conselheiro+Carr%C3%A3o,+223+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03403-000&amp;ll=-23.53789,-46.555822&amp;spn=0.006639,0.011362&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=-23.537779,-46.555863&amp;panoid=_PHXRZGWrP6wApWFzSXkCA&amp;cbp=12,84.68,,0,0.17&amp;output=svembed"></iframe><br /><small><a href="https://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Av.+Conselheiro+Carr%C3%A3o,+223&amp;aq=&amp;sll=-23.682804,-46.595546&amp;sspn=0.848906,1.454315&amp;ie=UTF8&amp;hq=&amp;hnear=Av.+Conselheiro+Carr%C3%A3o,+223+-+Carr%C3%A3o,+S%C3%A3o+Paulo,+03403-000&amp;ll=-23.53789,-46.555822&amp;spn=0.006639,0.011362&amp;t=m&amp;z=14&amp;layer=c&amp;cbll=-23.537779,-46.555863&amp;panoid=_PHXRZGWrP6wApWFzSXkCA&amp;cbp=12,84.68,,0,0.17" style="color:#0000FF;text-align:left">View Larger Map</a></small>	
+						</div>
+					</div>
+				</div>
+			</div> <!-- end toggle 1 -->
+		<% end %>
+		<div id="toggle">
+			<h2 class="trigger" style="background: url('/images/headers_full.png') 0px 0px">Presentes<a href="#"></a></h2>
+			<div class="toggle_container" style="display: none; ">
+				<div class="block">
+					<p>
+					Colocamos diversas maneiras de você, <b><%= @usuario.nome_convite %></b>, nos presentear!<br>
+					Acesse  <a href="/presentes"/>http://www.kleberetalita.com.br/presentes</a> e veja como nos presentear!
+					<a>
+				</div>
+			</div>
+		</div> <!-- end toggle 1 -->
+	</div>
+	<div class="clearfix"></div>
+	<div>
+		
+		<p style="margin: 0px">
+			<br>Selecione abaixo em quais eventos você gostaria de confirmar presença para cada uma das pessoas que estão inclusas no convite.
+		</p>
+		<%= form_for( @usuario, 
+							:url => url_for(:controller => 'confirmacao_presenca', :action => 'step2')) do |f| %>
+			<div style="float: left; width: 580px">
+				<p>
+				
+				<%= f.hidden_field :id %>
+				<%= f.fields_for :convidados do |builder| %>
+					<b><%= builder.object.nome %></b><br/>
+					<% if @usuario.disponivel_cerimonia %>
+						<%= builder.check_box :confimacao_presenca_cerimonia %> Confirmar presença na cerimonia 
+					<% end %>
+					<% if @usuario.disponivel_festa %>
+						<%= builder.check_box :confimacao_presenca_festa %> Confirmar presença na festa
+					<% end %>
+					<br/><br/>
+			  	<% end %>
+				</p>
+				<%= f.submit "Confirmar",  :class => "button orange", :style => "cursor: pointer" %>
+			</div>
+			<div >
+				<% image_tag("/images/caricatura/beh_e_mel.jpg") %>
+			</div>
+		<% end %>
+	</div>
+	
+</div> <!-- END PAGE -->
+							
+<div class="clearfix"></div>

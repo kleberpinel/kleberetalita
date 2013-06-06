@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130529180852) do
+ActiveRecord::Schema.define(:version => 20130605180559) do
 
   create_table "albums", :force => true do |t|
     t.string   "nome"
@@ -78,6 +78,15 @@ ActiveRecord::Schema.define(:version => 20130529180852) do
 
   add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
 
+  create_table "convidados", :force => true do |t|
+    t.string   "nome"
+    t.boolean  "confimacao_presenca_cerimonia"
+    t.boolean  "confimacao_presenca_festa"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "cotas", :force => true do |t|
     t.string   "nome"
     t.string   "descricao"
@@ -143,6 +152,14 @@ ActiveRecord::Schema.define(:version => 20130529180852) do
     t.string   "de_onde"
     t.string   "nome_convite"
     t.string   "convidados"
+    t.string   "numero_telefone"
+    t.string   "nivel_certeza"
+    t.string   "endereco"
+    t.string   "origem"
+    t.boolean  "diponivel_festa"
+    t.boolean  "diponivel_cerimonia"
+    t.boolean  "disponivel_festa"
+    t.boolean  "disponivel_cerimonia"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

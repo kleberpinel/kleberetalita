@@ -1,0 +1,46 @@
+<div class="top">
+			
+	<h2>Confirmação de presença</h2>
+
+</div> <!-- END TOP -->
+
+<div class="clearfix"></div>
+
+<div class="full">
+
+	<div style="float: left; width: 580px">
+		<p>
+			Obrigado <b><%= @usuario.nome_convite %></b>!<br/><br/>
+			Veja quais das pessoas do seu convite estão confirmadas:<br><br>
+			<% @usuario.convidados.each do |convidado| %>
+				<%= convidado.nome %> <br/>
+				<% if @usuario.disponivel_cerimonia %>
+					<%if convidado.confimacao_presenca_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%>Confirmado para Cerimonia <br/>
+				<% end %>
+				<% if @usuario.disponivel_festa %>
+					<%if convidado.confimacao_presenca_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%>Confirmado para Festa<br/>
+				<% end %>
+				<br/>
+			<% end %>
+			Para melhorar ainda mais nossa comunicação, peço que atualize alguns do seus dados para que possamos ter registrado!
+			<%= form_for( @usuario, 
+								:url => url_for(:controller => 'confirmacao_presenca', :action => 'sucesso')) do |f| %>
+				<p>
+					<%= f.hidden_field :id %>
+					<%= f.text_field :email, :style => "text-align: right; width: 400px" %> => E-mail<br/>
+					<%= f.text_field :numero_telefone, :style => "text-align: right; width: 400px"  %> => Telefone<br/>
+					<%= f.text_field :endereco, :style => "text-align: right; width: 400px"  %> => Endereço completo<br/>
+				</p>
+			<%= f.submit "Atualizar",  :class => "button orange", :style => "cursor: pointer" %>
+			<% end %>
+		</p>
+	</div>
+	<div >
+		<%= image_tag("/images/caricatura/beh_e_mel.jpg") %>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+</div> <!-- END PAGE -->
+							
+<div class="clearfix"></div>

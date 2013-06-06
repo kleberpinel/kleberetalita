@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   devise :omniauthable
   has_many :posts
+  has_many :convidados
+
+  accepts_nested_attributes_for :convidados
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -8,7 +11,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :nome, :de_onde, :nome_convite, :convidados, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :nome, :de_onde, :nome_convite, :password, :numero_telefone, :password_confirmation, :remember_me,
+                  :nivel_certeza, :endereco, :origem, :disponivel_festa, :disponivel_cerimonia
 
   def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info

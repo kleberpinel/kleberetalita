@@ -26,12 +26,6 @@
 	<div class="main">
 		<%= render "/include/header" %>
 		
-			<% flash.each do |name, msg| %>
-				<div class="full shortcodes">
-					<%= content_tag :span, msg, :class => "box green", :id => "flash_#{name}" %>
-				</div>
-			<% end %>
-		
 		<%= content_tag :h1, yield(:title) if show_title? %>
 		
 		<%= yield %>

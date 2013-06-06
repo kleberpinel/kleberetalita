@@ -6,6 +6,7 @@ class UsuariosController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    logger.debug "index"
     @users = User.all
 
     respond_to do |format|
@@ -36,25 +37,8 @@ class UsuariosController < ApplicationController
     end
   end
 
-  def import
-
-    f = File.open("C:/Users/kleber.silva/Documents/GitHub/kleberetalita/app/controllers/controle_casamento.xml")
-    doc = Nokogiri::XML(f)
-
-
-
-    @links = doc.xpath('//Raiz/lista').map do |i| 
-      {'Nome' => i.xpath('Nome').text, 
-        'De_Onde' => i.xpath('De_Onde').text, 
-        'Nome_Convite' => i.xpath('Nome_Convite').text}
-    end
-    f.close
-    render :json => @links
-  end
-
   # GET /users/1/edit
   def edit
-
     @usuario = User.find(params[:id])
     logger.info @usuario.inspect
   end
@@ -82,6 +66,12 @@ class UsuariosController < ApplicationController
 
     respond_to do |format|
       if @user.update_attributes(params[:user])
+
+        params[:user][:convidados_attributes].each do |attr_name, attr_value|
+          @convidado = Convidado.find(attr_value[:id])
+          @convidado.update_attributes(attr_value)
+        end
+
         format.html { redirect_to @user, :notice => 'User was successfully updated.' }
         format.json { head :ok }
       else

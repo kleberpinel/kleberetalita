@@ -1,5 +1,15 @@
+<%if @error_msg.to_s != "" %>
+	<div class="full shortcodes">
+		<span class="box red" id="flash_alert"><%= @error_msg %></span>
+	</div>
+<% end %>
+<% flash.each do |name, msg| %>
+	<div class="full shortcodes">
+		<%= content_tag :span, msg, :class => "box green", :id => "flash_#{name}" %>
+	</div>
+<% end %>
 <div class="welcome">
-		
+
 	<h3>Bemvindo</h3>
 	
 	<p>
@@ -36,6 +46,17 @@
 	<a href="/events/gift" style="margin: 0px"><img src="/images/arte_01.jpg" alt="Presentão"></a>
 	
 </div>
+<style type="text/css">
+	.box_ou {
+		text-align: center;
+		height: 20px;
+		margin: 0px;
+		line-height: 1px;
+		padding-right: 30px;
+		padding: 0px;
+		margin-top: 70px;
+	}	
+</style>
 
 <div class="sidebar" style="margin-left: 28px">
 		
@@ -43,17 +64,26 @@
 	
 	<ul class="address">
 		<li>Confirme sua presença abaixo:</li>
-		<li class="contact" style="height: 200px">
-			<form id="contact-us" action="#" method="post">
+		<li class="contact" style="height: 250px">
+			<form id="contact-us" action="/confirmacao_presenca/step1" method="post">
 				<div class="formblock">
 					<label class="screen-reader-text">Nome na tag do convite</label>
-					<input type="text" name="contactName" id="contactName" class="txt requiredField" placeholder="Nome na tag do convite" style="width:222px; margin-top: 20px">
+					<input type="text" name="nome_convite" id="nome_convite" class="txt requiredField" placeholder="Nome na tag do convite" style="width:222px; margin-top: 20px">
 				</div>
+				
+				<button name="submit" type="submit" class="button-large orange btn" style="margin: -10px; margin-right: 10px">Confirmar</button>				
+				<div class="formblock box_ou">
+					OU
+				</div>
+				<div style="padding: 10px; text-align: center; font-size: 15px">
+					<p  style="line-height: 1;">Envie um e-mail para <b>kleberetalita@gmail.com</b> para confirmar presença</p>
+				</div>
+				<!--
 				<div class="formblock">
 					<label class="screen-reader-text">Codigo recebido por email</label>
 					<input type="text" name="contactName" id="contactName" class="txt requiredField" placeholder="Numero do seu telefone com DDD" style="width:222px">
 				</div>
-				<button name="submit" type="submit" class="button-large orange btn" style="margin: -10px; margin-right: 10px">Confirmar</button>				
+				-->
 			</form>  <!-- END FORM -->	
 
 		</li>

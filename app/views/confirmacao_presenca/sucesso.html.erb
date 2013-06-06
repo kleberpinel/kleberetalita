@@ -1,0 +1,38 @@
+<div class="top">
+			
+	<h2>Confirmação de presença</h2>
+
+</div> <!-- END TOP -->
+
+<div class="clearfix"></div>
+
+<div class="full">
+
+	<div style="float: left; width: 580px">
+		<p>
+			Agora sim :D!!.<br>
+			Obrigado <b><%= @usuario.nome_convite %></b> por atualizar todos os dados!<br/><br/>
+
+			<%if @existe_confirmados %>
+				Contamos com a presença de <% if @usuario.convidados.size > 1 %> vocês <%else%> você <%end%>,<b>
+				<% @usuario.convidados.each do |convidado| %>
+					<%if convidado.confimacao_presenca_cerimonia || convidado.confimacao_presenca_festa %>
+						<%= convidado.nome %>, 
+					<% end %>
+				<% end %>
+				</b>em nosso casamento!<br><br>
+			<% end %>
+			<a href="/">Continue navegando no nosso site lendo sobre as noticias do casamento!</a><br/>
+			<br/>
+
+		</p>
+	</div>
+	<div >
+		<%= image_tag("/images/caricatura/beh_e_mel.jpg") %>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+</div> <!-- END PAGE -->
+							
+<div class="clearfix"></div>

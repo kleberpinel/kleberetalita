@@ -1,11 +1,13 @@
 <div style="padding: 30px">
+  <a href="/convidados/list">Listar todos convidados</a>
   <h1>Listando usuarios</h1>
   <br/>
   <table class="table table-bordered">
     <tr>
       <th>Nome</th>
       <th>Email</th>
-      <th>Foto</th>
+      <th style="text-align: center">Convidado <br/>para Festa</th>
+      <th style="text-align: center">Convidado <br/>para Cerimonia</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,7 +17,8 @@
     <tr>
       <td><%= user.nome %></td>
       <td><%= user.email %></td>
-      <td><%= image_tag "http://graph.facebook.com/#{user.nome}/picture", :size => "70x70"%></td>
+      <td style="text-align: center"><%if user.disponivel_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
+      <td style="text-align: center"><%if user.disponivel_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
       <td><%= link_to 'Visualizar', usuario_path(user) %></td>
       <td><%= link_to 'Editar', edit_usuario_path(user) %></td>
       <td><%= link_to 'Excluir', usuario_path(user), :confirm => 'Tem certeza?', :method => :delete %></td>

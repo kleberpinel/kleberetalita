@@ -1,0 +1,42 @@
+<div style="padding: 30px">
+  <h1>Listando convidados</h1>
+
+  <div style="border: 1px solid black; padding: 10px">
+    <%= form_for( @convidado, :method => :get, :url => url_for(:controller => 'convidados', :action => 'list')) do |f| %>
+  	  
+      <%= f.text_field :nome, :style => "text-align: right; width: 400px" %> => Nome<br/>
+    <br/>
+   
+      <%= f.submit "Filtrar",  :class => "button orange", :style => "cursor: pointer" %>
+    <% end %>
+  </div>
+  <br/>
+  <table class="table table-bordered">
+    <tr>
+      <th>Convite<br><%= User.where(:origem => "importacao").count %> convidados</th>
+      <th>Nome <br><%= Convidado.count %> convidados </th>
+      <th style="text-align: center">Confirmado <br/>para Festa</th>
+      <th style="text-align: center">Confirmado <br/>para Cerimonia</th>
+    </tr>
+
+  <% @convidados.each do |convidado| %>
+    <tr>
+       <td>
+         <% user = User.where(:id => convidado.user_id).first %>
+         <%= user.nome_convite %>
+      </td>
+      <td>
+        <%= link_to convidado.nome, usuario_path(convidado.user_id) %>
+      </td>
+      <td style="text-align: center"><%if convidado.confimacao_presenca_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
+      <td style="text-align: center"><%if convidado.confimacao_presenca_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <%= will_paginate @posts %>
+
+  <br />
+
+  <%= link_to 'Novo Usuario', new_usuario_path %>
+</div>
