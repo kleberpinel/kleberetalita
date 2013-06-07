@@ -94,6 +94,7 @@
 					<h2><%= categoria_cota.nome %></h2>
 					<p><%= categoria_cota.descricao %></p>
 				</span>
+
 				<%= image_tag  "https://s3.amazonaws.com/rails_s3/#{categoria_cota.imagem}", :width => "380px" %>
 			</li>
 		<% end %>
@@ -105,6 +106,10 @@
 					<h1 class="subtitle">Cotas da <%= categoria_cota.nome %></h1>
 					<ul>
 						<% categoria_cota.cotas.each do |cota| %>
+							<div style="border: 1px solid black; border-radius: 10px; margin: 5px; height: 20px; width: 250px; background-color: #3CB371; float: left" alt="">
+									<div style="border: 1px solid #FF0000; border-radius: 10px; height: 18px; width: <%= (cota.totalVendido * 100) / cota.cotas  %>%; background-color: #FF7F50;"></div>
+								</div>
+								<div style="vertical-align: middle;  margin: 5px; margin-left: 15px;"><p> <%= cota.totalVendido %> compradas de <%= cota.cotas %> disponíveis<p></div>
 							<li>
 								<a href="https://s3.amazonaws.com/rails_s3/<%= cota.imagem %>" class="img fancybox"><%= image_tag  "https://s3.amazonaws.com/rails_s3/#{cota.imagem}", :width => '100px' %></a>
 								<h2 id="nome<%= categoria_cota.id %>_<%= cota.id %>" style="color: black"><%= cota.nome %></h2>
@@ -116,7 +121,9 @@
 										<td style="vertical-align: middle;"><p> Quero presentear com <input type="text" style="width: 30px" onfocusout="adicionarCotasCarrinho('<%= categoria_cota.id %>_<%= cota.id %>', this.value)"/> cota(s)</p></td>
 									</tr>
 								</table>
+								
 							</li>
+
 						<% end %>
 					</ul>
 					

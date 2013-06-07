@@ -9924,7 +9924,7 @@ $(document).ready(function() {
  	$(".toggle_container").hide(); 
  	$(".trigger").click(function(){
  			console.log("ponto");
-			$(this).toggleClass("active").next().slideToggle("fast");
+			//$(this).toggleClass("active").next().slideToggle("fast");
 		return false; 	
 	});
 	$(".tab_content").hide(); 
