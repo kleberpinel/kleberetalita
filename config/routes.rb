@@ -1,5 +1,9 @@
 Kleberetalita::Application.routes.draw do
   
+  get "contato/form"
+
+  get "contato/enviar"
+
   get "convidados/list"
 
   post "confirmacao_presenca/step1"
