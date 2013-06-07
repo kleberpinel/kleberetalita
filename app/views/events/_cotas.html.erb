@@ -106,8 +106,11 @@
 					<h1 class="subtitle">Cotas da <%= categoria_cota.nome %></h1>
 					<ul>
 						<% categoria_cota.cotas.each do |cota| %>
+
+							<% percentualVendido = (cota.totalVendido * 100) / cota.cotas  %>
+							<% if percentualVendido < 100 %>
 							<div style="border: 1px solid black; border-radius: 10px; margin: 5px; height: 20px; width: 250px; background-color: #3CB371; float: left" alt="">
-									<div style="border: 1px solid #FF0000; border-radius: 10px; height: 18px; width: <%= (cota.totalVendido * 100) / cota.cotas  %>%; background-color: #FF7F50;"></div>
+									<div style="border: 1px solid #FF0000; border-radius: 10px; height: 18px; width: <%= percentualVendido  %>%; background-color: #FF7F50;"></div>
 								</div>
 								<div style="vertical-align: middle;  margin: 5px; margin-left: 15px;"><p> <%= cota.totalVendido %> compradas de <%= cota.cotas %> disponíveis<p></div>
 							<li>
@@ -123,7 +126,7 @@
 								</table>
 								
 							</li>
-
+							<% end %>
 						<% end %>
 					</ul>
 					
