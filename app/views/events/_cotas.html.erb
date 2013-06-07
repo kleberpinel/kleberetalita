@@ -114,17 +114,36 @@
 								</div>
 								<div style="vertical-align: middle;  margin: 5px; margin-left: 15px;"><p> <%= cota.totalVendido %> compradas de <%= cota.cotas %> disponíveis<p></div>
 							<li>
-								<a href="https://s3.amazonaws.com/rails_s3/<%= cota.imagem %>" class="img fancybox"><%= image_tag  "https://s3.amazonaws.com/rails_s3/#{cota.imagem}", :width => '100px' %></a>
-								<h2 id="nome<%= categoria_cota.id %>_<%= cota.id %>" style="color: black"><%= cota.nome %></h2>
-								<span class="price" id="preco<%= categoria_cota.id %>_<%= cota.id %>"><%= number_to_currency(cota.valor, :separator => ",", :delimiter => ".", :unit => "R$")  %></span>
-								<p id="descricao<%= categoria_cota.id %>_<%= cota.id %>"><%= cota.descricao %></p>
 								<table>
 									<tr>
-										<td><img src="/images/icone_presente.jpg" width="25px"/></td>
-										<td style="vertical-align: middle;"><p> Quero presentear com <input type="text" style="width: 30px" onfocusout="adicionarCotasCarrinho('<%= categoria_cota.id %>_<%= cota.id %>', this.value)"/> cota(s)</p></td>
+										<td>
+											<a href="https://s3.amazonaws.com/rails_s3/<%= cota.imagem %>" class="img fancybox"><%= image_tag  "https://s3.amazonaws.com/rails_s3/#{cota.imagem}", :width => '100px' %></a>
+										</td>
+										<td style="vertical-align: top;">
+											<table>
+												<tr>
+													<td>
+														<h2 id="nome<%= categoria_cota.id %>_<%= cota.id %>" style="color: black"><%= cota.nome %></h2></td>
+													<td>
+														<span class="price" id="preco<%= categoria_cota.id %>_<%= cota.id %>"><%= number_to_currency(cota.valor, :separator => ",", :delimiter => ".", :unit => "R$")  %></span>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p id="descricao<%= categoria_cota.id %>_<%= cota.id %>"><%= cota.descricao %></p>
+													</td>
+													<td>&nbsp;</td>
+												</tr>
+											</table>
+										</td>
 									</tr>
-								</table>
-								
+									<tr style="text-align: right">
+										<td ><img src="/images/icone_presente.jpg" width="25px"/></td>
+										<td style="align: right">
+											<p> Quero presentear com <input type="text" style="width: 30px" onfocusout="adicionarCotasCarrinho('<%= categoria_cota.id %>_<%= cota.id %>', this.value)"/> cota(s)</p>
+										</td>
+									</tr>
+								</table>								
 							</li>
 							<% end %>
 						<% end %>
