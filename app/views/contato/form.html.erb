@@ -1,0 +1,38 @@
+<div class="top">
+		
+	<h2>Entre em contato conosco</h2>
+
+</div> <!-- END TOP -->
+
+<div class="clearfix"></div>
+
+<div class="page blog">
+		<h2>Contato</h2>
+		<p>Em desenvolvimento</p>
+		
+	<div class="comments">
+	<p>
+		<form id="contact-us" action="/confirmacao_presenca/step1" method="post" class="comment-form">
+			<input type="text" name="email" class="txt name" placeholder="Email de contato" />
+			<input type="text" name="assunto" class="txt name" placeholder="Assunto" />
+			<textarea cols="40" id="body" name="body" rows="20" placeholder="Mensagem"></textarea>
+			<!--<input class="button orange" name="commit" style="cursor: pointer" type="submit" value="Enviar"> -->
+		</form>	
+	</p>
+	</div>
+							
+</div> <!-- END PAGE -->
+
+<div class="sidebar blog-side">
+
+	<%= render "/categorias/show_categorias" %>
+
+	<div class="clearfix"></div>
+
+	<%= render "/comments/last_comments" %>
+
+	<%= render "/events/gift_call" %>
+	
+	<%= render "/videos/videos" %>
+
+</div> <!-- END SIDEBAR -->
