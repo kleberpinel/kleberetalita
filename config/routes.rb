@@ -2,7 +2,7 @@ Kleberetalita::Application.routes.draw do
   
   get "contato/form"
 
-  get "contato/enviar"
+  post "contato/enviar"
 
   get "convidados/list"
 
