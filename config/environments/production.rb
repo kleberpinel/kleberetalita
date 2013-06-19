@@ -6,7 +6,7 @@ Kleberetalita::Application.configure do
   config.action_mailer.perform_deliveries = false
   config.action_mailer.default :charset => "utf-8"
   config.action_mailer.smtp_settings = {
-    address: "smtp.mandrillapp.com",
+    address: "smtp.manvvvvvvvvvvvvvvvvvdrillapp.com",
     port: 587,
     domain: "kleberetalita.com",
     authentication: "plain",
