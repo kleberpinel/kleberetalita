@@ -7,13 +7,13 @@ Kleberetalita::Application.configure do
   config.action_mailer.perform_deliveries = false
   config.action_mailer.default :charset => "utf-8"
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp.mandrillapp.com",
     port: 587,
-    domain: "railscasts.com",
+    domain: "kleberetalita.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "kleberetalita@gmail.com",
-    password: "TalitaSack@#09@2"
+    user_name: "kleberpinel@gmail.com",
+    password: "Kleber@#09Deus"
   }
 
   # Settings specified here will take precedence over those in config/application.rb
