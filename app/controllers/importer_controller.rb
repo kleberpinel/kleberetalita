@@ -18,7 +18,7 @@ class ImporterController < ApplicationController
 		header = spreadsheet.row(1)
 		qtdConvidados = 0;
 		contador = 1;
-		indice = 0;
+		indice = 999;
 		(2..spreadsheet.last_row).each do |i|
 		  	row = Hash[[header, spreadsheet.row(i)].transpose]
 
@@ -52,7 +52,7 @@ class ImporterController < ApplicationController
 		  		contador = 1
 
 		  		@usuarios.last.save!
-		  		indice = indice + 1
+		  		indice = indice - 1
 		  	end
 
 
