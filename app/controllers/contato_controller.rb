@@ -5,6 +5,7 @@ class ContatoController < ApplicationController
   end
 
   def enviar
+  	NewsletterMailer.contato(params[:email], params[:assunto], params[:body]).deliver
   end
 
 end

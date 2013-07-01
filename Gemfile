@@ -8,7 +8,7 @@ gem 'httparty'
 
 gem 'aws-s3'
 gem 'will_paginate', '~> 3.0'
-gem 'roadie'
+#gem 'roadie'
 #gem 'hrpicot'
 #gem 'premailer-rails3'
 

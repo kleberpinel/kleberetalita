@@ -7,8 +7,15 @@ class NewsletterMailer < ActionMailer::Base
   #   en.newsletter_mailer.weekly.subject
   #
   def weekly(email, assunto)
-    mail.attachments['Vestidos_-_Madrinhas_-_Cor.pdf'] = File.read('/Users/kbernardo/Documents/Casamento/Casamento/Documentos/Vestidos_-_Madrinhas_-_Cor.pdf')
+    #mail.attachments['Vestidos_-_Madrinhas_-_Cor.pdf'] = File.read('/Users/kbernardo/Documents/Casamento/Casamento/Documentos/Vestidos_-_Madrinhas_-_Cor.pdf')
     mail to: email, subject: assunto, :bcc => ["Kleber Pinel <kleberpinel@gmail.com>", "Talita Sack - LW <talita.sack@l-w.com>", "Talita Sack - Hotmail <talita_sack@hotmail.com>"]
   end
 
+  def contato(email, assunto, mensagem)
+    @email = email
+    @assunto = assunto
+    @mensagem = mensagem
+
+    mail to: "kleberpinel@gmail.com", subject: "Contato Site - [#{assunto}]"
+  end
 end
