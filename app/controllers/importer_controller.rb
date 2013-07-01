@@ -12,7 +12,7 @@ class ImporterController < ApplicationController
 
 	def importar
 		@usuarios = []
-		file_path = Rails.root.to_s + "/config/importacao/controle_casamento.csv";
+		file_path = Rails.root.to_s + "/config/importacao/controle_casamento_cerimonia.csv";
 
 		spreadsheet = Roo::Csv.new(file_path, nil, :ignore)
 		header = spreadsheet.row(1)
@@ -35,7 +35,7 @@ class ImporterController < ApplicationController
 		  		usuario.email = "exemplo"+indice.to_s+"@kleberetalita.com"
 		  		usuario.origem = "importacao" 
 		  		usuario.password = "casamentokleberetalita"
-		  		usuario.disponivel_festa = true 
+		  		usuario.disponivel_festa = false 
 		  		usuario.disponivel_cerimonia = true
 		  		
 		  		qtdConvidados = row["qtd_por_convite_familia"] == nil ? 0 : row["qtd_por_convite_familia"].to_i
