@@ -1,4 +1,8 @@
 class ImporterController < ApplicationController
+
+	@telefone_default = "(11) 999999999"
+	@endereco_default = "Rua De Exemplo, numero 99, apto 99 blc 9, CEP: 99999-999"
+
 	def remover
 		@usuarios = User.where( :origem => "importacao")
 		@usuarios.each do |usuario|
@@ -28,8 +32,8 @@ class ImporterController < ApplicationController
 		  		usuario.de_onde = row["De_onde"]
 		  		usuario.nome_convite = row["Nome_Convite"]
 		  		usuario.convidados << Convidado.new(:nome => row["Nome"])
-		  		usuario.numero_telefone = row["Telefone"] == nil ? "(11) 999999999" : row["Telefone"]
-		  		usuario.endereco = row["endereco"] == nil ? "Rua De Exemplo, numero 99, apto 99 blc 9, CEP: 99999-999" : row["endereco"]
+		  		usuario.numero_telefone = row["Telefone"] == nil ? @telefone_default : row["Telefone"]
+		  		usuario.endereco = row["endereco"] == nil ? @endereco_default : row["endereco"]
 		  		usuario.nivel_certeza = row["nivel_certeza"] 
 
 		  		usuario.email = "exemplo"+indice.to_s+"@kleberetalita.com"
@@ -54,12 +58,42 @@ class ImporterController < ApplicationController
 		  		@usuarios.last.save!
 		  		indice = indice - 1
 		  	end
-
-
-			#product = find_by_id(row["id"]) || new
-			#product.attributes = row.to_hash.slice(*accessible_attributes)
-			#product.save!
+		  	
 		end
+		render :json => @usuarios
+  	end
+
+  	def editar
+		@usuarios = []
+		file_path = [Rails.root.to_s + "/config/importacao/controle_casamento.csv",
+						Rails.root.to_s + "/config/importacao/controle_casamento_cerimonia.csv"];
+
+		file_path.each do |file|
+			spreadsheet = Roo::Csv.new(file, nil, :ignore)
+			header = spreadsheet.row(1)
+
+			(2..spreadsheet.last_row).each do |i|
+			  	row = Hash[[header, spreadsheet.row(i)].transpose]
+
+			  	if row["Nome_Convite"] != nil
+				  	@usuario = User.find(:first, :conditions => [ "nome_convite = :u", { :u => row["Nome_Convite"].strip }])
+
+				  	if @usuario != nil
+
+				  		if @usuario.numero_telefone == @telefone_default
+						  	@usuario.numero_telefone = row["Telefone"] == nil ? @telefone_default : row["Telefone"]
+						end
+						if @usuario.endereco == @endereco_default
+						  	@usuario.numero_telefone = row["endereco"] == nil  ? @endereco_default : row["endereco"]
+						end
+
+					  	@usuario.save!
+					  	@usuarios << @usuario
+				  	end
+				end
+			end
+		end
+		
 		render :json => @usuarios
   	end
 end

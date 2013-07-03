@@ -11,7 +11,8 @@ Kleberetalita::Application.routes.draw do
   put "confirmacao_presenca/sucesso"
 
   get "importer/importar"
-  get "importer/remover" 
+  get "importer/remover"
+  get "importer/editar" 
 
   resources :cotas
 

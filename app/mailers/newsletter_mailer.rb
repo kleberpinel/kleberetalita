@@ -1,5 +1,5 @@
 class NewsletterMailer < ActionMailer::Base
-  default from: "kleberetalita@gmail.com"
+  default from: "kleberpinel@gmail.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:

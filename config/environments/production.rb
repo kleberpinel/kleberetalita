@@ -1,19 +1,5 @@
 Kleberetalita::Application.configure do
 
-  config.action_mailer.delivery_method = :smtp
-
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.perform_deliveries = false
-  config.action_mailer.default :charset => "utf-8"
-  config.action_mailer.smtp_settings = {
-    address: "smtp.manvvvvvvvvvvvvvvvvvdrillapp.com",
-    port: 587,
-    domain: "kleberetalita.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: "kleberpinel@gmail.com",
-    password: "Kleber@#09Deus"
-  }
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -72,4 +58,15 @@ Kleberetalita::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 587, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true, # detects and uses STARTTLS
+    :user_name => "app3265569@heroku.com",
+    :password  => "nbVQ7kQdND9q9_-vEW8lYg", # SMTP password is any valid API key
+    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :domain => 'kleberetalita.com', # your domain to identify your server when connecting
+  }
+  ActionMailer::Base.delivery_method = :smtp
 end
