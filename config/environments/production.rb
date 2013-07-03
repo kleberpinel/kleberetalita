@@ -65,7 +65,7 @@ Kleberetalita::Application.configure do
     :enable_starttls_auto => true, # detects and uses STARTTLS
     :user_name => "app3265569@heroku.com",
     :password  => "nbVQ7kQdND9q9_-vEW8lYg", # SMTP password is any valid API key
-    :authentication => 'login', # Mandrill supports 'plain' or 'login'
+    :authentication => 'plain', # Mandrill supports 'plain' or 'login'
     :domain => 'kleberetalita.com', # your domain to identify your server when connecting
   }
   ActionMailer::Base.delivery_method = :smtp
