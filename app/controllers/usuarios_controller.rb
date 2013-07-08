@@ -7,11 +7,11 @@ class UsuariosController < ApplicationController
   # GET /users.json
   def index
     logger.debug "index"
-    @users = User.all
+    @users = User.find(:all, :order => "nome ASC")
     @user = User.new(params[:user])
 
     if @user.disponivel_festa
-      @users = User.where("disponivel_cerimonia = ? AND disponivel_festa = ? ", true, true)
+      @users = User.where("disponivel_cerimonia = ? OR disponivel_festa = ? ", true, true).order("disponivel_festa DESC").order("nome ASC")
     end
 
     respond_to do |format|

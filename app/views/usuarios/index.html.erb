@@ -14,22 +14,63 @@
   <br/>
 
   <table class="table table-bordered">
-    <tr>
-      <th>Nome <br><%= @users.count %> convites</th>
-      <th>Email</th>
-      <th style="text-align: center">Convidado <br/>para Festa</th>
-      <th style="text-align: center">Convidado <br/>para Cerimonia</th>
-      <th></th>
-      <th></th>
-      <th></th>
+    <tr style="text-align: center">
+      <td>Nome</td>
+      <td>Telefone</td>
+      <td style="text-align: center" colspan="2">Disponivel<br> (pessoas)</td>
+      <td style="text-align: center" colspan="2">Confirmado<br> (pessoas)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr style="text-align: center">
+      <td></td>
+      <td></td>
+      <td style="text-align: center; width: 50px">Cerimonia</td>
+      <td style="text-align: center; width: 50px">Festa</td>
+      <td style="text-align: center; width: 50px">Cerimonia</td>
+      <td style="text-align: center; width: 50px">Festa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr style="text-align: center">
+      <td><%= @users.count %> convites</td>
+      <td></td>
+      <td style="text-align: center;">
+        <% 
+          qtd_convidados = 0
+          User.where("disponivel_cerimonia = ? ", true).each do |user| 
+            qtd_convidados = qtd_convidados + user.convidados.count;
+          end 
+        %>
+        <%= qtd_convidados %>
+      </td>
+     <td style="text-align: center;">
+        <% 
+          qtd_convidados = 0
+          User.where("disponivel_festa = ? ", true).each do |user| 
+            qtd_convidados = qtd_convidados + user.convidados.count;
+          end 
+        %>
+        <%= qtd_convidados %>
+      </td>
+      <td style="text-align: center;"><%= Convidado.where("confimacao_presenca_cerimonia = ? ", true).count %></td>
+      <td style="text-align: center;"><%= Convidado.where("confimacao_presenca_festa = ? ", true).count %></td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
 
   <% @users.each do |user| %>
     <tr>
       <td><%= user.nome %></td>
-      <td><%= user.email %></td>
+      <td><%= user.numero_telefone %></td>
       <td style="text-align: center"><%if user.disponivel_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
       <td style="text-align: center"><%if user.disponivel_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
+      <td style="text-align: center;"><%= user.convidados.where("confimacao_presenca_cerimonia = ? ", true).count %></td>
+      <td style="text-align: center;"><%= user.convidados.where("confimacao_presenca_festa = ? ", true).count %></td>
       <td><%= link_to 'Visualizar', usuario_path(user) %></td>
       <td><%= link_to 'Editar', edit_usuario_path(user) %></td>
       <td><%= link_to 'Excluir', usuario_path(user), :confirm => 'Tem certeza?', :method => :delete %></td>

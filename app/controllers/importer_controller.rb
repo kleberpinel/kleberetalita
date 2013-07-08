@@ -1,7 +1,6 @@
 class ImporterController < ApplicationController
 
-	@telefone_default = "(11) 999999999"
-	@endereco_default = "Rua De Exemplo, numero 99, apto 99 blc 9, CEP: 99999-999"
+	
 
 	def remover
 		@usuarios = User.where( :origem => "importacao")
@@ -15,6 +14,10 @@ class ImporterController < ApplicationController
 	end
 
 	def importar
+
+		@telefone_default = "(11) 999999999"
+		@endereco_default = "Rua De Exemplo, numero 99, apto 99 blc 9, CEP: 99999-999"
+
 		@usuarios = []
 		file_path = Rails.root.to_s + "/config/importacao/controle_casamento_cerimonia.csv";
 
@@ -64,6 +67,9 @@ class ImporterController < ApplicationController
   	end
 
   	def editar
+  		@telefone_default = "(11) 999999999"
+		@endereco_default = "Rua De Exemplo, numero 99, apto 99 blc 9, CEP: 99999-999"
+
 		@usuarios = []
 		file_path = [Rails.root.to_s + "/config/importacao/controle_casamento.csv",
 						Rails.root.to_s + "/config/importacao/controle_casamento_cerimonia.csv"];
@@ -79,12 +85,11 @@ class ImporterController < ApplicationController
 				  	@usuario = User.find(:first, :conditions => [ "nome_convite = :u", { :u => row["Nome_Convite"].strip }])
 
 				  	if @usuario != nil
-
-				  		if @usuario.numero_telefone == @telefone_default
+				  		if @usuario.numero_telefone.to_s == @endereco_default.to_s
 						  	@usuario.numero_telefone = row["Telefone"] == nil ? @telefone_default : row["Telefone"]
 						end
 						if @usuario.endereco == @endereco_default
-						  	@usuario.numero_telefone = row["endereco"] == nil  ? @endereco_default : row["endereco"]
+						  	@usuario.endereco = row["endereco"] == nil  ? @endereco_default : row["endereco"]
 						end
 
 					  	@usuario.save!
