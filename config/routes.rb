@@ -39,7 +39,7 @@ Kleberetalita::Application.routes.draw do
   resources :posts do
     resources :comments
   end
-  
+
   match "/blog/:id/view",             :to => "blog#view",     :as => "view_blog",     :via => :get
   match "/blog/:id_autor/list",       :to => "blog#list",     :as => "list_blog",     :via => :get
   match "/blog/:id/list/category",    :to => "blog#category", :as => "category_blog", :via => :get

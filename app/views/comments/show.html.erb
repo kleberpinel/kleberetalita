@@ -1,0 +1,30 @@
+<div style="padding-left: 30px">
+	<h1>Exibindo Comentario</h1>
+	
+	<script type="text/javascript">
+		jQuery(function($){
+			url_face = 'http://graph.facebook.com/<%= @comment.commenter %>/picture';
+
+			$.ajax({
+			  url: url_face,
+			  success: function(data) {
+			    $("#imagem_face_").attr("src", url_face);
+			  }
+			});
+		});
+	</script>
+	<a href="#" class="avatar"><%= image_tag "/images/cao-sorridente.jpg", :id => "imagem_face_", :size => "70x70"%></a>
+	<p>
+	  <b>Commenter:</b>
+	  <%= @comment.commenter %>
+	</p>
+
+	<p>
+	  <b>Comentario:</b>
+	  <%= @comment.body %>
+	</p>
+
+
+	<%= link_to 'Editar', @post %> |
+	<%= link_to 'Voltar', posts_path %>
+</div>

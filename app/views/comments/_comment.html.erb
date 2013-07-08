@@ -9,7 +9,8 @@
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.post, comment],
+	<%= link_to "Edit Post Comment", edit_post_comment_path(@post, comment) %>
+  	<%= link_to 'Destroy Comment', [comment.post, comment],
                :confirm => 'Are you sure?',
                :method => :delete %>
 </p>
