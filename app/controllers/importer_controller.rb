@@ -25,7 +25,7 @@ class ImporterController < ApplicationController
 		header = spreadsheet.row(1)
 		qtdConvidados = 0;
 		contador = 1;
-		indice = 999;
+		indice = 1;
 		(2..spreadsheet.last_row).each do |i|
 		  	row = Hash[[header, spreadsheet.row(i)].transpose]
 
@@ -74,6 +74,8 @@ class ImporterController < ApplicationController
 		file_path = [Rails.root.to_s + "/config/importacao/controle_casamento.csv",
 						Rails.root.to_s + "/config/importacao/controle_casamento_cerimonia.csv"];
 
+		indice = 9969;
+
 		file_path.each do |file|
 			spreadsheet = Roo::Csv.new(file, nil, :ignore)
 			header = spreadsheet.row(1)
@@ -94,7 +96,30 @@ class ImporterController < ApplicationController
 
 					  	@usuario.save!
 					  	@usuarios << @usuario
-				  	end
+				  	else 
+				  		usuario = User.new
+				  		usuario.nome = row["Nome"]
+				  		usuario.de_onde = row["De_onde"]
+				  		usuario.nome_convite = row["Nome_Convite"]
+				  		usuario.convidados << Convidado.new(:nome => row["Nome"])
+				  		usuario.numero_telefone = row["Telefone"] == nil ? @telefone_default : row["Telefone"]
+				  		usuario.endereco = row["endereco"] == nil ? @endereco_default : row["endereco"]
+				  		usuario.nivel_certeza = row["nivel_certeza"] 
+
+				  		usuario.email = "exemplo"+indice.to_s+"@kleberetalita.com"
+				  		usuario.origem = "importacao" 
+				  		usuario.password = "casamentokleberetalita"
+				  		if file.to_s == Rails.root.to_s + "/config/importacao/controle_casamento.csv"
+				  			usuario.disponivel_festa = true 
+				  			usuario.disponivel_cerimonia = true
+				  		else
+				  			usuario.disponivel_festa = false 
+				  			usuario.disponivel_cerimonia = true
+				  		end
+				  		usuario.save!
+
+				  		indice = indice - 1
+				  	end 
 				end
 			end
 		end

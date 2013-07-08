@@ -34,11 +34,11 @@ class UsuariosController < ApplicationController
   # GET /users/new
   # GET /users/new.json
   def new
-    @user = User.new
+    @usuario = User.new
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render :json => @user }
+      format.json { render :json => @usuario }
     end
   end
 

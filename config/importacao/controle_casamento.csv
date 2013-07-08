@@ -1,378 +1,393 @@
-nivel_certeza,Nome,De_onde,Nome_Convite,,qtd_por_convite_familia,quantidade_convites_individual,,Telefone,Endereco
-Certeza,Vo Salovi,Vô Salovi e Vó Cenyra,Pr. Salovi e Sra. Cenyra,-,2,2,,,
-Certeza,Vó Cenyra,Vô Salovi e Vó Cenyra,,,,,,,
-Certeza,Tia Avó Cida,Maria Aparecida Giordani,Sra. Maria Aparecida Giordani,-,1,1,,,
-Certeza,Nelia Pinel,Gil e Família,Sr. Gil e Família,-,4,4,,,
-Certeza,Gil Oliveira,Gil e Família,,,,,,,
-Certeza,Gil Jr,Gil e Família,,,,,,,
-Certeza,Paula Zuquin,Gil e Família,,,,,,,
-Certeza,Leticia,Bruno e Família,Sr. Bruno e Família,-,2,2,,,
-Certeza,Bruno Paulo,Bruno e Família,,,,,,,
-Certeza,Tio Junior,Salovi Jr. e Família,Pr. Salovi Jr. e Família,-,3,3,,,
-Certeza,Tia Emilce,Salovi Jr. e Família,,,,,,,
-Certeza,Cintia,Salovi Jr. e Família,,,,,,,
-Certeza,Cristiano,Cristiano e Joycelu,Sr. Cristiano e Sra. Joycelu,-,2,2,,,
-Certeza,Joice Mota,Cristiano e Joycelu,,,,,,,
-Certeza,Tia Pri,Lucas e Família,Sr. Lucas e Família,-,4,4,,,
-Certeza,Tio Lucas,Lucas e Família,,,,,,,
-Certeza,Henrique,Lucas e Família,,,,,,,
-Certeza,Leonardo,Lucas e Família,,,,,,,
-Certeza,Tio Nestor,Nestor e Família,Sr. Nestor e Família,-,4,4,,,
-Certeza,Tia Telma,Nestor e Família,,,,,,,
-Certeza,Keylla,Nestor e Família,,,,,,,
-Certeza,George,Nestor e Família,,,,,,,
-Certeza,José Luiz,José Luiz e Karyna,Sr. José Luiz e Sra. Karyna,-,2,2,,,
-Certeza,Karyna,José Luiz e Karyna,,,,,,,
-Certeza,Tio Claudio,Claudio e Família,Sr. Claudio e Família,-,5,5,,,
-Certeza,Tia Livia,Claudio e Família,,,,,,,
-Certeza,Claudio Jr,Claudio e Família,,,,,,,
-Certeza,Silmara,Claudio e Família,,,,,,,
-Certeza,Aninha,Claudio e Família,,,,,,,
-Certeza,Tia Zinia,Zinia e Família,Sra. Zinia e Família,-,4,4,,,
-Certeza,Tiago Macedo,Zinia e Família,,,,,,,
-Duvida,Marcio,Zinia e Família,,,,,,,
-Duvida,Carol Cortinovis,Zinia e Família,,,,,,,
-Duvida,Eudes,Eudes e Família,Sr. Eudes e Família,-,3,2,,,
-Duvida,Patricia,Eudes e Família,,,,,,,
-Duvida,Davi,Eudes e Família,,,,,,,
-Certeza,Tia Lucia,Lúcia e Família,Sra. Lúcia e Família,-,6,6,,(13) 97122980,
-Certeza,Ricardo,Lúcia e Família,,,,,,,
-Certeza,Danillo,Lúcia e Família,,,,,,,
-Certeza,Diego,Lúcia e Família,,,,,,,
-Certeza,Tatiane Batistela,Lúcia e Família,,,,,,,
-Certeza,Beatriz,Lúcia e Família,,,,,,,
-Duvida,Tio Wilson,Wilson e Família,Sr. Wilson e Família,-,3,3,,(13) 78122808,Rua General Osorio 20 apto 31A Praia Gande - SP cep 11700-730
-Duvida,Viviane,Wilson e Família,,,,,,,
-Duvida,Yan,Wilson e Família,,,,,,,
-Duvida,Tia Junia,Junia e Família,Sra. Junia e Família,-,5,5,,,
-Duvida,Soraia,Junia e Família,,,,,,,
-Duvida,Marido Soraia,Junia e Família,,,,,,,
-Duvida,Jr Bill,Junia e Família,,,,,,,
-Duvida,Namorada Bill,Junia e Família,,,,,,,
-Certeza,Tio Jorgecir,Jorgecir e Família,Sr. Jorgecir e Família,-,3,3,,,
-Certeza,Tia Alzenir,Jorgecir e Família,,,,,,,
-Certeza,Jefferson,Jorgecir e Família,,,,,,,
-Certeza,Leandro,Leandro e Janielle,Sr. Leandro e Janielle,-,2,2,,,
-Certeza,Janielle,Leandro e Janielle,,,,,,,
-Certeza,Tio Joacir,Joacir e Família,Sr. Joacir e Família,-,2,2,,,
-Certeza,Tia Lu,Joacir e Família,,,,,,,
-Certeza,Bruna,Fernando e Família,Sr. Fernando e Família,-,3,2,,,
-Certeza,Fernando,Fernando e Família,,,,,,,
-Certeza,Filho Bruna ,Fernando e Família,,,,,,,
-Certeza,Camila,Anderson e Família,Sr. Anderson e Família,-,3,2,,,
-Certeza,Anderson,Anderson e Família,,,,,,,
-Certeza,Filho Camila,Anderson e Família,,,,,,,
-Certeza,Juliana,Juliana,Sra. Juliana A.,-,2,1,,,
-Certeza,Natã,Juliana,,,,,,,
-Certeza,Tia Cenilda,Cenilda,Sra. Cenilda,-,1,1,,,
-Certeza,Ciro,Ciro e Giselle,Sr. Ciro e Sra. Giselle,-,2,2,,,
-Certeza,Gisele,Ciro e Giselle,,,,,,,
-Certeza,Cassio ,Cassio e Aline,Sr. Cassio e Sra. Aline,-,2,2,,,
-Certeza,Aline,Cassio e Aline,,,,,,,
-Certeza,Tia Cida,Adeilton e Família,Sr. Adeilton e Família,-,4,4,,(13) 34222724; (11) 84483091,"Rua José Ruiz merino,  25 -  Sion itanhaém,  SP cep 11470-000"
-Certeza,Tio Adeilton,Adeilton e Família,,,,,,,
-Certeza,Alex,Adeilton e Família,,,,,,,
-Certeza,Junior,Adeilton e Família,,,,,,,
-Certeza,Alan,Alan e Família,Sr. Alan e Família,-,3,2,,(13) 97273391,"Rua José Ruiz merino,  25 -  Sion itanhaém,  SP cep 11470-000"
-Certeza,Mulher Alan,Alan e Família,,,,,,,
-Certeza,Asaph,Alan e Família,,,,,,,
-Duvida,Nicolas,Nicolas e Família,Sr. Nicolas e Família,-,3,3,,(11) 996970254,Rua xv de novembro 893 - Centro Salesopolis sp Cep 08970_000
-Duvida,Zaine,Nicolas e Família,,,,,,,
-Duvida,Ysadora,Nicolas e Família,,,,,,,
-Duvida,Cassio,Cassio e Família,Sr. Cassio e Família,-,4,4,,,
-Duvida,Danusa Quadra,Cassio e Família,,,,,,,
-Duvida,Samir,Cassio e Família,,,,,,,
-Duvida,Karyme,Cassio e Família,,,,,,,
-Duvida,Tia Dalva,Fumio Kikugawa e Família,Sr. Fumio Kikugawa e Família,-,5,5,,(27) 33274172,Rua Lavosier 43. Parque residencial laranjeiras 29165-200 Serra ES
-Duvida,Tio Fumil,Fumio Kikugawa e Família,,,,,,,
-Duvida,Beko,Fumio Kikugawa e Família,,,,,,,
-Duvida,Emanuel Kikugawa,Fumio Kikugawa e Família,,,,,,,
-Duvida,Paloma Kikugawa,Fumio Kikugawa e Família,,,,,,,
-Duvida,Tia Ide,Donald Cesar e Ide Giordani,Sr. Donald Cesar e Sra.Ide Giordani,-,2,2,,,
-Duvida,Donald Cesar,Donald Cesar e Ide Giordani,,,,,,,
-Duvida,Tia Helia,Helia Giordani Hespanhol,Sra. Helia Giordani Hespanhol,-,1,1,,,
-Duvida,Joselia,Noélio e Família,Sr. Noélio e Família,-,2,2,,,
-Duvida,Noelio,Noélio e Família,,,,,,,
-Duvida,Juliana Giordani,Sr. Junior e Família,Sr. Junior e Sra. Juliana,-,2,2,,,
-Duvida,Junior,Sr. Junior e Família,,,,,,,
-Duvida,Ana Carolina Giordani,Ana Carolina e Família,Sra.Ana Carolina e Família,-,2,2,,(21) 82126920,"Rua Saboia Lima, 11/1004 - Tijuca- cep 20521-250"
-Duvida,Marido Ana Carolina Giordani,Ana Carolina e Família,,,,,,,
-Duvida,Gisele,Gisele e Família,Sra. Gisele e Família,-,2,2,,,
-Duvida,Daniela,Gisele e Família,,,,,,,
-Duvida,Fabiana,Marcelo G. e Fabiana,Sr. Marcelo G. e Sra. Fabiana,-,2,2,,,
-Duvida,Marcelo,Marcelo G. e Fabiana,,,,,,,
-Certeza,Pai,Airton e Família,Sr. Airton e Família,-,3,3,,,
-Certeza,Mae,Airton e Família,,,,,,,
-Certeza,Eliabe,Airton e Família,,,,,,,
-Certeza,Vó Cacá ,Clair S.e Silvio,Sra. Clair e Sr. Silvio,-,2,2,,,
-Certeza,Silvinho,Clair S.e Silvio,,,,,,,
-Certeza,Edson,Edson B. e Família,Sr. Edson B. e Família,-,3,3,,,
-Certeza,Meri,Edson B. e Família,,,,,,,
-Certeza,Guid,Edson B. e Família,,,,,,,
-Certeza,Igor ,Igor B. e Ludmila ,Sr. Igor B. e Sra. Ludmila ,-,2,2,,,
-Certeza,Ludmila ,Igor B. e Ludmila ,,,,,,,
-Certeza,Keila,Samuel C. e Família,Sr. Samuel C. e Família,-,3,3,,,
-Certeza,Samuel,Samuel C. e Família,,,,,,,
-Certeza,Maira ,Samuel C. e Família,,,,,,,
-Certeza,Mateus,Matheus e Cíntia,Sr. Matheus e Sra. Cíntia,-,2,2,,,
-Certeza,Cinthia,Matheus e Cíntia,,,,,,,
-Certeza,Táta ( Clélia) ,Clélia,Sra. Clélia,-,1,1,,,
-Certeza,Késia ,Quésia e Filhas,Sra. Quésia e Filhas,-,3,3,,,
-Certeza,Nicole,Quésia e Filhas,,,,,,,
-Certeza,Barbará ,Quésia e Filhas,,,,,,,
-Certeza,Valéria ( e a Rebeca) ,Robson e Família,Sr. Robson e Família,-,2,2,,,
-Certeza,Robson ,Robson e Família,,,,,,,
-Certeza,Ivanir ,Ivanir e  M. Madalena,Sra. Ivanir e Sra. M. Madalena,-,2,2,,,
-Certeza,Maria Madela (mãe do Edson),Ivanir e  M. Madalena,,,,,,,
-Certeza,Amador ,Amador B. e Família,Sr. Amador B. e Família,-,3,3,,,
-Certeza,Monica,Amador B. e Família,,,,,,,
-Certeza,Marcela,Amador B. e Família,,,,,,,
-Duvida,Dodinha ,Amador Neto e Natalia,Sr. Amador Neto e Sra. Natalia,-,2,2,,,
-Duvida,Natália,Amador Neto e Natalia,,,,,,,
-Certeza,Nena ,Luis Carlos e Nena,Sr. Luis Carlos e Sra. Nena,-,2,2,,,
-Certeza,Luis Carlos,Luis Carlos e Nena,,,,,,,
-Certeza,Andressa,Jose Neto e Andressa,Sr. Jose Neto e Sra. Andressa,-,2,2,,,
-Certeza,Neto,Jose Neto e Andressa,,,,,,,
-Certeza,André,Andre e Zilda,Sr. Andre e Sra. Zilda,-,2,2,,,
-Certeza,Zilda,Andre e Zilda,,,,,,,
-Certeza,Nena ( avó),Nena,Sra. Nena,-,1,1,,,
-Certeza,Vlaudemir ,Vlaudemir L. e Família,Sr. Vlaudemir e Família,-,4,4,,,
-Certeza,Dora,Vlaudemir L. e Família,,,,,,,
-Certeza,Vanessa,Vlaudemir L. e Família,,,,,,,
-Certeza,Luis ( Namorado da Van),Vlaudemir L. e Família,,,,,,,
-Certeza,Luiz Fernando,Luiz Fernando B. e Glaucia,Sr. Luiz Fernando e Sra. Glaucia,-,2,2,,,
-Certeza,Glaucia ,Luiz Fernando B. e Glaucia,,,,,,,
-Certeza,Elaine Mendes Lira,Wilson e Elaine,Sr.Uilson e Sra. Elaine,,2,2,,,
-Certeza,Wilson,Wilson e Elaine,,,,,,,
-Certeza,Levi,Luiz e Família,Sr. Luiz e Família,-,4,4,,,
-Certeza,Larissa,Luiz e Família,,,,,,,Entregar para a Vó dela.
-Certeza,Luis ,Luiz e Família,,,,,,,
-Certeza,Cleunice,Luiz e Família,,,,,,,
-Certeza,Vinny ,Marcos e Família,Sr. Marcos e Família,-,6,6,,,
-Certeza,Namorada do Vinny,Marcos e Família,,,,,,,
-Certeza,Caio ,Marcos e Família,,,,,,,
-Certeza,Namorada do Caio ,Marcos e Família,,,,,,,
-Certeza,Vanderleia,Marcos e Família,,,,,,,
-Certeza,Marcos,Marcos e Família,,,,,,,
-Certeza,André , André Sandrim, André Sandrim,-,3,3,,,
-Certeza,Noiva do André, André Sandrim,,,,,,,
-Duvida,Filha da Noiva, André Sandrim,,,,,,,
-Certeza,Alexandre,Alexandre S. e Alessandra,Sr. Alexandre S. e Sra. Alessandra,-,2,2,,,
-Certeza,Dudinha ,Alexandre S. e Alessandra,,,,,,,
-Certeza,Marcia ,Valdecir e  Márcia,Sr. Valdecir e Sr. Márcia,-,2,2,,,
-Certeza,Valdecir,Valdecir e  Márcia,,,,,,,
-Certeza,Erik,Érik S. e Natália,Sr. Érik S. e Sra. Natália,-,2,2,,,
-Certeza,Nathalia ( namorada do Erik),Érik S. e Natália,,,,,,,
-Certeza,Alessandra ,Alessandra S.,Srta. Alessandra S.,-,1,1,,,
-Duvida,Andreia ,Andreia Spazzapan,Sra.Andreia S.,-,3,3,,,
-Duvida,Caio (filho da Andreia),Andreia Spazzapan,,,,,,,
-Duvida,Namorada do Caio ,Andreia Spazzapan,,,,,,,
-Certeza,Tia Terezinha,Terezinha Spazzapan,Sra.Terezinha S.,-,1,1,,,
-Certeza,Vó Vige,Edwirges,Sra. Edwirges,-,1,1,,,
-Certeza,Tio João,Joao e Nira,Sr. Joao e Sra. Nira,-,2,2,,,
-Certeza,Namorada do Tio,Joao e Nira,,,,,,,
-Certeza,Gabriel M.,Gabriel M.,Gabriel M.,-,2,2,,,
-Duvida,Namorada Do Gabriwl,Gabriel M.,,,,,,,
-Duvida,Tia Maria,Tias Maria e Dora,Sra. Maria e Sra. Dora,-,2,2,,,
-Duvida,Tia Dora,Tias Maria e Dora,,,,,,,
-Certeza,Vanderlei,Vanderlei e Cleide,Sr. Vanderlei e Sra. Cleide,-,2,2,,,
-Certeza,Cleide,Vanderlei e Cleide,,,,,,,
-Duvida,Mafalda,Mafalda,Mafalda,-,1,1,,,
-Certeza,Raquel,Leandro e Raquel,Sr. Leandro e Sra. Raquel,-,2,2,,,
-Certeza,Leandro,Leandro e Raquel,,,,,,,
-Duvida,Lygia,Paulo e Ligia,Sr. Paulo e Sra. Ligia,-,2,2,,,
-Duvida,Paulo,Paulo e Ligia,,,,,,,
-Duvida,Erminio,Erminio e Família,Sr. Erminio e Família,-,3,3,,,
-Duvida,Aldaisa,Erminio e Família,,,,,,,
-Duvida,Rafael,Erminio e Família,,,,,,,
-Duvida,Silvestre,Silvestre e Família,Sr. Silvestre e Família,-,4,4,,(13) 3092925; (13) 91519402,rua Michel Alca n°771 -  bairro ocian - cidade praia grande - cep:1170-610
-Duvida,Cleunira,Silvestre e Família,,,,,,,
-Duvida,Roberta,Silvestre e Família,,,,,,,
-Duvida,Noivo,Silvestre e Família,,,,,,,
-Duvida,Thiago,Tiago V. e  Luana,Sr. Tiago V. e Família,-,2,2,,(13) 91765852;,enviar para o mesmo da Roberta
-Duvida,Luana,Tiago V. e  Luana,,,,,,,
-Duvida,Pricilla,João V e Família,Sr. João V e Família,-,3,2,,(13) 34724586; (13) 91576776,enviar para o mesmo da Roberta
-Duvida,João Vianna,João V e Família,,,,,,,
-Duvida,Jão Pedro ( bebe),João V e Família,,,,,,,
-Duvida,Grazieli Mendes,Reinaldo e Família,Sr. Reinaldo e Familia,,3,2,,,
-Duvida,Reinaldo,Reinaldo e Família,,,,,,,
-Duvida,Isabela Manzolli,,,,,,,,
-Certeza,Abel,Abel,Sr. Abel,-,1,1,,,
-Duvida,Osvaldo,Osvaldo e Família,Sr. Osvaldo e Família,-,4,4,,,
-Duvida,Rafael ,Osvaldo e Família,,,,,,,
-Duvida,Diogo,Osvaldo e Família,,,,,,,
-Duvida,Conceição,Osvaldo e Família,,,,,,,
-Certeza,Mariquinha,Tia Mariquinha,Sra. Mariquinha,-,1,1,,,
-Certeza,Margareth,Milton e Família,Sr. Milton e Família,-,4,4,,,
-Certeza,Milton,Milton e Família,,,,,,,
-Certeza,Helon,Milton e Família,,,,,,,
-Certeza,Namorada Helon,Milton e Família,,,,,,,
-Certeza,Rodrigo,Rodrigo e Luciana,Sr. Rodrigo e Sra. Luciana,-,2,2,,,
-Certeza,Luciana,Rodrigo e Luciana,,,,,,,
-Certeza,Ricardo Ubiratan,Ricardo e Família,Sr. Ricardo e Família,-,5,5,,,
-Certeza,Solange,Ricardo e Família,,,,,,,
-Certeza,Gabriel ,Ricardo e Família,,,,,,,
-Certeza,Guilia,Ricardo e Família,,,,,,,
-Certeza,Clarimur,Ricardo e Família,,,,,,,
-Certeza,Rute Zocchio,Joel Z. e Família,Sr. Joel Z. e Família,-,4,4,,,
-Certeza,Zoel Zocchio,Joel Z. e Família,,,,,,,
-Certeza,Daniel Zocchio,Joel Z. e Família,,,,,,,
-Certeza,Davi Zocchio,Joel Z. e Família,,,,,,,
-Certeza,Aires,Aires P. e Família,Sr. Aires P. e Família,-,3,3,,,
-Certeza,Debora Porto ,Aires P. e Família,,,,,,,
-Certeza,Larissa Porto,Aires P. e Família,,,,,,,
-Certeza,Cacilda,Dugair e Família,Sr. Dugair e Família,-,4,4,,,
-Certeza,Dugair,Dugair e Família,,,,,,,
-Certeza,Raul,Dugair e Família,,,,,,,
-Duvida,Gabriel ,Dugair e Família,,,,,,,
-Certeza,Lucas Pereira,Valmir e Família,Sr. Valmir e Família,-,3,3,,,
-Certeza,Marcia Pereira,Valmir e Família,,,,,,,
-Certeza,Valmir Pereira,Valmir e Família,,,,,,,
-Certeza,Diego Costa,Diego e Thaís,Sr. Diego e Sra. Thaís,-,2,2,,,
-Certeza,Thais Rocha,Diego e Thaís,,,,,,,
-Certeza,Joel Pereira,Joel e Natalia,Sr. Joel e Sra. Natalia,-,2,2,,,
-Certeza,Natalia Pereira,Joel e Natalia,,,,,,,
-Certeza,Elieser,Elieser e Família,Sr. Elieser e Família,-,4,4,,,
-Certeza,Rafael,Elieser e Família,,,,,,,
-Certeza,Mãe do Ricardo,Elieser e Família,,,,,,,
-Certeza,Ricardo,Elieser e Família,,,,,,,
-Certeza,Jó,Josenildo e Gilene,Josenildo e Gilene,-,2,2,,,
-Certeza,Ninha,Josenildo e Gilene,,,,,,,
-Certeza,Anderson,Anderson e Anete,Sr. Anderson e Sra. Anete,-,2,2,,,
-Certeza,Anete,Anderson e Anete,,,,,,,
-Certeza,Andrei,Andrei e Carol,Sr. Andrei e Sra. Carol,-,2,2,,,
-Certeza,Carol,Andrei e Carol,,,,,,,
-Certeza,Dani de Jesus,Daniele de Jesus,Daniele de Jesus,-,1,1,,,
-Certeza,Eunapio,Eunápio e Silvandira,Sr. Eunápio e Sra. Silvandira,-,2,2,,,
-Certeza,Silvandira,Eunápio e Silvandira,,,,,,,
-Certeza,Chico,Francisco e Família,Sr. Francisco e Família,-,3,2,,,
-Certeza,Regiane,Francisco e Família,,,,,,,
-Certeza,Leticia,Francisco e Família,,,,,,,
-Certeza,Benedito,Benedito e Família,Sr. Benedito e Família,-,3,3,,,
-Certeza,Thiago,Benedito e Família,,,,,,,
-Certeza,Aura,Benedito e Família,,,,,,,
-Certeza,Manoel,Manoel e Família,Sr. Manoel e Família,-,4,3,,,
-Certeza,Kelly,Manoel e Família,,,,,,,
-Certeza,Giovana,Manoel e Família,,,,,,,
-Certeza, Heloisa,Manoel e Família,,,,,,,
-Certeza,Robson ,Robson e Família,Sr. Robson e Família,-,4,4,,,
-Certeza,Ana Cleide,Robson e Família,,,,,,,
-Certeza,Ana Maria,Robson e Família,,,,,,,
-Certeza,Pedrinho,Robson e Família,,,,,,,
-Certeza,Adneia,Ferreira e Adneia,Sr. Ferreira e Sra. Adneia,-,2,2,,,
-Certeza,Marido da Adneia,Ferreira e Adneia,,,,,,,
-Certeza,Sinesio,Sinesio e Família,Sr. Sinesio e Família,-,6,6,,,
-Certeza,Lucia,Sinesio e Família,,,,,,,
-Certeza,Wagner,Sinesio e Família,,,,,,,
-Certeza,Katarina,Sinesio e Família,,,,,,,
-Certeza,Willian,Sinesio e Família,,,,,,,
-Certeza,Namorada Wilian,Sinesio e Família,,,,,,,
-Certeza,Roberto,Roberto e Família,Sr. Roberto e Família,-,4,2,,,
-Certeza,Luciana,Roberto e Família,,,,,,,
-Certeza,Isaac,Roberto e Família,,,,,,,
-Certeza,Grabriela,Roberto e Família,,,,,,,
-Certeza,Mauro,Mauro e Família,Sr. Mauro e Família,-,5,5,,,
-Certeza,Alessandra,Mauro e Família,,,,,,,
-Certeza,Felipe,Mauro e Família,,,,,,,
-Certeza,Monique,Mauro e Família,,,,,,,
-Certeza,Renan ,Mauro e Família,,,,,,,
-Certeza,Neno,Austregesio e Família,Sr. Austregésilo e Família,-,4,4,,,
-Certeza,Marli,Austregesio e Família,,,,,,,
-Certeza,Bruna,Austregesio e Família,,,,,,,
-Certeza,Ricardo,Austregesio e Família,,,,,,,
-Certeza,Samuel,Samuel e Família,Sr. Samuel e Família,-,3,2,,,
-Certeza,Luciane,Samuel e Família,,,,,,,
-Certeza,Ana Clara,Samuel e Família,,,,,,,
-Certeza,Celso,Celso e Rute,Sr. Celso e Sra. Rute,-,2,2,,,
-Certeza,Ruth,Celso e Rute,,,,,,,
-Certeza,Givaldo,Givaldo e Família,Sr. Givaldo e Sra. Eurides,-,2,2,,,
-Certeza,Eurides,Givaldo e Família,,,,,,,
-Certeza,Antonio,Antonio e Lidia,Sr. Antonio e Sra. Lidia,-,2,2,,,
-Certeza,Lidia,Antonio e Lidia,,,,,,,
-Certeza,Maria,Maria e Família,Sra. Maria e Família,-,3,3,,,
-Duvida,Tauane,Maria e Família,,,,,,,
-Certeza,Edilson,Maria e Família,,,,,,,
-Certeza,Paulo Hass,Paulo e Família,Sr. Paulo e Família,-,4,4,,,
-Certeza,Marcia Hass,Paulo e Família,,,,,,,
-Certeza,Stela Hass,Paulo e Família,,,,,,,
-Certeza,Juliana Hass,Paulo e Família,,,,,,,
-Certeza,Maria Anunciação,Maria Anunciação,Sra. Maria Anunciação,-,1,1,,,
-Certeza,Nonato,Nonato e Família,Sr. Nonato e Família,-,6,6,,,
-Certeza,Ireni,Nonato e Família,,,,,,,
-Certeza,Renata,Nonato e Família,,,,,,,
-Certeza,Vinicios,Nonato e Família,,,,,,,
-Duvida,Ricardo,Nonato e Família,,,,,,,
-Duvida,Desiree ,Nonato e Família,,,,,,,
-Certeza,Nair,Nair,Sra. Nair,-,1,1,,,
-Certeza,Marcia ,Marcia e Amanda,Sra. Marcia e Amanda,-,2,2,,,
-Certeza,Amanda ,Marcia e Amanda,,,,,,,
-Certeza,Renata Souza ,Renata e James ,Sra. Renata e Sr. James ,-,2,2,,,
-Duvida,Marido da Rê,Renata e James ,,,,,,,
-Certeza,Macikelly,Kelly e Renan,Kelly e Renan,-,2,2,,,
-Certeza,Renann,Kelly e Renan,,,,,,,
-Certeza,Carol,Carol,Carol,-,1,1,,,
-Certeza,Angela,Angela,Angela,-,1,1,,,
-Duvida,Caroline ,Carol,Carol,-,2,2,,,
-Duvida,Namorado da Caroline,Carol,,,,,,,
-Certeza,Ismael,Ismael e Isabela,Ismael e Isabela,-,2,2,,,
-Certeza,Isabela Manzolli,Ismael e Isabela,,,,,,,
-Certeza,Rubens,Rubens e Família,Sr. Rubens e Família,-,5,5,,,
-Certeza,Cida,Rubens e Família,,,,,,,
-Certeza,Bruna,Rubens e Família,,,,,,,
-Certeza,Caio,Rubens e Família,,,,,,,
-Certeza,Namorada Caio,Rubens e Família,,,,,,,
-Certeza,Ivan,Ivan e Thais Garcia,Sr. Ivan e Sra. Thais Garcia,-,2,2,,,
-Certeza,Thais,Ivan e Thais Garcia,,,,,,,
-Duvida,Jorge Maranho,Jorge e Família,Sr. Jorge e Família,-,2,2,,,
-Duvida,Esposa do Jorge,Jorge e Família,,,,,,,
-Duvida,Thomas,Thomas e Família,Sr. Thomas e Família,-,2,2,,,
-Duvida,Esposa do Thomas,Thomas e Família,,,,,,,
-Certeza,Amauri,Amauri e Família,Sr. Amauri e Família,-,2,2,,,
-Certeza,Marielza,Amauri e Família,,,,,,,
-Certeza,Ivan,Ivan S. e Família,Sr. Ivan S. e Família,-,3,3,,,
-Certeza,Rose,Ivan S. e Família,,,,,,,
-Certeza,Felipe,Ivan S. e Família,,,,,,,
-Certeza,Eliane,Eliane,Sra. Eliane Rocha,-,1,1,,,
-Certeza,Eldinha,Elda,Sra. Elda,-,1,1,,,
-Certeza,Eunice,Eunice,Sra. Eunice,-,1,1,,,
-Certeza,Henrique,Henrique e Jéssica,Henrique e Jéssica,-,2,2,,,
-Certeza,Jessica,Henrique e Jéssica,,,,,,,
-Duvida,Marcos,Marcos e Cristiane,Sr. Marcos e Sra. Cristiane,-,2,2,,,
-Duvida,Cristiane,Marcos e Cristiane,,,,,,,
-Certeza,Eunapio Jr,Eunapio Jr e Paula,Sr. Eunapio Jr e Sra. Paula,-,2,2,,,
-Certeza,Paula,Eunapio Jr e Paula,,,,,,,
-Certeza,Ines,Inês,Inês,-,1,1,,,
-Certeza,Ir Antonio,Antonio e Família,Sr. Antonio e Família,-,3,3,,,
-Certeza,Irma ,Antonio e Família,,,,,,,
-Certeza,Elma,Antonio e Família,,,,,,,
-Certeza,Campana,Campana,Sra. Campana,-,1,1,,,
-Certeza,Irmao Pedro,Pedro e Esposa,Sr. Pedro e Sra. Aparecida,-,2,2,,,
-Certeza,Esposa Irmão Pedro,Pedro e Esposa,,,,,,,
-Certeza,Lurdinha,Lurdes,Sra.Lurdes,-,1,1,,,
-Certeza,Semana,Semana e Família,Sr. Semana e Família,-,2,2,,,
-Certeza,Fabiola,Semana e Família,,,,,,,
-Certeza,Rosimeire,Rosimeire,Sra. Rosimeire,-,1,1,,,
-Duvida,Vera,Carlos e Vera,Sr. Carlos e Sra. Vera,-,2,2,,,
-Duvida,Carlos,Carlos e Vera,,,,,,,
-Certeza,Pedro Escudeiro,Pedro Escudeiro e Família,Sr. Pedro Escudeiro e Família,-,5,5,,,
-Certeza,Esposa Escudeiro,Pedro Escudeiro e Família,,,,,,,
-Certeza,Camila Escudeiro,Pedro Escudeiro e Família,,,,,,,
-Certeza,Rafael Escudeiro,Pedro Escudeiro e Família,,,,,,,
-Certeza,Thais Escudeiro,Pedro Escudeiro e Família,,,,,,,
-Certeza,Pablicio,Pablicio e Família,Sr. Pablicio e Família,-,3,2,,,
-Certeza,Livia,Pablicio e Família,,,,,,,
-Certeza,Filhos,Pablicio e Família,,,,,,,
-Certeza,Sueli,Osvaldo e Família,Sr. Osvaldo e Família,-,4,4,,,
-Certeza,Osvaldo,Osvaldo e Família,,,,,,,
-Certeza,Karen,Osvaldo e Família,,,,,,,
-Certeza,Leonardo,Osvaldo e Família,,,,,,,
-Certeza,Roberto G. Spuri,Roberto e Família,Sr. Roberto Spuri e Família,-,4,4,,,
-Certeza,Andrea,Roberto e Família,,,,,,,
-Duvida,Rafael,Roberto e Família,,,,,,,
-Duvida,Giovana,Roberto e Família,,,,,,,
-Duvida,Miltinho,Milton e Esposa,NAO-DEFINIDO,,2,2,,,
-Duvida,Esposa Milton,Milton e Esposa,,,,,,,
-Certeza,Mercedes,Mercedes,Sra. Mercedes,-,2,2,,,
-Duvida,Filha Mercedes,Mercedes,,,,,,,
-Duvida,Pedro Tomé,Pedro Tomé e Rosário,Sr. Pedro Tomé e Sra. Rosário,-,2,2,,,
-Duvida,Rosário Crujo,Pedro Tomé e Rosário,,,,,,,
+nivel_certeza,Nome,De_onde,Nome_Convite,,Endereco,Telefone,,qtd_por_convite_familia,quantidade_convites_individual,,
+Certeza,Vo Salovi,Vô Salovi e Vó Cenyra,Pr. Salovi e Sra. Cenyra,,,,-,2,2,OK,x
+Certeza,Vó Cenyra,Vô Salovi e Vó Cenyra,,,,,,,,OK,
+Certeza,Tia Avó Cida,Maria Aparecida Giordani,Sra. Maria Aparecida Giordani,,,,-,1,1,OK,x
+Certeza,Nelia Pinel,Gil e Família,Sr. Gil e Família,,,,-,4,4,OK,x
+Certeza,Gil Oliveira,Gil e Família,,,,,,,,OK,
+Certeza,Gil Jr,Gil e Família,,,,,,,,OK,
+Certeza,Paula Zuquin,Gil e Família,,,,,,,,OK,
+Certeza,Fatima,Fatima,Sra. Fátima,,,,,1,1,,x
+Certeza,Leticia,Bruno e Família,Sr. Bruno e Família,,,,-,2,2,OK,x
+Certeza,Bruno Paulo,Bruno e Família,,,,,,,,OK,
+Certeza,Tio Junior,Salovi Jr. e Família,Pr. Salovi Jr. e Família,,,,-,3,3,OK,x
+Certeza,Tia Emilce,Salovi Jr. e Família,,,,,,,,OK,
+Certeza,Cintia,Salovi Jr. e Família,,,,,,,,OK,
+Certeza,Cristiano,Cristiano e Joycelu,Sr. Cristiano e Sra. Joycelu,,,,-,2,2,OK,x
+Certeza,Joice Mota,Cristiano e Joycelu,,,,,,,,OK,
+Certeza,Tia Pri,Lucas e Família,Sr. Lucas e Família,,,,-,4,4,OK,x
+Certeza,Tio Lucas,Lucas e Família,,,,,,,,OK,
+Certeza,Henrique,Lucas e Família,,,,,,,,OK,
+Certeza,Leonardo,Lucas e Família,,,,,,,,OK,
+Certeza,Tio Nestor,Nestor e Família,Sr. Nestor e Família,,,,-,4,4,OK,x
+Certeza,Tia Telma,Nestor e Família,,,,,,,,OK,
+Certeza,Keylla,Nestor e Família,,,,,,,,OK,
+Certeza,George,Nestor e Família,,,,,,,,OK,
+Certeza,José Luiz,José Luiz e Karyna,Sr. José Luiz e Sra. Karyna,,,,-,2,2,OK,x
+Certeza,Karyna,José Luiz e Karyna,,,,,,,,OK,
+Certeza,Tio Claudio,Claudio e Família,Sr. Claudio e Família,,,,-,5,5,OK,x
+Certeza,Tia Livia,Claudio e Família,,,,,,,,OK,
+Certeza,Claudio Jr,Claudio e Família,,,,,,,,OK,
+Certeza,Silmara,Claudio e Família,,,,,,,,OK,
+Certeza,Aninha,Claudio e Família,,,,,,,,OK,
+Certeza,Tia Zinia,Zinia e Família,Sra. Zinia e Família,->,"Rua Giovani Castro, 90, bloco 1, apto 201, Gabinal 1 - Freguesia Jacarepaguá - Rio de Janeio - CEP: 22763-070",(21) 78252651,-,4,4,OK,x
+Certeza,Tiago Macedo,Zinia e Família,,,,,,,,OK,
+Duvida,Marcio,Zinia e Família,,,,,,,,OK,
+Duvida,Carol Cortinovis,Zinia e Família,,,,,,,,OK,
+Duvida,Eudes,Eudes e Família,Sr. Eudes e Família,,,,-,3,2,OK,x
+Duvida,Patricia,Eudes e Família,,,,,,,,OK,
+Duvida,Davi,Eudes e Família,,,,,,,,OK,
+Certeza,Tia Lucia,Lúcia e Família,Sra. Lúcia e Família,,,(13) 97122980,-,6,6,OK,x
+Certeza,Ricardo,Lúcia e Família,,,,,,,,OK,
+Certeza,Danillo,Lúcia e Família,,,,,,,,OK,
+Certeza,Diego,Lúcia e Família,,,,,,,,OK,
+Certeza,Tatiane Batistela,Lúcia e Família,,,,,,,,OK,
+Certeza,Beatriz,Lúcia e Família,,,,,,,,OK,
+Duvida,Tio Wilson,Wilson e Família,Sr. Wilson e Família,->,Rua General Osorio 20 apto 31A Praia Gande - SP cep 11700-730,(13) 78122808,-,3,3,OK,x
+Duvida,Viviane,Wilson e Família,,,,,,,,OK,
+Duvida,Yan,Wilson e Família,,,,,,,,OK,
+Duvida,Tia Junia,Junia e Família,Sra. Junia e Família,,,(11) 996970254,-,5,5,OK,x
+Duvida,Soraia,Junia e Família,,,,,,,,OK,
+Duvida,Marido Soraia,Junia e Família,,,,,,,,OK,
+Duvida,Jr Bill,Junia e Família,,,,,,,,OK,
+Duvida,Namorada Bill,Junia e Família,,,,,,,,OK,
+Certeza,Tio Jorgecir,Jorgecir e Família,Sr. Jorgecir e Família,,,,-,3,3,OK,x
+Certeza,Tia Alzenir,Jorgecir e Família,,,,,,,,OK,
+Certeza,Jefferson,Jorgecir e Família,,,,,,,,OK,
+Certeza,Leandro,Leandro e Janielle,Sr. Leandro e Janielle,,,,-,2,2,OK,x
+Certeza,Janielle,Leandro e Janielle,,,,,,,,OK,
+Certeza,Tio Joacir,Joacir e Família,Sr. Joacir e Família,,,,-,2,2,OK,x
+Certeza,Tia Lu,Joacir e Família,,,,,,,,OK,
+Certeza,Bruna,Fernando e Família,Sr. Fernando e Família,,,,-,3,2,OK,x
+Certeza,Fernando,Fernando e Família,,,,,,,,OK,
+Certeza,Filho Bruna ,Fernando e Família,,,,,,,,OK,
+Certeza,Camila,Anderson e Família,Sr. Anderson e Família,,,,-,3,2,OK,x
+Certeza,Anderson,Anderson e Família,,,,,,,,OK,
+Certeza,Filho Camila,Anderson e Família,,,,,,,,OK,
+Certeza,Juliana,Juliana,Sra. Juliana A.,,,,-,2,1,OK,x
+Certeza,Natã,Juliana,,,,,,,,OK,
+Certeza,Tia Cenilda,Cenilda,Sra. Cenilda,,,,-,1,1,OK,x
+Certeza,Ciro,Ciro e Giselle,Sr. Ciro e Sra. Giselle,,,,-,2,2,OK,x
+Certeza,Gisele,Ciro e Giselle,,,,,,,,OK,
+Certeza,Cassio ,Cassio e Aline,Sr. Cassio e Sra. Aline,,,,-,2,2,OK,x
+Certeza,Aline,Cassio e Aline,,,,,,,,OK,
+Certeza,Tia Cida,Adeilton e Família,Sr. Adeilton e Família,->,"Rua José Ruiz merino,  25 -  Sion itanhaém,  SP cep 11470-000",(13) 34222724; (11) 84483091,-,4,4,OK,x
+Certeza,Tio Adeilton,Adeilton e Família,,,,,,,,OK,
+Certeza,Alex,Adeilton e Família,,,,,,,,OK,
+Certeza,Junior,Adeilton e Família,,,,,,,,OK,
+Certeza,Alan,Alan e Família,Sr. Alan e Família,->,"Rua José Ruiz merino,  25 -  Sion itanhaém,  SP cep 11470-000",(13) 97273391,-,3,2,OK,x
+Certeza,Mulher Alan,Alan e Família,,,,,,,,OK,
+Certeza,Asaph,Alan e Família,,,,,,,,OK,
+Duvida,Nicolas,Nicolas e Família,Sr. Nicolas e Família,->,Rua xv de novembro 893 - Centro Salesopolis sp Cep 08970_000,(11) 996970254,-,3,3,OK,x
+Duvida,Zaine,Nicolas e Família,,,,,,,,OK,
+Duvida,Ysadora,Nicolas e Família,,,,,,,,OK,
+Duvida,Cassio,Cassio e Família,Sr. Cassio e Família,,,,-,4,4,OK,x
+Duvida,Danusa Quadra,Cassio e Família,,,,,,,,OK,
+Duvida,Samir,Cassio e Família,,,,,,,,OK,
+Duvida,Karyme,Cassio e Família,,,,,,,,OK,
+Duvida,Tia Dalva,Fumio Kikugawa e Família,Sr. Fumio Kikugawa e Família,->,Rua Lavosier 43. Parque residencial laranjeiras 29165-200 Serra ES,(27) 33274172,-,5,5,OK,x
+Duvida,Tio Fumil,Fumio Kikugawa e Família,,,,,,,,OK,
+Duvida,Beko,Fumio Kikugawa e Família,,,,,,,,OK,
+Duvida,Emanuel Kikugawa,Fumio Kikugawa e Família,,,,,,,,OK,
+Duvida,Paloma Kikugawa,Fumio Kikugawa e Família,,,,,,,,OK,
+Duvida,Tia Ide,Donald Cesar e Ide Giordani,Sr. Donald Cesar e Sra.Ide Giordani,,,,-,2,2,OK,x
+Duvida,Donald Cesar,Donald Cesar e Ide Giordani,,,,,,,,OK,
+Duvida,Tia Helia,Helia Giordani Hespanhol,Sra. Helia Giordani Hespanhol,,,,-,1,1,OK,x
+Duvida,Joselia,Noélio e Família,Sr. Noélio e Família,,,,-,3,3,OK,x
+Duvida,Noelio,Noélio e Família,,,,,,,,OK,
+Duvida,Ana Carolina Giordani,Noélio e Família,,,,,,,,OK,x
+Duvida,Juliana Giordani,Sr. Junior e Família,Sr. Junior e Sra. Juliana,,,,-,2,2,OK,
+Duvida,Junior,Sr. Junior e Família,,,,,,,,OK,x
+Duvida,Gisele,Gisele e Família,Sra. Gisele e Família,,,,-,2,2,OK,
+Duvida,Daniela,Gisele e Família,,,,,,,,OK,
+Duvida,Fabiana,Marcelo G. e Fabiana,Sr. Marcelo G. e Sra. Fabiana,,,,-,2,2,OK,x
+Duvida,Marcelo,Marcelo G. e Fabiana,,,,,,,,OK,
+Certeza,Pai,Airton e Família,Sr. Airton e Família,,,,-,3,3,OK,x
+Certeza,Mae,Airton e Família,,,,,,,,OK,
+Certeza,Eliabe,Airton e Família,,,,,,,,OK,
+Certeza,Vó Cacá ,Clair S.e Silvio,Sra. Clair e Sr. Silvio,,,,-,2,2,OK,x
+Certeza,Silvinho,Clair S.e Silvio,,,,,,,,OK,
+Certeza,Edson,Edson B. e Família,Sr. Edson B. e Família,,,,-,3,3,OK,x
+Certeza,Meri,Edson B. e Família,,,,,,,,OK,
+Certeza,Guid,Edson B. e Família,,,,,,,,OK,
+Certeza,Igor ,Igor B. e Ludmila ,Sr. Igor B. e Sra. Ludmila ,,,,-,2,2,OK,x
+Certeza,Ludmila ,Igor B. e Ludmila ,,,,,,,,OK,
+Certeza,Keila,Samuel C. e Família,Sr. Samuel C. e Família,,,,-,4,4,OK,x
+Certeza,Samuel,Samuel C. e Família,,,,,,,,OK,
+Certeza,Maira ,Samuel C. e Família,,,,,,,,OK,
+Certeza,Namorado Maira,Samuel C. e Família,,,,,,,,OK,
+Certeza,Mateus,Matheus e Cíntia,Sr. Matheus e Sra. Cíntia,,,,-,2,2,OK,x
+Certeza,Cinthia,Matheus e Cíntia,,,,,,,,OK,
+Certeza,Táta ( Clélia) ,Clélia,Sra. Clélia,,,,-,1,1,OK,x
+Certeza,Késia ,Quésia e Filhas,Sra. Quésia e Filhas,,,,-,3,3,OK,x
+Certeza,Nicole,Quésia e Filhas,,,,,,,,OK,
+Certeza,Barbará ,Quésia e Filhas,,,,,,,,OK,
+Certeza,Valéria ( e a Rebeca) ,Robson e Família,Sr. Robson e Família,,,,-,2,2,OK,x
+Certeza,Robson ,Robson e Família,,,,,,,,OK,
+Certeza,Ivanir ,Ivanir e  M. Madalena,Sra. Ivanir e Sra. M. Madalena,,,,-,2,2,OK,x
+Certeza,Maria Madela (mãe do Edson),Ivanir e  M. Madalena,,,,,,,,OK,
+Certeza,Amador ,Amador B. e Família,Sr. Amador B. e Família,,,,-,3,3,OK,x
+Certeza,Monica,Amador B. e Família,,,,,,,,OK,
+Certeza,Marcela,Amador B. e Família,,,,,,,,OK,
+Duvida,Dodinha ,Amador Neto e Natalia,Sr. Amador Neto e Sra. Natalia,,,,-,2,2,OK,x
+Duvida,Natália,Amador Neto e Natalia,,,,,,,,OK,
+Certeza,Nena ,Luis Carlos e Nena,Sr. Luis Carlos e Sra. Nena,,,,-,2,2,OK,x
+Certeza,Luis Carlos,Luis Carlos e Nena,,,,,,,,OK,
+Certeza,Andressa,Jose Neto e Andressa,Sr. Jose Neto e Sra. Andressa,,,,-,2,2,OK,x
+Certeza,Neto,Jose Neto e Andressa,,,,,,,,OK,
+Certeza,André,Andre e Zilda,Sr. Andre e Sra. Zilda,,,,-,2,2,OK,x
+Certeza,Zilda,Andre e Zilda,,,,,,,,OK,
+Certeza,Nena ( avó),Nena,Sra. Nena,,,,-,1,1,OK,x
+Certeza,Vlaudemir ,Vlaudemir L. e Família,Sr. Vlaudemir e Família,,,,-,4,4,OK,x
+Certeza,Dora,Vlaudemir L. e Família,,,,,,,,OK,
+Certeza,Vanessa,Vlaudemir L. e Família,,,,,,,,OK,
+Certeza,Luis ( Namorado da Van),Vlaudemir L. e Família,,,,,,,,OK,
+Certeza,Luiz Fernando,Luiz Fernando B. e Glaucia,Sr. Luiz Fernando e Sra. Glaucia,,,,-,2,2,OK,x
+Certeza,Glaucia ,Luiz Fernando B. e Glaucia,,,,,,,,OK,
+Certeza,Elaine Mendes Lira,Wilson e Elaine,Sr.Uilson e Sra. Elaine,,,,,2,2,OK,x
+Certeza,Wilson,Wilson e Elaine,,,,,,,,OK,
+Certeza,Levi,Luiz e Família,Sr. Luiz e Família,,,,-,4,4,OK,x
+Certeza,Larissa,Luiz e Família,,->,Entregar para a Vó dela.,,,,,OK,
+Certeza,Luis ,Luiz e Família,,,,,,,,OK,
+Certeza,Cleunice,Luiz e Família,,,,,,,,OK,
+Certeza,Vinny ,Marcos e Família,Sr. Marcos e Família,,,,-,6,6,OK,x
+Certeza,Namorada do Vinny,Marcos e Família,,,,,,,,OK,
+Certeza,Caio ,Marcos e Família,,,,,,,,OK,
+Certeza,Namorada do Caio ,Marcos e Família,,,,,,,,OK,
+Certeza,Vanderleia,Marcos e Família,,,,,,,,OK,
+Certeza,Marcos,Marcos e Família,,,,,,,,OK,
+Certeza,André , André Sandrim, André Sandrim,,,,-,3,3,OK,x
+Certeza,Noiva do André, André Sandrim,,,,,,,,OK,
+Duvida,Filha da Noiva, André Sandrim,,,,,,,,OK,
+Certeza,Alexandre,Alexandre S. e Alessandra,Sr. Alexandre S. e Sra. Alessandra,,,,-,2,2,OK,x
+Certeza,Dudinha ,Alexandre S. e Alessandra,,,,,,,,OK,
+Certeza,Marcia ,Valdecir e  Márcia,Sr. Valdecir e Sr. Márcia,,,,-,2,2,OK,x
+Certeza,Valdecir,Valdecir e  Márcia,,,,,,,,OK,
+Certeza,Erik,Érik S. e Natália,Sr. Érik S. e Sra. Natália,,,,-,2,2,OK,x
+Certeza,Nathalia ( namorada do Erik),Érik S. e Natália,,,,,,,,OK,
+Certeza,Alessandra ,Alessandra S.,Srta. Alessandra S.,,,,-,1,1,OK,x
+Duvida,Andreia ,Andreia Spazzapan,Sra.Andreia S.,,,,-,3,3,OK,x
+Duvida,Caio (filho da Andreia),Andreia Spazzapan,,,,,,,,OK,
+Duvida,Namorada do Caio ,Andreia Spazzapan,,,,,,,,OK,
+Certeza,Tia Terezinha,Terezinha Spazzapan,Sra.Terezinha S.,,,,-,1,1,OK,x
+Certeza,Vó Vige,Edwirges,Sra. Edwiges,,,,-,1,1,OK,x
+Certeza,Tio João,Joao e Nira,Sr. Joao e Sra. Nira,,,,-,2,2,OK,x
+Certeza,Namorada do Tio,Joao e Nira,,,,,,,,OK,
+Certeza,Gabriel M.,Gabriel M.,Gabriel M.,,,,-,2,2,OK,x
+Duvida,Namorada Do Gabriwl,Gabriel M.,,,,,,,,OK,
+Duvida,Tia Maria,Tias Maria e Dora,Sra. Maria e Sra. Dora,,,,-,2,2,OK,x
+Duvida,Tia Dora,Tias Maria e Dora,,,,,,,,OK,
+Certeza,Vanderlei,Vanderlei e Cleide,Sr. Vanderlei e Sra. Cleide,,,,-,2,2,OK,x
+Certeza,Cleide,Vanderlei e Cleide,,,,,,,,OK,
+Duvida,Mafalda,Mafalda,Mafalda,,,,-,1,1,OK,x
+Certeza,Raquel,Leandro e Raquel,Sr. Leandro e Sra. Raquel,,,,-,2,2,OK,x
+Certeza,Leandro,Leandro e Raquel,,,,,,,,OK,
+Duvida,Lygia,Paulo e Ligia,Sr. Paulo e Sra. Ligia,,,,-,2,2,OK,x
+Duvida,Paulo,Paulo e Ligia,,,,,,,,OK,
+Duvida,Erminio,Erminio e Família,Sr. Erminio e Família,,,,-,3,3,OK,x
+Duvida,Aldaisa,Erminio e Família,,,,,,,,OK,
+Duvida,Rafael,Erminio e Família,,,,,,,,OK,
+Duvida,Silvestre,Silvestre e Família,Sr. Silvestre e Família,->,rua Michel Alca n°771 -  bairro ocian - cidade praia grande - cep:1170-610,(13) 3092925; (13) 91519402,-,4,4,OK,x
+Duvida,Cleunira,Silvestre e Família,,,,,,,,OK,
+Duvida,Roberta,Silvestre e Família,,,,,,,,OK,
+Duvida,Noivo,Silvestre e Família,,,,,,,,OK,
+Duvida,Thiago,Tiago V. e  Luana,Sr. Tiago V. e Família,->,enviar para o mesmo da Roberta,(13) 91765852;,-,2,2,OK,x
+Duvida,Luana,Tiago V. e  Luana,,,,,,,,OK,
+Duvida,Pricilla,João V e Família,Sr. João V e Família,->,enviar para o mesmo da Roberta,(13) 34724586; (13) 91576776,-,3,2,OK,x
+Duvida,João Vianna,João V e Família,,,,,,,,OK,
+Duvida,Jão Pedro ( bebe),João V e Família,,,,,,,,OK,
+Duvida,Grazieli Mendes,Reinaldo e Família,Sr. Reinaldo e Familia,,,,,3,2,OK,x
+Duvida,Reinaldo,Reinaldo e Família,,,,,,,,OK,
+Duvida,Isabela Manzolli,,,,,,,,,OK,
+Certeza,Abel,Abel,Sr. Abel,,,,-,1,1,OK,x
+Duvida,Osvaldo,Osvaldo e Família,Sr. Osvaldo e Família,,,,-,4,4,OK,x
+Duvida,Rafael ,Osvaldo e Família,,,,,,,,OK,
+Duvida,Diogo,Osvaldo e Família,,,,,,,,OK,
+Duvida,Conceição,Osvaldo e Família,,,,,,,,OK,
+Certeza,Mariquinha,Tia Mariquinha,Sra. Mariquinha,,,,-,1,1,OK,x
+Certeza,Margareth,Milton e Família,Sr. Milton e Família,,,,-,4,4,OK,x
+Certeza,Milton,Milton e Família,,,,,,,,OK,
+Certeza,Helon,Milton e Família,,,,,,,,OK,
+Certeza,Namorada Helon,Milton e Família,,,,,,,,OK,
+Duvida,Roberval,Roberval e Rosinete,Sr. Roberval e Sra. Rosinete,,,,-,2,2,,x
+Duvida,Rosinete,Roberval e Rosinete,,,,,,,,,
+Certeza,Rodrigo,Rodrigo e Luciana,Sr. Rodrigo e Sra. Luciana,,,,-,2,2,OK,x
+Certeza,Luciana,Rodrigo e Luciana,,,,,,,,OK,
+Certeza,Ricardo Ubiratan,Ricardo e Família,Sr. Ricardo e Família,,,,-,5,5,OK,x
+Certeza,Solange,Ricardo e Família,,,,,,,,OK,
+Certeza,Gabriel ,Ricardo e Família,,,,,,,,OK,
+Certeza,Guilia,Ricardo e Família,,,,,,,,OK,
+Certeza,Clarimur,Ricardo e Família,,,,,,,,OK,
+Certeza,Rute Zocchio,Joel Z. e Família,Sr. Joel Z. e Família,,,,-,4,4,OK,x
+Certeza,Zoel Zocchio,Joel Z. e Família,,,,,,,,OK,
+Certeza,Daniel Zocchio,Joel Z. e Família,,,,,,,,OK,
+Certeza,Davi Zocchio,Joel Z. e Família,,,,,,,,OK,
+Certeza,Aires,Aires P. e Família,Sr. Aires P. e Família,,,,-,3,3,OK,x
+Certeza,Debora Porto ,Aires P. e Família,,,,,,,,OK,
+Certeza,Larissa Porto,Aires P. e Família,,,,,,,,OK,
+Certeza,Cacilda,Dugair e Família,Sr. Dugair e Família,,,,-,4,4,OK,x
+Certeza,Dugair,Dugair e Família,,,,,,,,OK,
+Certeza,Raul,Dugair e Família,,,,,,,,OK,
+Duvida,Gabriel ,Dugair e Família,,,,,,,,OK,
+Certeza,Lucas Pereira,Valmir e Família,Sr. Valmir e Família,,,,-,3,3,OK,x
+Certeza,Marcia Pereira,Valmir e Família,,,,,,,,OK,
+Certeza,Valmir Pereira,Valmir e Família,,,,,,,,OK,
+Certeza,Diego Costa,Diego e Thaís,Sr. Diego e Sra. Thaís,,,,-,2,2,OK,x
+Certeza,Thais Rocha,Diego e Thaís,,,,,,,,OK,
+Certeza,Joel Pereira,Joel e Natalia,Sr. Joel e Sra. Natalia,,,,-,2,2,OK,x
+Certeza,Natalia Pereira,Joel e Natalia,,,,,,,,OK,
+Certeza,Elieser,Elieser e Família,Sr. Elieser e Família,,,,-,4,4,OK,x
+Certeza,Rafael,Elieser e Família,,,,,,,,OK,
+Certeza,Mãe do Ricardo,Elieser e Família,,,,,,,,OK,
+Certeza,Ricardo,Elieser e Família,,,,,,,,OK,
+Certeza,Jó,Josenildo e Gilene,Josenildo e Gilene,,,,-,2,2,OK,x
+Certeza,Ninha,Josenildo e Gilene,,,,,,,,OK,
+Certeza,Anderson,Anderson e Anete,Sr. Anderson e Sra. Anete,,,,-,2,2,OK,x
+Certeza,Anete,Anderson e Anete,,,,,,,,OK,
+Certeza,Andrei,Andrei e Carol,Sr. Andrei e Sra. Carol,,,,-,2,2,OK,x
+Certeza,Carol,Andrei e Carol,,,,,,,,OK,
+Certeza,Dani de Jesus,Daniele de Jesus,Daniele de Jesus,,,11 999573514,-,1,1,OK,x
+Certeza,Eunapio,Eunápio e Silvandira,Sr. Eunápio e Sra. Silvandira,,,,-,2,2,OK,x
+Certeza,Silvandira,Eunápio e Silvandira,,,,,,,,OK,
+Certeza,Chico,Francisco e Família,Sr. Francisco e Família,,,,-,3,2,OK,x
+Certeza,Regiane,Francisco e Família,,,,,,,,OK,
+Certeza,Leticia,Francisco e Família,,,,,,,,OK,
+Certeza,Benedito,Benedito e Família,Sr. Benedito e Família,,,,-,3,3,OK,x
+Certeza,Thiago,Benedito e Família,,,,,,,,OK,
+Certeza,Aura,Benedito e Família,,,,,,,,OK,
+Certeza,Manoel,Manoel e Família,Sr. Manoel e Família,,,,-,4,3,OK,x
+Certeza,Kelly,Manoel e Família,,,,,,,,OK,
+Certeza,Giovana,Manoel e Família,,,,,,,,OK,
+Certeza, Heloisa,Manoel e Família,,,,,,,,OK,
+Certeza,Robson ,Robson e Família,Sr. Robson e Família,,,,-,4,4,OK,x
+Certeza,Ana Cleide,Robson e Família,,,,,,,,OK,
+Certeza,Ana Maria,Robson e Família,,,,,,,,OK,
+Certeza,Pedrinho,Robson e Família,,,,,,,,OK,
+Certeza,Adneia,Ferreira e Adneia,Sr. Ferreira e Sra. Adneia,,,,-,2,2,OK,x
+Certeza,Marido da Adneia,Ferreira e Adneia,,,,,,,,OK,
+Certeza,Sinesio,Sinesio e Família,Sr. Sinesio e Família,,,,-,6,6,OK,x
+Certeza,Lucia,Sinesio e Família,,,,,,,,OK,
+Certeza,Wagner,Sinesio e Família,,,,,,,,OK,
+Certeza,Katarina,Sinesio e Família,,,,,,,,OK,
+Certeza,Willian,Sinesio e Família,,,,,,,,OK,
+Certeza,Namorada Wilian,Sinesio e Família,,,,,,,,OK,
+Certeza,Roberto,Roberto e Família,Sr. Roberto e Família,,,,-,4,2,OK,x
+Certeza,Luciana,Roberto e Família,,,,,,,,OK,
+Certeza,Isaac,Roberto e Família,,,,,,,,OK,
+Certeza,Grabriela,Roberto e Família,,,,,,,,OK,
+Certeza,Mauro,Mauro e Família,Sr. Mauro e Família,,,,-,5,5,OK,x
+Certeza,Alessandra,Mauro e Família,,,,,,,,OK,
+Certeza,Felipe,Mauro e Família,,,,,,,,OK,
+Certeza,Monique,Mauro e Família,,,,,,,,OK,
+Certeza,Renan ,Mauro e Família,,,,,,,,OK,
+Certeza,Neno,Austregesio e Família,Sr. Austregésilo e Família,,,,-,4,4,OK,x
+Certeza,Marli,Austregesio e Família,,,,,,,,OK,
+Certeza,Bruna,Austregesio e Família,,,,,,,,OK,
+Certeza,Ricardo,Austregesio e Família,,,,,,,,OK,
+Certeza,Samuel,Samuel e Família,Sr. Samuel e Família,,,,-,3,2,OK,x
+Certeza,Luciane,Samuel e Família,,,,,,,,OK,
+Certeza,Ana Clara,Samuel e Família,,,,,,,,OK,
+Certeza,Celso,Celso e Rute,Sr. Celso e Sra. Rute,,,,-,2,2,OK,x
+Certeza,Ruth,Celso e Rute,,,,,,,,OK,
+Certeza,Givaldo,Givaldo e Família,Sr. Givaldo e Sra. Eurides,,,,-,2,2,OK,x
+Certeza,Eurides,Givaldo e Família,,,,,,,,OK,
+Certeza,Antonio,Antonio e Lidia,Sr. Antonio e Sra. Lidia,,,,-,2,2,OK,x
+Certeza,Lidia,Antonio e Lidia,,,,,,,,OK,
+Certeza,Maria,Maria e Família,Sra. Maria e Família,,,,-,3,3,OK,x
+Duvida,Tauane,Maria e Família,,,,,,,,OK,
+Certeza,Edilson,Maria e Família,,,,,,,,OK,
+Certeza,Paulo Hass,Paulo e Família,Sr. Paulo e Família,,,,-,4,4,OK,x
+Certeza,Marcia Hass,Paulo e Família,,,,,,,,OK,
+Certeza,Stela Hass,Paulo e Família,,,,,,,,OK,
+Certeza,Juliana Hass,Paulo e Família,,,,,,,,OK,
+Certeza,Maria Anunciação,Maria Anunciação,Sra. Maria Anunciação,,,,-,1,1,OK,x
+Certeza,Nonato,Nonato e Família,Sr. Nonato e Família,,,,-,6,6,OK,x
+Certeza,Ireni,Nonato e Família,,,,,,,,OK,
+Certeza,Renata,Nonato e Família,,,,,,,,OK,
+Certeza,Vinicios,Nonato e Família,,,,,,,,OK,
+Duvida,Ricardo,Nonato e Família,,,,,,,,OK,
+Duvida,Desiree ,Nonato e Família,,,,,,,,OK,
+Certeza,Nair,Nair,Sra. Nair,,,,-,1,1,OK,x
+Certeza,Marcia ,Marcia e Amanda,Sra. Marcia e Amanda,,,(11) 986214491,-,2,2,OK,x
+Certeza,Amanda ,Marcia e Amanda,,,,,,,,OK,
+Certeza,Renata Souza ,Renata e James ,Sra. Renata e Sr. James ,,,,-,2,2,OK,x
+Duvida,Marido da Rê,Renata e James ,,,,,,,,OK,
+Certeza,Macikelly,Kelly e Renan,Kelly e Renan,,,,-,2,2,OK,x
+Certeza,Renann,Kelly e Renan,,,,,,,,OK,
+Certeza,Carol,Carol,Carol,,,,-,1,1,OK,x
+Certeza,Angela,Angela,Angela,,,,-,1,1,OK,x
+Duvida,Caroline ,Carol,Carol,,,,-,2,2,OK,x
+Duvida,Namorado da Caroline,Carol,,,,,,,,OK,
+Certeza,Ismael,Ismael e Isabela,Ismael e Isabela,->," Rua Almirante Noronha, 986, ap 41- Jd São Paulo. Cep 02043-061",(11) 29768521; (11) 994410018,-,2,2,OK,x
+Certeza,Isabela Manzolli,Ismael e Isabela,,,,,,,,OK,
+Certeza,Rubens,Rubens e Família,Sr. Rubens e Família,->,"Avenida Arruda Botelho, 490, ap. 41 - Alto de Pinheiros - São Paulo - SP - Cep: 05466-000",(11) 30223709,-,5,5,OK,x
+Certeza,Cida,Rubens e Família,,,,,,,,OK,
+Certeza,Bruna,Rubens e Família,,,,,,,,OK,
+Certeza,Caio,Rubens e Família,,,,,,,,OK,
+Certeza,Namorada Caio,Rubens e Família,,,,,,,,OK,
+Certeza,Ivan,Ivan e Thais Garcia,Sr. Ivan e Sra. Thais Garcia,,,,-,2,2,OK,x
+Certeza,Thais,Ivan e Thais Garcia,,,,,,,,OK,
+Duvida,Jorge Maranho,Jorge e Família,Sr. Jorge e Família,,,,-,2,2,OK,x
+Duvida,Esposa do Jorge,Jorge e Família,,,,,,,,OK,
+Duvida,Thomas,Thomas e Família,Sr. Thomas e Família,,,,-,2,2,OK,x
+Duvida,Esposa do Thomas,Thomas e Família,,,,,,,,OK,
+Certeza,Amauri,Amauri e Família,Sr. Amauri e Família,->,"Rua Hugo Musso, 787, apto 101 - Praia da Costa - Vila Velha/ES - Vitória - CEP: 29101-285",(27) 32086493,-,2,2,OK,x
+Certeza,Marielza,Amauri e Família,,,,,,,,OK,
+Certeza,Ivan,Ivan S. e Família,Sr. Ivan S. e Família,,,,-,3,3,OK,x
+Certeza,Rose,Ivan S. e Família,,,,,,,,OK,
+Certeza,Felipe,Ivan S. e Família,,,,,,,,OK,
+Certeza,Eliane,Eliane,Sra. Eliane Rocha,,,,-,1,1,OK,x
+Certeza,Eldinha,Elda,Sra. Elda,,,,-,1,1,OK,x
+Certeza,Eunice,Eunice,Sra. Eunice,,,,-,1,1,OK,x
+Certeza,Henrique,Henrique e Jéssica,Henrique e Jéssica,,,,-,2,2,OK,x
+Certeza,Jessica,Henrique e Jéssica,,,,,,,,OK,
+Duvida,Marcos,Marcos e Cristiane,Sr. Marcos e Sra. Cristiane,,,,-,2,2,OK,x
+Duvida,Cristiane,Marcos e Cristiane,,,,,,,,OK,
+Certeza,Eunapio Jr,Eunapio Jr e Paula,Sr. Eunapio Jr e Sra. Paula,,,,-,2,2,OK,x
+Certeza,Paula,Eunapio Jr e Paula,,,,,,,,OK,
+Certeza,Ines,Inês,Inês,,,,-,1,1,OK,x
+Certeza,Ir Antonio,Antonio e Família,Sr. Antonio e Família,,,,-,3,3,OK,x
+Certeza,Irma ,Antonio e Família,,,,,,,,OK,
+Certeza,Elma,Antonio e Família,,,,,,,,OK,
+Certeza,Campana,Campana,Sra. Campana,,,,-,1,1,OK,x
+Certeza,Irmao Pedro,Pedro e Esposa,Sr. Pedro e Sra. Aparecida,,,,-,2,2,OK,x
+Certeza,Maria Aparecida,Pedro e Esposa,,,,,,,,OK,
+Certeza,Lurdinha,Lurdes,Sra.Lurdes,,,,-,1,1,OK,x
+Certeza,Semana,Semana e Família,Sr. Semana e Família,,,,-,2,2,OK,x
+Certeza,Fabiola,Semana e Família,,,,,,,,OK,
+Certeza,Rosimeire,Rosimeire,Sra. Rosimeire,,,,-,1,1,OK,x
+Duvida,Carlos,Carlos e Vera,,,,,,,,OK,
+Certeza,Pedro Escudeiro,Pedro Escudeiro e Família,Sr. Pedro Escudeiro e Família,,,,-,5,5,OK,x
+Certeza,Esposa Escudeiro,Pedro Escudeiro e Família,,,,,,,,OK,
+Certeza,Camila Escudeiro,Pedro Escudeiro e Família,,,,,,,,OK,
+Certeza,Rafael Escudeiro,Pedro Escudeiro e Família,,,,,,,,OK,
+Certeza,Thais Escudeiro,Pedro Escudeiro e Família,,,,,,,,OK,
+Certeza,Pablicio,Pablicio e Família,Sr. Pablicio e Família,,,,-,3,2,OK,x
+Certeza,Livia,Pablicio e Família,,,,,,,,OK,
+Certeza,Filhos,Pablicio e Família,,,,,,,,OK,
+Certeza,Sueli,Osvaldo e Família,Sr. Osvaldo e Família,,,,-,4,4,OK,x
+Duvida,Osvaldo,Osvaldo e Família,,,,,,,,OK,
+Certeza,Karen,Osvaldo e Família,,,,,,,,OK,
+Certeza,Leonardo,Osvaldo e Família,,,,,,,,OK,
+Certeza,Roberto G. Spuri,Roberto e Família,Sr. Roberto Spuri e Família,,,,-,4,4,OK,x
+Certeza,Andrea,Roberto e Família,,,,,,,,OK,
+Duvida,Rafael,Roberto e Família,,,,,,,,OK,
+Duvida,Giovana,Roberto e Família,,,,,,,,OK,
+Duvida,Miltinho,Milton e Esposa,Sr. Milton e Jaqueline,,,,,2,2,,x
+Duvida,Jaqueline,Milton e Esposa,,,,,,,,,
+Certeza,Mercedes,Mercedes,Sra. Mercedes,,,,-,1,1,OK,x
+Certeza,Elenice,Elenice,Sra. Elenice,,,,-,1,1,,
+Certeza,Thiago Costa,Thiago,Thiago ,,,,-,2,2,,x
+Certeza,Namorada do Thiago,Thiago,,,,,,,,,
+Duvida,Pedro Tomé,Pedro Tomé e Rosário,Sr. Pedro Tomé e Sra. Rosário,,,,-,2,2,OK,x
+Duvida,Rosário Crujo,Pedro Tomé e Rosário,,,,,,,,OK,
+Duvida,Irmao Isaac,Sr. Isaac e Família,Sr. Isaac e Família,,,,-,6,6,,x
+Duvida,Irmã Aparecida,Sr. Isaac e Família,,,,,,,,,
+Duvida,Iara,Sr. Isaac e Família,,,,,,,,,
+Duvida,Marido Iara,Sr. Isaac e Família,,,,,,,,,
+Duvida,Isaac Jr,Sr. Isaac e Família,,,,,,,,,
+Duvida,Esposa Isaac,Sr. Isaac e Família,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,373,,
