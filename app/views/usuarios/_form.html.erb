@@ -16,9 +16,10 @@
     <%= f.text_field :nome_convite %>
   </div>
 
+<b>Convidados</b>
   <div class="field"> 
     <%= f.fields_for :convidados do |builder| %>
-          <b><%= f.label builder.object.nome %></b><br/>
+          <%= builder.text_field :nome %><br/>
           <% if @usuario.disponivel_cerimonia %>
             <%= builder.check_box :confimacao_presenca_cerimonia, :style=>"width: 20px" %> Confirmar presença na cerimonia 
           <% end %>
