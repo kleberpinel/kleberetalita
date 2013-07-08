@@ -1,10 +1,21 @@
 <div style="padding: 30px">
   <a href="/convidados/list">Listar todos convidados</a>
   <h1>Listando usuarios</h1>
+
+  <div style="border: 1px solid black; padding: 10px">
+    <%= form_for( @user, :method => :get, :url => url_for(:controller => 'usuarios', :action => 'index')) do |f| %>
+      
+      <%= f.check_box :disponivel_festa, :style => "text-align: right;" %> => R.S.V.P.<br/>
+    <br/>
+   
+      <%= f.submit "Filtrar",  :class => "button orange", :style => "cursor: pointer" %>
+    <% end %>
+  </div>
   <br/>
+
   <table class="table table-bordered">
     <tr>
-      <th>Nome</th>
+      <th>Nome <br><%= @users.count %> convites</th>
       <th>Email</th>
       <th style="text-align: center">Convidado <br/>para Festa</th>
       <th style="text-align: center">Convidado <br/>para Cerimonia</th>

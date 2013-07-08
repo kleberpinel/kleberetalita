@@ -8,6 +8,11 @@ class UsuariosController < ApplicationController
   def index
     logger.debug "index"
     @users = User.all
+    @user = User.new(params[:user])
+
+    if @user.disponivel_festa
+      @users = User.where("disponivel_cerimonia = ? AND disponivel_festa = ? ", true, true)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
