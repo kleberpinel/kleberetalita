@@ -67,11 +67,12 @@ class UsuariosController < ApplicationController
     respond_to do |format|
       if @user.update_attributes(params[:user])
 
-        params[:user][:convidados_attributes].each do |attr_name, attr_value|
-          @convidado = Convidado.find(attr_value[:id])
-          @convidado.update_attributes(attr_value)
-        end
-
+        if params[:user][:convidados_attributes] != nil
+          params[:user][:convidados_attributes].each do |attr_name, attr_value|
+            @convidado = Convidado.find(attr_value[:id])
+            @convidado.update_attributes(attr_value)
+          end
+        end 
         format.html { redirect_to @user, :notice => 'User was successfully updated.' }
         format.json { head :ok }
       else
