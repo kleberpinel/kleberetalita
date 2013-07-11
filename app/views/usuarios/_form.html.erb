@@ -23,8 +23,8 @@
   <div class="field"> 
     <%= f.fields_for :convidados do |builder| %>
           <%= builder.text_field :nome %><br/>
-            <%= builder.check_box :confimacao_presenca_cerimonia, :style=>"width: 20px" %> Confirmar presença na cerimonia  <br/>
-            <%= builder.check_box :confimacao_presenca_festa, :style=>"width: 20px" %> Confirmar presença na festa <br/>
+          <%= builder.check_box :confimacao_presenca_cerimonia, :style=>"width: 20px" %> Confirmar presença na cerimonia  <br/>
+          <%= builder.check_box :confimacao_presenca_festa, :style=>"width: 20px" %> Confirmar presença na festa <br/>
           <br/><br/>
     <% end %>   
   </div>   

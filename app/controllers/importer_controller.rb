@@ -74,7 +74,7 @@ class ImporterController < ApplicationController
 		file_path = [Rails.root.to_s + "/config/importacao/controle_casamento.csv",
 						Rails.root.to_s + "/config/importacao/controle_casamento_cerimonia.csv"];
 
-		indice = 9969;
+		indice = 444;
 
 		file_path.each do |file|
 			spreadsheet = Roo::Csv.new(file, nil, :ignore)
@@ -84,10 +84,16 @@ class ImporterController < ApplicationController
 			  	row = Hash[[header, spreadsheet.row(i)].transpose]
 
 			  	if row["Nome_Convite"] != nil
-				  	@usuario = User.find(:first, :conditions => [ "nome_convite = :u", { :u => row["Nome_Convite"].strip }])
-
+			  		
+				  	@usuario = User.find(:first, :conditions => [ "nome_convite like :u", { :u => "%" + row["Nome_Convite"] + "%".strip }])
+				  	
 				  	if @usuario != nil
-				  		if @usuario.numero_telefone.to_s == @endereco_default.to_s
+
+				  		logger.debug row["Nome_Convite"]
+				  		logger.debug row["Telefone"]
+				  		logger.debug  @usuario.numero_telefone.to_s + "==" + @endereco_default.to_s
+
+				  		if @usuario.numero_telefone.to_s == @telefone_default.to_s
 						  	@usuario.numero_telefone = row["Telefone"] == nil ? @telefone_default : row["Telefone"]
 						end
 						if @usuario.endereco == @endereco_default
@@ -97,6 +103,7 @@ class ImporterController < ApplicationController
 					  	@usuario.save!
 					  	@usuarios << @usuario
 				  	else 
+				  		
 				  		usuario = User.new
 				  		usuario.nome = row["Nome"]
 				  		usuario.de_onde = row["De_onde"]

@@ -17,8 +17,9 @@
     <tr style="text-align: center">
       <td>Nome</td>
       <td>Telefone</td>
-      <td style="text-align: center" colspan="2">Disponivel<br> (pessoas)</td>
+      <td style="text-align: center" colspan="3">Disponivel<br> (pessoas)</td>
       <td style="text-align: center" colspan="2">Confirmado<br> (pessoas)</td>
+      <td style="text-align: center">R.S.V.P.<br> executado</td>
       <td></td>
       <td></td>
       <td></td>
@@ -28,8 +29,10 @@
       <td></td>
       <td style="text-align: center; width: 50px">Cerimonia</td>
       <td style="text-align: center; width: 50px">Festa</td>
+      <td style="text-align: center; width: 50px">Pessoas</td>
       <td style="text-align: center; width: 50px">Cerimonia</td>
       <td style="text-align: center; width: 50px">Festa</td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -56,8 +59,10 @@
         %>
         <%= qtd_convidados %>
       </td>
+      <td style="text-align: center;"><%= Convidado.count %></td>
       <td style="text-align: center;"><%= Convidado.where("confimacao_presenca_cerimonia = ? ", true).count %></td>
       <td style="text-align: center;"><%= Convidado.where("confimacao_presenca_festa = ? ", true).count %></td>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -65,15 +70,17 @@
 
   <% @users.each do |user| %>
     <tr>
-      <td><%= user.nome %></td>
+      <td><%= user.nome_convite %></td>
       <td><%= user.numero_telefone %></td>
       <td style="text-align: center"><%if user.disponivel_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
       <td style="text-align: center"><%if user.disponivel_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
+      <td style="text-align: center;"><%= user.convidados.count %></td>
       <td style="text-align: center;"><%= user.convidados.where("confimacao_presenca_cerimonia = ? ", true).count %></td>
       <td style="text-align: center;"><%= user.convidados.where("confimacao_presenca_festa = ? ", true).count %></td>
-      <td><%= link_to 'Visualizar', usuario_path(user) %></td>
-      <td><%= link_to 'Editar', edit_usuario_path(user) %></td>
-      <td><%= link_to 'Excluir', usuario_path(user), :confirm => 'Tem certeza?', :method => :delete %></td>
+      <td style="text-align: center"><%if user.rsvp_executado %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%></td>
+      <td><%= link_to 'Show', usuario_path(user) %></td>
+      <td><%= link_to 'Edit', edit_usuario_path(user) %></td>
+      <td><%= link_to 'Delete', usuario_path(user), :confirm => 'Tem certeza?', :method => :delete %></td>
     </tr>
   <% end %>
   </table>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130605180559) do
+ActiveRecord::Schema.define(:version => 20130711181338) do
 
   create_table "albums", :force => true do |t|
     t.string   "nome"
@@ -152,17 +152,17 @@ ActiveRecord::Schema.define(:version => 20130605180559) do
     t.string   "de_onde"
     t.string   "nome_convite"
     t.string   "convidados"
-    t.string   "numero_telefone"
     t.string   "nivel_certeza"
     t.string   "endereco"
     t.string   "origem"
-    t.boolean  "diponivel_festa"
-    t.boolean  "diponivel_cerimonia"
+    t.string   "numero_telefone"
     t.boolean  "disponivel_festa"
     t.boolean  "disponivel_cerimonia"
+    t.boolean  "rsvp_executado"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["nome_convite"], :name => "unique_name", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

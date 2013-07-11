@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   has_many :posts
   has_many :convidados
 
+  validates :nome_convite, :uniqueness => true
+
   accepts_nested_attributes_for :convidados
 
   # Include default devise modules. Others available are:

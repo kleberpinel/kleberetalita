@@ -35,9 +35,19 @@
 	  	<%= convidado.nome %> <br/>
 	  	<%if convidado.confimacao_presenca_cerimonia %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%>Confirmado para Cerimonia <br/>
 	  	<%if convidado.confimacao_presenca_festa %><img src="/images/button_ok.png"/><% else %><img src="/images/error.png"/><%end%>Confirmado para Festa<br/>
+
+	  	<%= link_to 'Destroy Convidado', [convidado.user, convidado],
+               :method => :delete %>
 	  	<br/>
 	  <% end %>
 	</p>
+
+	 <div class="field">
+	    <%= form_for([@user, Convidado.new], :html => {:class=> "comment-form"})  do |conv| %>
+	        <%= conv.text_field :nome, :class => "txt name", :placeholder=>"Nome"%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <%= conv.submit %>
+	      <%end%>
+	  </div>
 	
 
 	<%= link_to 'Edit', edit_usuario_path(@usuario) %> |

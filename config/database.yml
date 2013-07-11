@@ -11,6 +11,7 @@ development:
   pool: 5
   username: postgres
   password: root
+  port: 5433
 
 test:
   adapter: sqlite3
