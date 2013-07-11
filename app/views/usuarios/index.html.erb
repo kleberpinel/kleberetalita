@@ -56,7 +56,6 @@
           User.where("disponivel_festa = ? ", true).each do |user| 
             qtd_convidados = qtd_convidados + user.convidados.count;
           end 
-          
         %>
         <%= qtd_convidados %>
       </td>
