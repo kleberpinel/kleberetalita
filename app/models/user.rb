@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
       user
     else # Create a user with a stub password. 
       #logger.debug data.inspect
-      User.create!(:email => data.email, :password => Devise.friendly_token[0,20], :nome => data.username) 
+      User.create!(:email => data.email, :password => Devise.friendly_token[0,20], :nome => data.username, :nome_convite => data.username) 
     end
   end
 

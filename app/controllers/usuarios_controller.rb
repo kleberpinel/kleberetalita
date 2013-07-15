@@ -52,6 +52,9 @@ class UsuariosController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(params[:user])
+    @user.nome_convite = "dkemneotmometomoetmomeotmo"
+
+    logger.debug @user.inspect
 
     respond_to do |format|
       if @user.save

@@ -9,6 +9,7 @@
 			<h2>Sign up</h2>
 		</td>
 	</tr>
+	<%= f.hidden_field :nome_convite %>
 	<tr>
 		<td width="200px"><%= f.label :nome %></td>
 		<td><%= f.text_field :nome%></td>
@@ -28,9 +29,15 @@
 	</tr>
 	<tr>
 		<td colspan="2">
-			<%= f.submit "Sign up", :class => "button blue"%>
+			<%= f.submit "Sign up", :class => "button blue", :onclick => "return setNomeConvite();"%>
 		</td>
 	</tr>
+	<script type="text/javascript">
+		function setNomeConvite(){
+			$("#user_nome_convite").val($("#user_nome").val());
+			return true;
+		}
+	</script>
 	<tr>
 		<td>&nbsp;</td>
 		<td>
