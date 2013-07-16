@@ -4,6 +4,10 @@ class EventsController < ApplicationController
   	
   end
 
+  def padrinhos
+  	
+  end
+
   def dates
   	render :layout => false
   end

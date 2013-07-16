@@ -1,9 +1,7 @@
 Kleberetalita::Application.routes.draw do
   
   get "contato/form"
-
   post "contato/enviar"
-
   get "convidados/list"
 
   post "confirmacao_presenca/step1"
@@ -58,6 +56,7 @@ Kleberetalita::Application.routes.draw do
   get "events/list"
   get "events/dates"
   get "events/gift"
+  get "events/padrinhos"
 
   match "/presentes",  :to => "events#gift"
 
